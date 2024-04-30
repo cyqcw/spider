@@ -41,7 +41,7 @@ def zhuhuSipder(page):
     print(f'encrypt : {encrypt_str}')
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36",
-        "cookie": 'd_c0=ALBU2ZcilhePTrLjK5IA1cOhFMf6zwRoPlc = | 1697992389;',
+        "cookie": 'd_c0=ALBU2ZcilhePTrLjK5IA1cOhFMf6zwRoPlc=|1697992389;',
         "x-api-version": "3.0.91",
         "x-zse-93": "101_3_3.0",
         "x-zse-96": "2.0_%s" % encrypt_str,
@@ -92,7 +92,6 @@ def savedata():
     v = list(zip(userId, userTime, userName, userLike, userComment, userContent))
     # print(v)
     pd.DataFrame(v, columns=["id", "time", "name", "like", "comment", "cotent"]).to_excel("cat.xlsx")
-
 
 if __name__ == "__main__":
     mulitypage()
