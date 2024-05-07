@@ -1,8 +1,7 @@
 import requests
 import json
 import time
-from entity import *
-
+from zhihu.src.entity import *
 
 # 目标URL
 url = "https://www.zhihu.com/api/v4/search_v3"
@@ -128,13 +127,12 @@ def getQuestionUrls(keyWord:str)->None:
         print(f"params: {params}")
         time.sleep(1)
 
-
 def saveQuestionsToPath(path:str)->None:
     with open(path, 'w+', encoding='utf-8') as f:
         for question in questions:
             f.write(f"{question}\n")
     print(f"问题数量：{len(questions)}")
-    
+
 def saveArticlesToPath(path:str)->None:
     with open(path, 'w+', encoding='utf-8') as f:
         for article in articles:

@@ -47,41 +47,12 @@ params = {
     'search_source': 'Normal',
 }
 
-
 headers['x-zse-96'] = xza96[0]
 response = requests.get('https://www.zhihu.com/api/v4/search_v3', params=params, cookies=cookies, headers=headers)
 content = json.loads(response.content.decode('utf-8'))
 print(content['paging']['next'])
 
 
-
-
-
-
-
-
-
-
-
-
-
-cookies = {
-    '_zap': '0e195c0c-98b9-4a14-aa13-6121ae2c74cd',
-    'd_c0': 'ALBU2ZcilhePTrLjK5IA1cOhFMf6zwRoPlc=|1697992389',
-    '__snaker__id': 'olApQtmhiwbmpeyX',
-    '_xsrf': 'NDWkyb0gZvkQFH8ABcYYX87T5wMz0G4o',
-    'q_c1': '4cdd7e30e6a34f3ba66b2834adbe5613|1713582633000|1713582633000',
-    'z_c0': '2|1:0|10:1713582742|4:z_c0|92:Mi4xMlJxOUZBQUFBQUFBc0ZUWmx5S1dGeGNBQUFCZ0FsVk5LSUFRWndDVnFhZldWMi1zVThRYk14YjVIYVNuOVhaXzZ3|950cf96b0e1e4ea6e0e77724c71210d40e7ec4f45bff922e578a29f29a7a7633',
-    'gdxidpyhxdE': '4%2FL%5C4dOnkuuVizqagsXEWBvWH%2FVk4GIO7S9fXJlaCMWb3r%5ColdAmp%5CSNE2x3K9vnKUqt8JUvD9Kel7c0naOlePc66KHJzRSOy5hMVavRmZJ38MjQUt8%5CKYmclUulJbZz03CbOo%2FGOXtqE8hXgN%2Fc6%5CysHLWvUPmvN12%2BHo3o6TVSGYwc%3A1714208638670',
-    'Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49': '1714015142,1714037265,1714186028,1714381984',
-    'tst': 'r',
-    'SESSIONID': 'NJQdqK0BUk68p3oa3DJce9JTTRWawxSg4k39gMIIxoo',
-    'JOID': 'VF4XBk3HPjR3FFuub8RuYnFXgDR8iXBiEGUQmiqSVQZIZ2jBCqCqABIUX61rudGnl_a6HFXdB8pg0Yw2dRqEdtw=',
-    'osd': 'VVwWA0LGPDVyG1qsbsFhY3NWhTt9i3FnH2QSmy-dVARJYmfACKGvDxMWXqhkuNOmkvm7HlTYCMti0Ik5dBiFc9M=',
-    'BEC': '43d4532fd57f0c3c659e43172114057d',
-    'Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49': '1714466211',
-    'KLBRSID': 'fe0fceb358d671fa6cc33898c8c48b48|1714466849|1714460510',
-}
 
 headers['x-zse-96'] = xza96[1]
 params = {
@@ -108,33 +79,9 @@ response = requests.get('https://www.zhihu.com/api/v4/search_v3', params=params,
 content = json.loads(response.content.decode('utf-8'))
 print(content['paging']['next'])
 
-
-
-
-
-import requests
-
-cookies = {
-    '_zap': '0e195c0c-98b9-4a14-aa13-6121ae2c74cd',
-    'd_c0': 'ALBU2ZcilhePTrLjK5IA1cOhFMf6zwRoPlc=|1697992389',
-    '__snaker__id': 'olApQtmhiwbmpeyX',
-    '_xsrf': 'NDWkyb0gZvkQFH8ABcYYX87T5wMz0G4o',
-    'q_c1': '4cdd7e30e6a34f3ba66b2834adbe5613|1713582633000|1713582633000',
-    'z_c0': '2|1:0|10:1713582742|4:z_c0|92:Mi4xMlJxOUZBQUFBQUFBc0ZUWmx5S1dGeGNBQUFCZ0FsVk5LSUFRWndDVnFhZldWMi1zVThRYk14YjVIYVNuOVhaXzZ3|950cf96b0e1e4ea6e0e77724c71210d40e7ec4f45bff922e578a29f29a7a7633',
-    'gdxidpyhxdE': '4%2FL%5C4dOnkuuVizqagsXEWBvWH%2FVk4GIO7S9fXJlaCMWb3r%5ColdAmp%5CSNE2x3K9vnKUqt8JUvD9Kel7c0naOlePc66KHJzRSOy5hMVavRmZJ38MjQUt8%5CKYmclUulJbZz03CbOo%2FGOXtqE8hXgN%2Fc6%5CysHLWvUPmvN12%2BHo3o6TVSGYwc%3A1714208638670',
-    'Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49': '1714015142,1714037265,1714186028,1714381984',
-    'tst': 'r',
-    'SESSIONID': 'NJQdqK0BUk68p3oa3DJce9JTTRWawxSg4k39gMIIxoo',
-    'JOID': 'VF4XBk3HPjR3FFuub8RuYnFXgDR8iXBiEGUQmiqSVQZIZ2jBCqCqABIUX61rudGnl_a6HFXdB8pg0Yw2dRqEdtw=',
-    'osd': 'VVwWA0LGPDVyG1qsbsFhY3NWhTt9i3FnH2QSmy-dVARJYmfACKGvDxMWXqhkuNOmkvm7HlTYCMti0Ik5dBiFc9M=',
-    'BEC': '43d4532fd57f0c3c659e43172114057d',
-    'Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49': '1714466211',
-    'KLBRSID': 'fe0fceb358d671fa6cc33898c8c48b48|1714469000|1714460510',
-}
-
 headers ['x-zse-96'] = xza96[2]
 
-params = {
+params = { # 有顺序
     'gk_version': 'gz-gaokao',
     't': 'general',
     'q': '人工智能',
@@ -148,8 +95,6 @@ params = {
     'search_source': 'Normal',
     'vertical_info': '0,1,0,0,0,0,0,0,0,0',
 }
-
-
 
 response = requests.get('https://www.zhihu.com/api/v4/search_v3', params=params, cookies=cookies, headers=headers)
 content = json.loads(response.content.decode('utf-8'))
