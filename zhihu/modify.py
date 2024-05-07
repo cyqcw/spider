@@ -52,8 +52,6 @@ response = requests.get('https://www.zhihu.com/api/v4/search_v3', params=params,
 content = json.loads(response.content.decode('utf-8'))
 print(content['paging']['next'])
 
-
-
 headers['x-zse-96'] = xza96[1]
 params = {
     'gk_version': 'gz-gaokao',
@@ -69,11 +67,6 @@ params = {
     'search_source': 'Normal',
     'vertical_info': '0,1,0,0,0,0,0,0,0,0',
 }
-# params['offset'] = '20'
-# params['lc_idx'] = '20'
-# params['search_hash_id'] = "fe1f2c52bc245466a7714c890869324c"
-# params['vertical_info'] = '0,1,0,0,0,0,0,0,0,0'
-# print(params)
 
 response = requests.get('https://www.zhihu.com/api/v4/search_v3', params=params, cookies=cookies, headers=headers)
 content = json.loads(response.content.decode('utf-8'))

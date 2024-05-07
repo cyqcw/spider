@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "jsdom": "^24.0.0"
+    "jsdom": "^24.0.0",
+    "md5-node": "^1.0.1"
   }
 }
