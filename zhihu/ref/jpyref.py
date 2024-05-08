@@ -10,7 +10,7 @@ class zhihu_v3():
         self.url = "https://www.zhihu.com/api/v4/search_v3?gk_version=gz-gaokao&t=general&q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&correction=1&offset=0&limit=20&filter_fields=&lc_idx=0&show_all_topics=0&search_source=Normal" #相关api
 
     def call_js_x_s(self, func_name, *args):
-        with open(r'cnsec.js', 'r') as f:
+        with open(r'../src/x96.js', 'r') as f:
             js_code = f.read().strip()
         # 构造要执行的 JS 代码字符串
         js_args = [f"'{arg}'" if isinstance(arg, str) else str(arg) for arg in args]

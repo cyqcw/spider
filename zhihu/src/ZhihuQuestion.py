@@ -1,139 +1,156 @@
+import execjs
 import requests
 import json
 import time
-from zhihu.src.entity import *
+from entity import *
+from urllib.parse import urlencode
 
-# 目标URL
-url = "https://www.zhihu.com/api/v4/search_v3"
-nextUrl = None
+# 目标接口
+baseUrl = "https://www.zhihu.com/api/v4/search_v3"
+
 # 关键词
 keyWords = ['人工智能']
-# 每页大小
-pageSize = 20
-questionPath='./data/questions.txt'
-articlePath='./data/articles.txt'
+
+# 保存路径
+questionPath = './data/questions.txt'
+articlePath = './data/articles.txt'
 
 # 请求头
 headers = {
-    # "Accept": "*/*",
-    # "Accept-Encoding": "gzip, deflate, br, zstd",
-    # "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    # 以下Cookie和其他特定头信息可能需要根据实际情况调整
-    "Cookie": "_zap=0e195c0c-98b9-4a14-aa13-6121ae2c74cd; d_c0=ALBU2ZcilhePTrLjK5IA1cOhFMf6zwRoPlc=|1697992389; __snaker__id=olApQtmhiwbmpeyX; _xsrf=NDWkyb0gZvkQFH8ABcYYX87T5wMz0G4o; q_c1=4cdd7e30e6a34f3ba66b2834adbe5613|1713582633000|1713582633000; z_c0=2|1:0|10:1713582742|4:z_c0|92:Mi4xMlJxOUZBQUFBQUFBc0ZUWmx5S1dGeGNBQUFCZ0FsVk5LSUFRWndDVnFhZldWMi1zVThRYk14YjVIYVNuOVhaXzZ3|950cf96b0e1e4ea6e0e77724c71210d40e7ec4f45bff922e578a29f29a7a7633; gdxidpyhxdE=4%2FL%5C4dOnkuuVizqagsXEWBvWH%2FVk4GIO7S9fXJlaCMWb3r%5ColdAmp%5CSNE2x3K9vnKUqt8JUvD9Kel7c0naOlePc66KHJzRSOy5hMVavRmZJ38MjQUt8%5CKYmclUulJbZz03CbOo%2FGOXtqE8hXgN%2Fc6%5CysHLWvUPmvN12%2BHo3o6TVSGYwc%3A1714208638670; Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49=1714015142,1714037265,1714186028,1714381984; tst=r; SESSIONID=NJQdqK0BUk68p3oa3DJce9JTTRWawxSg4k39gMIIxoo; JOID=VF4XBk3HPjR3FFuub8RuYnFXgDR8iXBiEGUQmiqSVQZIZ2jBCqCqABIUX61rudGnl_a6HFXdB8pg0Yw2dRqEdtw=; osd=VVwWA0LGPDVyG1qsbsFhY3NWhTt9i3FnH2QSmy-dVARJYmfACKGvDxMWXqhkuNOmkvm7HlTYCMti0Ik5dBiFc9M=; BEC=43d4532fd57f0c3c659e43172114057d; Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49=1714466211; KLBRSID=fe0fceb358d671fa6cc33898c8c48b48|1714466211|1714460510",
-    "X-Api-Version": "3.0.91",
-    # "X-App-Za": "OS=Web",
-    # "X-Requested-With": "fetch",
-    "X-Zse-93": "101_3_3.0",
-    # 需要根据实际情况调整
-    "X-Zse-96": "2.0_5KcY6+pyb96B4BbWLB1GG5Qtp6DUvzQZS6+crUkSGRn=ZzASW9WHNK5t8D1In0cG"
-}
-
-XZse96Array=[
-    '2.0_QzfPpdX4UgRyBl/10Tk0YdfwaeLdvHvODvwur0eyNzz3fBzSUMxhjkbAS=mlUXxn',
-    '2.0_ivWkDn0UwlrM5ULuPJHfnVMv4nScXqUTm04kYy98v=cMzBNPixZc=tCVX=AKfwoW',
-    "2.0_7+5or63nFlL5NixDmy8sDRyYMpmV0Su4t7aNhkmdXj6kxvrDUZU6o+GavUfWD4Z5",
-    '2.0_V6ya3xcdKHO=zCU4yFi=jucegwaq+Qsrh7/F/Yzf1za=zcm0VKktcO8hOCrCpae0',
-    '2.0_k0XQAThGxeGyyfgfwnoOBLzkmTbOB5FBlHuGy0TeI1=jHbp+7liik0+y=1a1H=Rj',
-    '2.0_SohACevrc8xprQ9pkHD+8i9CPacrUU/IiceJbTa6aCI/HD3p4NYsBBnvZGs5juiZ',
-]
-
-# 查询参数
-params = {
-    "gk_version": "gz-gaokao",
-    "t": "general",
-    "q": "人工智能",
-    "correction": "1",
-    "offset": "0",
-    "limit": str(pageSize),
-    "filter_fields": "",
-    "lc_idx": "0",
-    "show_all_topics": "0",
-    "search_source": "Normal",
+    "authority": "www.zhihu.com",
+    "accept": "*/*",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cookie": "_zap=55d70801-1690-43db-b4d0-cf16a2aa28ec; d_c0=AHAXJUx5xRaPTo1CHUTt-lh3rGIt69EcLO0=|1683989365; _xsrf=bdcf3a25-1208-4b12-a969-212abb21f4c0; Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49=1714544962,1715162121; SESSIONID=Tlz9iMcdUF5G9QXw4YySWbxgdZvxVJOSESgOUfFYvFM; JOID=W14VBkyCL2d9wAOkK44-Nt98VuY62UUYRqdBwUrZZlQ_-1zzWoFgWxfBCqcs19fppIZ6sb5yQ--S-deFCQftWSo=; osd=UVEUAkyIIGZ5wAmrKoo-PNB9UuYw1kQcRq1OwE7ZbFs-_1z5VYBkWx3OC6Ms3djooIZwvr92Q-Wd-NOFAwjsXSo=; __snaker__id=814B6gFAkw6uGCWd; captcha_session_v2=2|1:0|10:1715162158|18:captcha_session_v2|88:RVd2U2p6OXV0azVpYmJua0d4RTBQcENRWFNVdUF6S1MzSVBYeHdBMzZVSnZ1aDNBWFZNdkU0T1BDSXVkRmpMNA==|2521e3ba553976d936ff223ec6d2d31c61fb63f45dd635f813411848144f92f4; gdxidpyhxdE=2d3HTwbGoEeqebE1HKg9D8nTEGOXRz4pBE3UQ63wMen2ifBgevSenMhsJi0PSNA5n%2B1RQM%5CnJioz%5CbAsaat3bC6D2RZQQ0YsT913yVsbxMgbWJ1aUBDZClMQ7uidx%5CVcxZlpwd0iXWU0oNI8%5CU4TusZwygeR689N833po4%2B%2BVHGWwqzb%3A1715163058080; o_act=login; ref_source=other_https://www.zhihu.com/knowledge-plan/hot-question/hot/0/day; expire_in=15552000; q_c1=6b48e9160f474705b13c906c5c0946aa|1715162167000|1715162167000; tst=r; BEC=43d4532fd57f0c3c659e43172114057d; z_c0=2|1:0|10:1715162170|4:z_c0|92:Mi4xMlJxOUZBQUFBQUFBY0JjbFRIbkZGaGNBQUFCZ0FsVk5OcG9vWndEMHFoMXJ1VjRQMXpfYkhKZ0RvYmZDYXUwY3RB|05099a3453c24f26dd3f65398ce25e70fb1f785ef7350bd8287b629318247631; Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49=1715162235; KLBRSID=53650870f91603bc3193342a80cf198c|1715162236|1715162120",
+    "referer": "https://www.zhihu.com/search?type=content&q=^%^E8^%^8B^%^B9^%^E6^%^9E^%^9C^",
+    "sec-ch-ua": "^\\^Chromium^^;v=^\\^122^^, ^\\^Not(A:Brand^^;v=^\\^24^^, ^\\^Google",
+    "sec-ch-ua-mobile": "?0",
+    "^sec-ch-ua-platform": "^\\^Windows^^^",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "x-requested-with": "fetch",
+    "x-zse-93": "101_3_3.0",
+    "x-zse-96": None
 }
 
 # 问题URL列表
 questions = []
 questionUrls = []
 
-articles= []
+articles = []
 articleUrls = []
 
+
+# 解析关键词搜索页获得数据
+def parse(content: json):
+    # 解析获取这一页的问题URL
+    for data in content['data']:
+        if data['type'] != 'search_result':
+            continue
+        object = data['object']
+        # 如果是问题
+        if object['type'] == 'answer':
+            question = object['question']
+            print(f"question index: {data['index']}, dataHeight: {question['name']}")
+            # 如果问题URL不在列表中，添加到列表
+            if question['url'] not in questionUrls:
+                questions.append(Question(
+                    question['id'], question['type'], question['name'],
+                    question['url'], question['answer_count'], question['follow_count']
+                ))
+                questionUrls.append(question['url'])
+        # 如果是文章
+        elif object['type'] == 'article':
+            article = object
+            print(f"article index: {data['index']}, dataHeight: {article['title']}")
+            # 如果文章URL不在列表中，添加到列表
+            if article['url'] not in articleUrls:
+                articles.append(Article(
+                    article['id'], article['author']['id'], article['author']['name'],
+                    article['author']['url'], article['author']['type'], article['author']['headline'],
+                    article['title'], article['type'], article['url'], article['excerpt'],
+                    article['voteup_count'], article['comment_count'], article['zfav_count'],
+                    article['created_time'], article['updated_time'], article['content']
+                ))
+                articleUrls.append(article['url'])
+        else:
+            print(f"未知类型：{object['type']}, {data['index']}")
+
+
 # 根据关键词检索获得问题URL
-def getQuestionUrls(keyWord:str)->None:
-    page=0
+def getQuestionUrls(keyWord: str) -> None:
+    page = 0
+    search_hash_id = None
+    pageSize = 20
     # 每次循环获取一页数据(20个问题/文章)，直到没有数据
-    while True:
-        # 发送GET请求
-        response = requests.get(url, params = params, headers=headers)
-        
+    while page < 2:
+        if page == 0:
+            params = {
+                "gk_version": "gz-gaokao",
+                "t": "general",
+                "q": keyWord,
+                "correction": "1",
+                "offset": str(page * pageSize),
+                "limit": str(pageSize),
+                "filter_fields": "",
+                "lc_idx": str(page * pageSize),
+                "show_all_topics": "0",
+                "search_source": "Normal",
+            }
+        else:
+            params = {
+                'gk_version': 'gz-gaokao',
+                't': 'general',
+                'q': '人工智能',
+                'correction': '1',
+                'offset': str(page * pageSize),
+                'limit': '20',
+                'filter_fields': '',
+                'lc_idx': str(page * pageSize),
+                'show_all_topics': '0',
+                'search_hash_id': search_hash_id,
+                'search_source': 'Normal',
+                'vertical_info': f'0,1,0,0,0,0,0,0,0,{page * 4}',
+            }
+
+        # 完整请求路径
+        fullUrl = f"{baseUrl}?{urlencode(params)}"
+        # 知乎加密参数
+        x_zse = execjs.compile(func).call('ed', fullUrl.replace('https://www.zhihu.com', ""))
+        headers["X-Zse-96"] = f"2.0_{x_zse}"
+        # 请求
+        response = requests.get(fullUrl, headers=headers)
+
         # 检查响应状态码
         if response.status_code != 200:
             print(f"请求失败，状态码：{response.status_code}, reason: {response.reason}, text: {response.text}")
             break
-        
+
         # 解析JSON内容
         content = json.loads(response.content.decode('utf-8'))
-        
+
         # 如果后续没有数据，退出循环
         if content['paging']['is_end']:
             break
-        
-        # 解析获取这一页的问题URL
-        for data in content['data']:
-            if data['type'] != 'search_result':
-                continue
-            object= data['object']
-            # 如果是问题
-            if object['type'] == 'answer': 
-                question = object['question']
-                print(f"page: {page}, index: {data['index']}, dataHeight: {question['name']}")
-                # 如果问题URL不在列表中，添加到列表
-                if question['url'] not in questionUrls:
-                    questions.append(Question(
-                        question['id'], question['type'], question['name'],
-                        question['url'], question['answer_count'], question['follow_count']    
-                    ))
-                    questionUrls.append(question['url'])
-            # 如果是文章
-            elif object['type'] == 'article':
-                article = object
-                print(f"page: {page}, index: {data['index']}, dataHeight: {article['title']}")
-                # 如果文章URL不在列表中，添加到列表
-                if article['url'] not in articleUrls:
-                    articles.append(Article(
-                        article['id'], article['author']['id'], article['author']['name'],
-                        article['author']['url'], article['author']['type'], article['author']['headline'],
-                        article['title'], article['type'], article['url'], article['excerpt'],
-                        article['voteup_count'], article['comment_count'], article['zfav_count'],
-                        article['created_time'], article['updated_time'], article['content']
-                    ))
-                    articleUrls.append(article['url'])
-            else:
-                print(f"未知类型：{object['type']}, {data['index']}")
-                
-        # 下一页
-        nextUrl = content['paging']['next']
-        print(f"nextUrl: {nextUrl}")
-        page+=1
-        if page>10:
-            break
-        
-        params['offset'] = str(page * pageSize)
-        params['search_hash_id'] = content['search_action_info']['search_hash_id']
-        params['lc_idx'] = str(page * pageSize)
-        params['vertical_info'] = '0,1,0,0,0,0,0,0,0,0'
-        params['search_source'] = 'Normal'
-        print(f"params: {params}")
+
+        parse(content)
+
+        page += 1
+
+        search_hash_id = content['search_action_info']['search_hash_id']
+        print(f"paging : {content['paging']}, search_hash_id: {search_hash_id}")
         time.sleep(1)
 
-def saveQuestionsToPath(path:str)->None:
+
+def saveQuestionsToPath(path: str) -> None:
     with open(path, 'w+', encoding='utf-8') as f:
         for question in questions:
             f.write(f"{question}\n")
     print(f"问题数量：{len(questions)}")
 
-def saveArticlesToPath(path:str)->None:
+
+def saveArticlesToPath(path: str) -> None:
     with open(path, 'w+', encoding='utf-8') as f:
         for article in articles:
             f.write(f"{article}\n")
@@ -141,10 +158,31 @@ def saveArticlesToPath(path:str)->None:
 
 
 if __name__ == '__main__':
+    with open('x96.js', 'r', encoding='utf-8') as f:
+        func = f.read()
     getQuestionUrls('人工智能')
     saveArticlesToPath(articlePath)
     saveQuestionsToPath(questionPath)
-    
 
-
-
+    # # 初始化Get查询参数
+    # params = {
+    #     "gk_version": "gz-gaokao",
+    #     "t": "general",
+    #     "q": "人工智能",
+    #     "correction": "1",
+    #     "offset": '0',
+    #     "limit": '20',
+    #     "filter_fields": "",
+    #     "lc_idx": '0',
+    #     "show_all_topics": "0",
+    #     "search_source": "Normal",
+    # }
+    # #
+    #
+    # # 发送GET请求
+    # fullUrl = f"{baseUrl}?{urlencode(params)}"
+    # x_zse = execjs.compile(func).call('ed', fullUrl.replace('https://www.zhihu.com', ""))
+    # print(f"x_zse : {x_zse}")
+    # headers["X-Zse-96"] = f"2.0_{x_zse}"
+    # response = requests.get(fullUrl, headers=headers)
+    # print(response.json())

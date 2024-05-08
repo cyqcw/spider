@@ -9,7 +9,7 @@ import execjs
 '''
 
 
-with open('x96.js','r',encoding='utf-8') as f:
+with open('src/x96.js', 'r', encoding='utf-8') as f:
     func = f.read()
 
 url = "https://www.zhihu.com/api/v4/comment_v5/answers/3308302434/root_comment?order_by=score&limit=20&offset="
@@ -40,3 +40,4 @@ response = requests.get(url, headers=headers)
 
 print(response.text)
 print(response)
+print(response.json())
