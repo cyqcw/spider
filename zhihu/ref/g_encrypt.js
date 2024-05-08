@@ -40,7 +40,7 @@ Function.prototype.toString = function() {
         return "function "+this.name+"() { [native code] }"
     }
 }
-
+window = global;
 (window.webpackChunkheifetz = window.webpackChunkheifetz || []).push([[4091], {
     1514: function(__unused_webpack_module, exports, __webpack_require__) {
         "use strict";
@@ -1406,9 +1406,27 @@ var signature;
     u.push = s.bind(null, u.push.bind(u))
 }();
 
+function D(e) {
+   return signature('1514').ZP(e)
+}
 const ex={
     "md5" : "1e4cce95cf7271ba6ba11129f1564184",
     "预期" : "RiQN=4NjPlD1jTHyRcsj8QJFAK1DwpcJycCO9ehdX1FvGi5JJ/RUf2qmG82ZIqTa"
 }
+for (f=0; f<1001; f+=1){
+    let rf=f/1000.0
+    console.log(rf)
+    Math.random = function() {
+        return rf;
+    }
+    if (signature('1514').ZP(ex.md5) == ex.预期){
+        console.log(rf, "get: "+signature('1514').ZP(ex.md5), ex.md5)
+        break;
+    }else{
+        console.log(rf, "real: "+signature('1514').ZP(ex.md5), ex.md5)
+    }
+}
 
-console.log(signature(ex.md5))
+
+console.log(signature('1514').ZP(ex.md5))
+console.log(ex.预期)

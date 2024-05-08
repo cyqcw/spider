@@ -15,7 +15,8 @@ headers = {
 def getSignature(params:str)->str:
     with open('g_encrypt.js', 'r') as f:
         ctx = execjs.compile(f.read())
-        signature = ctx.call('b', hashlib.md5(params.encode("utf-8")).hexdigest())
+        signature = ctx.call('D', hashlib.md5(params.encode("utf-8")).hexdigest())
+        print(f"params: {params}, signature: {signature}")
         return signature
 def process(keyword:str)->None:
     keyword=quote(keyword)
@@ -25,16 +26,11 @@ def process(keyword:str)->None:
     print(response.cookies.values(), response.headers, response.status_code,sep='\n')
     cookie_dc0="ALBU2ZcilhePTrLjK5IA1cOhFMf6zwRoPlc=|1697992389" # response.cookies.get('d_c0','')
     params=f"101_3_3.0+/api/v4/search_v3?gk_version=gz-gaokao&t=general&q={keyword}&correction=1&offset=0&limit=20&filter_fields=&lc_idx=0&show_all_topics=0&search_source=Normal+{cookie_dc0}"
-    print(params)
     x_zse_96=getSignature(params)
-    print(x_zse_96)
     headers.update({"x-zse-96":f"2.0_{x_zse_96}"})
     url=f'https://www.zhihu.com/api/v4/search_v3?gk_version=gz-gaokao&t=general&q={keyword}&correction=1&offset=0&limit=20&filter_fields=&lc_idx=0&show_all_topics=0&search_source=Normal'
     response=ses.get(url, headers=headers, timeout=20)
     print(response.json())
 
 if __name__ == '__main__':
-    # process('人工智能')
-    # print(getSignature("d5954a23addf34d1da0ab5251c8bc076"))
-    print(len("a_tyr6UqcXtYbTY0mXY8nr98nwYpkMFBhCYygge8eLSx"))
-    print(len("RiQN=4NjPlD1jTHyRcsj8QJFAK1DwpcJycCO9ehdX1FvGi5JJ/RUf2qmG82ZIqTa"))
+    process('人工智能')
