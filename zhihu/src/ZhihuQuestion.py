@@ -1,3 +1,5 @@
+import random
+
 import execjs
 import requests
 import json
@@ -143,7 +145,7 @@ def getQuestionUrls(keyWord: str) -> None:
         search_hash_id = content['search_action_info']['search_hash_id']
 
         print(f"paging : {content['paging']}, search_hash_id: {search_hash_id}")
-        time.sleep(1)
+        time.sleep(random.randint(2,5))
 
 def saveQuestionsAndArticleToPath() -> None:
     #

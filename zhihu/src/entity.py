@@ -20,13 +20,14 @@ class Question:
 
 # 知乎回答实体类
 class Answer:
-    def __init__(self, questionId: str, id: str, authorId: str, author: str,
+    def __init__(self, id: str, questionId: str, questionTitle: str, authorId: str, author: str,
                  authorUrl: str, authorType: str, authorHeadline: str,
                  type: str, url: str, excerpt: str, voteupCount: int,
                  commentCount: int, favoriteCount: int, createdTime: str,
                  updatedTime: str, content: str):
-        self.questionId = questionId
         self.id = id
+        self.questionId = questionId
+        self.questionTitle = questionTitle
         self.authorId = authorId
         self.author = author
         self.authorUrl = authorUrl
@@ -46,8 +47,7 @@ class Answer:
         return f"作者：{self.author}, 赞同数：{self.voteupCount}, 内容：{self.content}"
 
     def __repr__(self):
-        return f'{self.questionId},{self.id},{self.authorId},{self.author},{self.authorUrl},{self.authorType},{self.authorHeadline},{self.type},{self.url},{self.excerpt},{self.voteupCount},{self.commentCount},{self.favoriteCount},{self.createdTime},{self.updatedTime},{self.content}'
-
+        return f'{self.id},{self.questionId},{self.questionTitle},{self.authorId},{self.author},{self.authorUrl},{self.authorType},{self.authorHeadline},{self.type},{self.url},{self.excerpt},{self.voteupCount},{self.commentCount},{self.favoriteCount},{self.createdTime},{self.updatedTime},{self.content}'
 
 # 知乎文章实体类
 class Article:
