@@ -12,8 +12,8 @@ baseUrl = "https://www.zhihu.com/api/v4/search_v3"
 keyWords = ['人工智能']
 
 # 保存路径
-questionPath = './data/questions.txt'
-articlePath = './data/articles.txt'
+questionPath = '../data/questions.csv'
+articlePath = '../data/articles.csv'
 
 # 请求头
 headers = {
@@ -41,18 +41,21 @@ questionUrls = []
 articles = []
 articleUrls = []
 
+def getPureTitle(title: str)->str:
+    return title.replace("<em>", "").replace("</em>", "")
 
 # 解析关键词搜索页获得数据
 def parse(content: json):
     # 解析获取这一页的问题URL
-    for data in content['data']:
+    dataLst = content['data']
+    for data in dataLst:
         if data['type'] != 'search_result':
             continue
         object = data['object']
         # 如果是问题
         if object['type'] == 'answer':
             question = object['question']
-            print(f"question index: {data['index']}, dataHeight: {question['name']}")
+            print(f"index: {data['index']}, type: question, title: {getPureTitle(question['name'])}")
             # 如果问题URL不在列表中，添加到列表
             if question['url'] not in questionUrls:
                 questions.append(Question(
@@ -63,7 +66,7 @@ def parse(content: json):
         # 如果是文章
         elif object['type'] == 'article':
             article = object
-            print(f"article index: {data['index']}, dataHeight: {article['title']}")
+            print(f"index: {data['index']}, type: article, title: {getPureTitle(article['title'])}")
             # 如果文章URL不在列表中，添加到列表
             if article['url'] not in articleUrls:
                 articles.append(Article(
@@ -84,7 +87,7 @@ def getQuestionUrls(keyWord: str) -> None:
     search_hash_id = None
     pageSize = 20
     # 每次循环获取一页数据(20个问题/文章)，直到没有数据
-    while page < 2:
+    while page < 3:
         if page == 0:
             params = {
                 "gk_version": "gz-gaokao",
@@ -102,10 +105,10 @@ def getQuestionUrls(keyWord: str) -> None:
             params = {
                 'gk_version': 'gz-gaokao',
                 't': 'general',
-                'q': '人工智能',
+                'q': keyWord,
                 'correction': '1',
                 'offset': str(page * pageSize),
-                'limit': '20',
+                'limit': str(pageSize),
                 'filter_fields': '',
                 'lc_idx': str(page * pageSize),
                 'show_all_topics': '0',
@@ -124,7 +127,7 @@ def getQuestionUrls(keyWord: str) -> None:
 
         # 检查响应状态码
         if response.status_code != 200:
-            print(f"请求失败，状态码：{response.status_code}, reason: {response.reason}, text: {response.text}")
+            print(f"请求失败 url: {fullUrl}, text: {response.text}")
             break
 
         # 解析JSON内容
@@ -137,52 +140,27 @@ def getQuestionUrls(keyWord: str) -> None:
         parse(content)
 
         page += 1
-
         search_hash_id = content['search_action_info']['search_hash_id']
+
         print(f"paging : {content['paging']}, search_hash_id: {search_hash_id}")
         time.sleep(1)
 
-
-def saveQuestionsToPath(path: str) -> None:
-    with open(path, 'w+', encoding='utf-8') as f:
+def saveQuestionsAndArticleToPath() -> None:
+    #
+    with open(questionPath, 'a+', encoding='utf-8') as f:
+        f.write("id,type,name,url,answer_count,follow_count\n")
         for question in questions:
-            f.write(f"{question}\n")
+            f.write(f"{repr(question)}\n")
     print(f"问题数量：{len(questions)}")
 
-
-def saveArticlesToPath(path: str) -> None:
-    with open(path, 'w+', encoding='utf-8') as f:
+    with open(articlePath, 'a+', encoding='utf-8') as f:
+        f.write("id,authorId,author,authorUrl,authorType,authorHeadline,title,type,url,excerpt,voteupCount,commentCount,zfavCount,createdTime,updatedTime,content\n")
         for article in articles:
-            f.write(f"{article}\n")
+            f.write(f"{repr(article)}\n")
     print(f"文章数量：{len(articles)}")
-
 
 if __name__ == '__main__':
     with open('x96.js', 'r', encoding='utf-8') as f:
         func = f.read()
     getQuestionUrls('人工智能')
-    saveArticlesToPath(articlePath)
-    saveQuestionsToPath(questionPath)
-
-    # # 初始化Get查询参数
-    # params = {
-    #     "gk_version": "gz-gaokao",
-    #     "t": "general",
-    #     "q": "人工智能",
-    #     "correction": "1",
-    #     "offset": '0',
-    #     "limit": '20',
-    #     "filter_fields": "",
-    #     "lc_idx": '0',
-    #     "show_all_topics": "0",
-    #     "search_source": "Normal",
-    # }
-    # #
-    #
-    # # 发送GET请求
-    # fullUrl = f"{baseUrl}?{urlencode(params)}"
-    # x_zse = execjs.compile(func).call('ed', fullUrl.replace('https://www.zhihu.com', ""))
-    # print(f"x_zse : {x_zse}")
-    # headers["X-Zse-96"] = f"2.0_{x_zse}"
-    # response = requests.get(fullUrl, headers=headers)
-    # print(response.json())
+    saveQuestionsAndArticleToPath()
