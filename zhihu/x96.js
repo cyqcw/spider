@@ -606,8 +606,6 @@ var fff;
 
 })
 
-// Math.random = function(params) { return 1}
-
 V = function(t, e) {
     return void 0 === e && (e = 4096),
     !!t && function(t) {
@@ -615,19 +613,25 @@ V = function(t, e) {
     }(t) <= e
 }
 
+var loash = fff(1514)
 function ed(u){
-    var loash = fff(1514)
-        var o = "101_3_3.0"
-        , i = "AVDTyDPXvhePTomDWXk2pxYoCDjgAyKSoXM=|1700724089"
-        , a = ''
-        , u = u
-        , c = ''
+        var o = "101_3_3.0" // 版本号
+        , i = "AHAXJUx5xRaPTo1CHUTt-lh3rGIt69EcLO0=|1683989365" // cookie中的d_c0值
+        , a = '' // x-zst-81值
+        , u = u // 接口部分
+        , c = '' // ""
         , s = [o, u, i, V(c) && c, a].filter(Boolean).join("+")
       ,encrypted = md5Hash(s);
-      console.log(encrypted)
-
+      console.log("md5:",encrypted)
+    //32位小写md5加密
     return loash.ZP(encrypted)
-
 }
 
+const ex={
+    "md5" : "9a2c07044f4ce15666e8985816cb14b1",
+    "预期" : "0WBxz9WHuewBd8n9HgYTwCbzg3977tt4L3bwgITec8Lm0TZcBkOqtoOPOW1lGqPi"
+}
 
+console.log(loash.ZP(ex.md5))
+
+console.log(ed("101_3_3.0+/api/v4/search/recommend_query/v2+AHAXJUx5xRaPTo1CHUTt-lh3rGIt69EcLO0=|1683989365"))
