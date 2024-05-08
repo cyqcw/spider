@@ -1,3 +1,4 @@
+import csv
 import random
 
 import execjs
@@ -86,11 +87,23 @@ def getAllAnswers(questionUrl: str)->None:
         # print(f"数据已成功保存")
 
 def saveAnswers()->None:
-    with open('../data/answers.csv', 'w+', encoding='utf-8') as f:
-        f.write("id,questionId,questionTitle,authorId,author,authorUrl,authorType,authorHeadline,type,url,excerpt,voteupCount,commentCount,favoriteCount,createdTime,updatedTime,content\n")
+    with open('../data/answers.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=answers[0].getFieldName())
+        writer.writeheader()  # 写入列名
         for answer in answers:
-            f.write(repr(answer)+"\n")
+            # 转换实体为字典，以便csv.DictWriter处理
+            entity_dict = answer.__dict__
+            # 可以在这里添加额外的逻辑来清理或转换数据
+            writer.writerow(entity_dict)
 
 if __name__ == '__main__':
-    getAllAnswers('https://www.zhihu.com/api/v4/questions/263823175/answers')
-    saveAnswers()
+    with open('../data/questions.csv', 'r', encoding='utf-8') as f:
+        f.readline()
+        lines = f.readlines()
+        ids = [line.split(',')[0] for line in lines]
+        print(ids)
+        for id in ids:
+            getAllAnswers(f'https://www.zhihu.com/api/v4/questions/{id}/answers')
+        print(answers)
+        print(len(answers))
+        saveAnswers()

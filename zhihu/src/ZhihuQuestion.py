@@ -1,3 +1,4 @@
+import csv
 import random
 
 import execjs
@@ -137,6 +138,7 @@ def getQuestionUrls(keyWord: str) -> None:
 
         # 如果后续没有数据，退出循环
         if content['paging']['is_end']:
+            print(f"关键词 {keyWord} 爬取完毕")
             break
 
         parse(content)
@@ -148,18 +150,30 @@ def getQuestionUrls(keyWord: str) -> None:
         time.sleep(random.randint(2,5))
 
 def saveQuestionsAndArticleToPath() -> None:
-    #
-    with open(questionPath, 'a+', encoding='utf-8') as f:
-        f.write("id,type,name,url,answer_count,follow_count\n")
+    with open(questionPath, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=questions[0].getFieldName())
+        writer.writeheader()  # 写入列名
         for question in questions:
-            f.write(f"{repr(question)}\n")
+            # 转换实体为字典，以便csv.DictWriter处理
+            entity_dict = question.__dict__
+            # 可以在这里添加额外的逻辑来清理或转换数据
+            writer.writerow(entity_dict)
     print(f"问题数量：{len(questions)}")
 
-    with open(articlePath, 'a+', encoding='utf-8') as f:
-        f.write("id,authorId,author,authorUrl,authorType,authorHeadline,title,type,url,excerpt,voteupCount,commentCount,zfavCount,createdTime,updatedTime,content\n")
+    with open(articlePath, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=articles[0].getFieldName())
+        writer.writeheader()  # 写入列名
         for article in articles:
-            f.write(f"{repr(article)}\n")
+            # 转换实体为字典，以便csv.DictWriter处理
+            entity_dict = article.__dict__
+            # 可以在这里添加额外的逻辑来清理或转换数据
+            writer.writerow(entity_dict)
     print(f"文章数量：{len(articles)}")
+
+    with open('../data/qustion_urls.txt', 'w', encoding='utf-8') as f:
+        for questionUrl in questionUrls:
+            f.write(questionUrl+"\n")
+
 
 if __name__ == '__main__':
     with open('x96.js', 'r', encoding='utf-8') as f:

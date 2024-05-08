@@ -17,6 +17,8 @@ class Question:
     def __repr__(self):
         return f'{self.id},{self.type},{self.name},{self.url},{self.answerCount},{self.followCount}'
 
+    def getFieldName(self):
+        return ['id', 'type', 'name', 'url', 'answerCount', 'followCount']
 
 # 知乎回答实体类
 class Answer:
@@ -49,6 +51,11 @@ class Answer:
     def __repr__(self):
         return f'{self.id},{self.questionId},{self.questionTitle},{self.authorId},{self.author},{self.authorUrl},{self.authorType},{self.authorHeadline},{self.type},{self.url},{self.excerpt},{self.voteupCount},{self.commentCount},{self.favoriteCount},{self.createdTime},{self.updatedTime},{self.content}'
 
+    def getFieldName(self):
+        return ['id', 'questionId', 'questionTitle', 'authorId', 'author', 'authorUrl', 'authorType',
+                        'authorHeadline', 'type', 'url', 'excerpt', 'voteupCount', 'commentCount', 'favoriteCount',
+                        'createdTime', 'updatedTime', 'content']
+
 # 知乎文章实体类
 class Article:
     def __init__(self, id: str, authorId: str, author: str, authorUrl: str,
@@ -77,3 +84,8 @@ class Article:
 
     def __repr__(self):
         return f'{self.id},{self.authorId},{self.author},{self.authorUrl},{self.authorType},{self.authorHeadline},{self.title},{self.type},{self.url},{self.excerpt},{self.voteupCount},{self.commentCount},{self.zfavCount},{self.createdTime},{self.updatedTime},{self.content}'
+
+    def getFieldName(self):
+        return ['id', 'authorId', 'author', 'authorUrl', 'authorType', 'authorHeadline',
+                'title', 'type', 'url', 'excerpt', 'voteupCount', 'commentCount',
+                'zfavCount', 'createdTime', 'updatedTime', 'content']
