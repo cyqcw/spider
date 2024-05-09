@@ -13,7 +13,7 @@ from urllib.parse import urlencode
 baseUrl = "https://www.zhihu.com/api/v4/search_v3"
 
 # 关键词
-keyWords = ['人工智能']
+keyWords = ['人工智能', 'AI', '大模型']
 
 # 保存路径
 questionPath = '../data/questions.csv'
@@ -158,11 +158,11 @@ def saveQuestionsAndArticleToPath() -> None:
     # 检查问题文件是否存在
     if not os.path.isfile(questionPath):
         with open(questionPath, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=questions[0].get_field_name())
+            writer = csv.DictWriter(csvfile, fieldnames=questions[0].getFieldName())
             writer.writeheader()  # 写入列名
 
     with open(questionPath, 'a', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=questions[0].get_field_name())
+        writer = csv.DictWriter(csvfile, fieldnames=questions[0].getFieldName())
         for question in questions:
             entity_dict = question.__dict__
             writer.writerow(entity_dict)
@@ -171,11 +171,11 @@ def saveQuestionsAndArticleToPath() -> None:
     # 检查文章文件是否存在
     if not os.path.isfile(articlePath):
         with open(articlePath, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=articles[0].get_field_name())
+            writer = csv.DictWriter(csvfile, fieldnames=articles[0].getFieldName())
             writer.writeheader()  # 写入列名
 
     with open(articlePath, 'a', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=articles[0].get_field_name())
+        writer = csv.DictWriter(csvfile, fieldnames=articles[0].getFieldName())
         for article in articles:
             entity_dict = article.__dict__
             writer.writerow(entity_dict)
@@ -195,6 +195,6 @@ if __name__ == '__main__':
     print(f"已经爬取的问题URL：{alreadyUrls}")
 
 
-    # # 获取问题URL
-    # getQuestionUrls('人工智能')
-    # saveQuestionsAndArticleToPath()
+    # 获取问题URL
+    getQuestionUrls('AI')
+    saveQuestionsAndArticleToPath()

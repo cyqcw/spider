@@ -10,7 +10,6 @@ from entity import *
 from urllib.parse import urlencode
 
 baseUrl = 'https://www.zhihu.com/api/v4/questions/263823175/answers'
-answers = []
 
 # 请求头
 headers = {
@@ -42,9 +41,10 @@ params = {
 with open('x96.js', 'r', encoding='utf-8') as f:
     func = f.read()
 
-def parseAnswer(content: json)->None:
+def parseAnswer(content: json, answers: list)->None:
     dataLst = content['data']
     for data in dataLst:
+        print(f"正在解析，问题：{data['question']['id']}，答案：{data['id']}")
         answers.append(Answer(
             data['id'], data['question']['id'], data['question']['title'], data['author']['id'], data['author']['name'],
             data['author']['url'], data['author']['user_type'], data['author']['headline'],
@@ -58,6 +58,8 @@ def getAllAnswers(questionUrl: str)->None:
     start = 0
     limit = 20
     while True:
+        # 每一页保存一次
+        answers = []
         print(f"正在爬取第{start//limit}页数据")
         params['offset'] = start
         params['limit'] = limit
@@ -76,7 +78,8 @@ def getAllAnswers(questionUrl: str)->None:
 
         # 解析JSON内容
         content = json.loads(response.content.decode('utf-8'))
-        parseAnswer(content)
+        parseAnswer(content, answers)
+        saveAnswers(answers)
         start += limit
         if content['paging']['is_end']:
             print(f"爬取了此问题下的所有数据 共 {content['paging']['totals']}条")
@@ -87,29 +90,29 @@ def getAllAnswers(questionUrl: str)->None:
         #     json.dump(content, file, ensure_ascii=False, indent=4)
         # print(f"数据已成功保存")
 
-def saveAnswers()->None:
+def saveAnswers(answers: list)->None:
     # 检查答案文件是否存在
     if not os.path.isfile('../data/answers.csv'):
         with open('../data/answers.csv', 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=answers[0].get_field_name())
+            writer = csv.DictWriter(csvfile, fieldnames=answers[0].getFieldName())
             writer.writeheader()  # 写入列名
 
     with open('../data/answers.csv', 'a', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=answers[0].get_field_name())
+        writer = csv.DictWriter(csvfile, fieldnames=answers[0].getFieldName())
         for answer in answers:
             entity_dict = answer.__dict__
             writer.writerow(entity_dict)
 
-    print(f"答案数量：{len(answers)}")
+    print(f"本次保存答案数量：{len(answers)}")
 
 if __name__ == '__main__':
     with open('../data/questions.csv', 'r', encoding='utf-8') as f:
         f.readline()
         lines = f.readlines()
-        ids = [line.split(',')[0] for line in lines]
+        ids = [line.split(',')[0] for line in lines][34:]
         print(ids)
         for id in ids:
             getAllAnswers(f'https://www.zhihu.com/api/v4/questions/{id}/answers')
-        print(answers)
-        print(len(answers))
-        saveAnswers()
+        # print(answers)
+        # print(len(answers))
+        # saveAnswers()
