@@ -1,4 +1,6 @@
 # Description: 定义知乎数据实体类
+import json
+
 
 # 知乎问题实体类
 class Question:
@@ -12,7 +14,8 @@ class Question:
         self.followCount = followCount
 
     def __str__(self):
-        return f"问题：{self.name}，URL：{self.url}，回答数：{self.answerCount}, 关注者数：{self.followCount}"
+        # 使用json.dumps将对象转换为JSON格式的字符串，确保中文等非ASCII字符被正确处理
+        return json.dumps(self, default=lambda o: o.__dict__, ensure_ascii=False, indent=4)
 
     def __repr__(self):
         return f'{self.id},{self.type},{self.name},{self.url},{self.answerCount},{self.followCount}'
@@ -20,6 +23,7 @@ class Question:
     @classmethod
     def getFieldName(cls):
         return ['id', 'type', 'name', 'url', 'answerCount', 'followCount']
+
 
 # 知乎回答实体类
 class Answer:
@@ -47,7 +51,8 @@ class Answer:
         self.content = content
 
     def __str__(self):
-        return f"作者：{self.author}, 赞同数：{self.voteupCount}, 内容：{self.content}"
+        # 使用json.dumps将对象转换为JSON格式的字符串，确保中文等非ASCII字符被正确处理
+        return json.dumps(self, default=lambda o: o.__dict__, ensure_ascii=False, indent=4)
 
     def __repr__(self):
         return f'{self.id},{self.questionId},{self.questionTitle},{self.authorId},{self.author},{self.authorUrl},{self.authorType},{self.authorHeadline},{self.type},{self.url},{self.excerpt},{self.voteupCount},{self.commentCount},{self.favoriteCount},{self.createdTime},{self.updatedTime},{self.content}'
@@ -55,8 +60,9 @@ class Answer:
     @classmethod
     def getFieldName(cls):
         return ['id', 'questionId', 'questionTitle', 'authorId', 'author', 'authorUrl', 'authorType',
-                        'authorHeadline', 'type', 'url', 'excerpt', 'voteupCount', 'commentCount', 'favoriteCount',
-                        'createdTime', 'updatedTime', 'content']
+                'authorHeadline', 'type', 'url', 'excerpt', 'voteupCount', 'commentCount', 'favoriteCount',
+                'createdTime', 'updatedTime', 'content']
+
 
 # 知乎文章实体类
 class Article:
@@ -82,7 +88,8 @@ class Article:
         self.content = content
 
     def __str__(self):
-        return f"作者：{self.author}, 赞同数：{self.voteupCount}, 内容：{self.content}"
+        # 使用json.dumps将对象转换为JSON格式的字符串，确保中文等非ASCII字符被正确处理
+        return json.dumps(self, default=lambda o: o.__dict__, ensure_ascii=False, indent=4)
 
     def __repr__(self):
         return f'{self.id},{self.authorId},{self.author},{self.authorUrl},{self.authorType},{self.authorHeadline},{self.title},{self.type},{self.url},{self.excerpt},{self.voteupCount},{self.commentCount},{self.zfavCount},{self.createdTime},{self.updatedTime},{self.content}'
@@ -92,3 +99,14 @@ class Article:
         return ['id', 'authorId', 'author', 'authorUrl', 'authorType', 'authorHeadline',
                 'title', 'type', 'url', 'excerpt', 'voteupCount', 'commentCount',
                 'zfavCount', 'createdTime', 'updatedTime', 'content']
+
+
+# 类和类型转换器
+ClassTypeTransfer = {
+    Question: "问题",
+    Answer: "回答",
+    Article: "文章",
+    "问题": Question,
+    "回答": Answer,
+    "文章": Article
+}

@@ -9,15 +9,13 @@ from urllib.parse import urlencode
 
 from config import *
 from entity import *
+from utils import *
 
 # 目标接口
 baseUrl = "https://www.zhihu.com/api/v4/search_v3"
 
-def getPureTitle(title: str)->str:
-    return title.replace("<em>", "").replace("</em>", "")
-
 # 解析一页关键词搜索得到的数据
-def parse(content: json, questions: list, articles: list, alreadyUrls: list)->None:
+def parseQuestionAndArticle(content: json, questions: list, articles: list, alreadyUrls: list)->None:
     # 解析获取这一页的问题URL
     dataLst = content['data']
     for data in dataLst:
@@ -28,57 +26,31 @@ def parse(content: json, questions: list, articles: list, alreadyUrls: list)->No
         # 如果是问题
         if object['type'] == 'answer':
             question = object['question']
-            print(f"index: {data['index']}, type: question, title: {getPureTitle(question['name'])}")
+            print(f"{data['index']}, type: question, title: {cleanWebContent(question['name'])}")
             # 如果问题URL不在列表中,也不在已爬取的列表中,添加到列表
             if question['url'] not in alreadyUrls:
                 questions.append(Question(
-                    question['id'], question['type'], question['name'],
+                    question['id'], question['type'], cleanWebContent(question['name']),
                     question['url'], question['answer_count'], question['follow_count']
                 ))
                 alreadyUrls.append(question['url'])
         # 如果是文章
         elif object['type'] == 'article':
             article = object
-            print(f"index: {data['index']}, type: article, title: {getPureTitle(article['title'])}")
+            print(f"{data['index']}, type: article, title: {cleanWebContent(article['title'])}")
             # 如果文章URL不在列表中，添加到列表
             if article['url'] not in alreadyUrls:
-                articles.append(Article(
-                    article['id'], article['author']['id'], article['author']['name'],
-                    article['author']['url'], article['author']['type'], article['author']['headline'],
-                    article['title'], article['type'], article['url'], article['excerpt'],
-                    article['voteup_count'], article['comment_count'], article['zfav_count'],
-                    article['created_time'], article['updated_time'], article['content']
+                articles.append(
+                    Article(
+                        article['id'], article['author']['id'], article['author']['name'],
+                        article['author']['url'], article['author']['type'], article['author']['headline'],
+                        cleanWebContent(article['title']), article['type'], article['url'], article['excerpt'],
+                        article['voteup_count'], article['comment_count'], article['zfav_count'],
+                        article['created_time'], article['updated_time'], cleanWebContent(article['content'])
                 ))
                 alreadyUrls.append(article['url'])
         else:
             print(f"未知类型：{object['type']}, {data['index']}")
-
-def saveQuestionsAndArticleToPath(questions: list, articles: list) -> None:
-    # 检查问题文件是否存在
-    if not os.path.isfile(questionPath):
-        with open(questionPath, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=Question.getFieldName())
-            writer.writeheader()  # 写入列名
-
-    with open(questionPath, 'a', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=Question.getFieldName())
-        for question in questions:
-            entity_dict = question.__dict__
-            writer.writerow(entity_dict)
-    print(f"问题数量：{len(questions)}")
-
-    # 检查文章文件是否存在
-    if not os.path.isfile(articlePath):
-        with open(articlePath, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=Article.getFieldName())
-            writer.writeheader()  # 写入列名
-
-    with open(articlePath, 'a', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=Article.getFieldName())
-        for article in articles:
-            entity_dict = article.__dict__
-            writer.writerow(entity_dict)
-    print(f"文章数量：{len(articles)}")
 
 
 # 根据关键词检索获得问题URL
@@ -120,6 +92,7 @@ def getQuestionAndArticleFromKeyword(keyWord: str, alreadyUrls: list) -> None:
                 'vertical_info': f'0,1,0,0,0,0,0,0,0,{page * 4}',
             }
 
+        print(f'正在爬取关键词：{keyWord}，第{page}页')
         # 完整请求路径
         fullUrl = f"{baseUrl}?{urlencode(params)}"
         # 知乎加密参数
@@ -130,7 +103,7 @@ def getQuestionAndArticleFromKeyword(keyWord: str, alreadyUrls: list) -> None:
 
         # 检查响应状态码
         if response.status_code != 200:
-            print(f"请求失败 url: {fullUrl}, text: {response.text}")
+            print(f"请求失败! keyword: {keyword}, url: {fullUrl}, text: {response.text}")
             break
 
         # 解析JSON内容
@@ -142,25 +115,21 @@ def getQuestionAndArticleFromKeyword(keyWord: str, alreadyUrls: list) -> None:
             break
 
         # 从关键词搜索页面中解析出问题和文章
-        parse(content, questions, articles, alreadyUrls)
-        # 保存一页的问题和文章到文件中
-        saveQuestionsAndArticleToPath(questions, articles)
+        parseQuestionAndArticle(content, questions, articles, alreadyUrls)
 
+        # 保存一页的问题和文章到文件中
+        saveEntitiesToPath(questions, questionPath, ClassTypeTransfer.get(Question))
+        saveEntitiesToPath(articles, articlePath, ClassTypeTransfer.get(Article))
+
+        # 迭代进入下一次循环
         page += 1
         search_hash_id = content['search_action_info']['search_hash_id']
 
         print(f"paging : {content['paging']}, search_hash_id: {search_hash_id}")
         time.sleep(random.randint(2,5))
 
-def getAlreadyUrls() -> list:
-    with open('../data/qustion_urls.txt', 'r', encoding='utf-8') as f:
-        return [line.strip() for line in f.readlines()]
-
 if __name__ == '__main__':
-    # 读出加密函数
-    with open('x96.js', 'r', encoding='utf-8') as f:
-        func = f.read()
-
+    # 获取已经爬取过的URL
     alreadyUrls = getAlreadyUrls()
 
     # 爬取关键词对应的问题和文章

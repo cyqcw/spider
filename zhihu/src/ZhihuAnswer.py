@@ -9,6 +9,7 @@ from urllib.parse import urlencode
 
 from entity import *
 from config import *
+from utils import *
 
 params = {
     'include': 'data[*].is_normal,admin_closed_comment,reward_info,is_collapsed,annotation_action,annotation_detail,collapse_reason,is_sticky,collapsed_by,suggest_edit,comment_count,can_comment,content,editable_content,attachment,voteup_count,reshipment_settings,comment_permission,created_time,updated_time,review_info,relevant_info,question,excerpt,is_labeled,paid_info,paid_info_content,relationship.is_authorized,is_author,voting,is_thanked,is_nothelp,is_recognized;data[*].mark_infos[*].url;data[*].author.follower_count,vip_info,badge[*].topics;data[*].settings.table_of_content.enabled',
@@ -18,29 +19,26 @@ params = {
     'platform': 'desktop'
 }
 
-with open('x96.js', 'r', encoding='utf-8') as f:
-    func = f.read()
-
-def parseAnswer(content: json, answers: list)->None:
+def parseAnswer(content: json, answers: list) -> None:
     dataLst = content['data']
     for data in dataLst:
         print(f"正在解析，问题：{data['question']['id']}，答案：{data['id']}")
-        answers.append(Answer(
-            data['id'], data['question']['id'], data['question']['title'], data['author']['id'], data['author']['name'],
-            data['author']['url'], data['author']['user_type'], data['author']['headline'],
-            data['type'], data['url'], data['excerpt'], data['voteup_count'],
-            data['comment_count'], None, data['created_time'],
-            data['updated_time'], data['content']
+        answers.append(
+            Answer(
+                data['id'], data['question']['id'], cleanWebContent(data['question']['title']), data['author']['id'], data['author']['name'],
+                data['author']['url'], data['author']['user_type'], data['author']['headline'],
+                data['type'], data['url'], data['excerpt'], data['voteup_count'],
+                data['comment_count'], None, data['created_time'],
+                data['updated_time'], cleanWebContent(data['content'])
         ))
 
-
-def getAllAnswers(questionUrl: str)->None:
+def getAllAnswers(questionUrl: str) -> None:
     start = 0
     limit = 20
     while True:
         # 每一页保存一次
         answers = []
-        print(f"正在爬取第{start//limit}页数据")
+        print(f"正在爬取第{start // limit}页数据")
         params['offset'] = start
         params['limit'] = limit
         # 完整请求路径
@@ -59,27 +57,13 @@ def getAllAnswers(questionUrl: str)->None:
         # 解析JSON内容
         content = json.loads(response.content.decode('utf-8'))
         parseAnswer(content, answers)
-        saveAnswers(answers)
+        # 保存一页的回答到文件中
+        saveEntitiesToPath(answers, answerPath, ClassTypeTransfer.get(Answer))
         start += limit
         if content['paging']['is_end']:
             print(f"爬取了此问题下的所有数据 共 {content['paging']['totals']}条")
             break
         time.sleep(random.Random().randint(2, 5))
-
-def saveAnswers(answers: list)->None:
-    # 检查答案文件是否存在
-    if not os.path.isfile(answerPath):
-        with open(answerPath, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=Answer.getFieldName())
-            writer.writeheader()  # 写入列名
-
-    with open(answerPath, 'a', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=Answer.getFieldName())
-        for answer in answers:
-            entity_dict = answer.__dict__
-            writer.writerow(entity_dict)
-
-    print(f"本次保存答案数量：{len(answers)}")
 
 if __name__ == '__main__':
     with open(questionPath, 'r', encoding='utf-8') as f:
