@@ -1,14 +1,9 @@
-import csv
-import os
 import random
 import execjs
 import requests
-import json
 import time
 from urllib.parse import urlencode
 
-from config import *
-from entity import *
 from utils import *
 
 # 目标接口
@@ -20,13 +15,13 @@ def parseQuestionAndArticle(content: json, questions: list, articles: list, alre
     dataLst = content['data']
     for data in dataLst:
         if data['type'] != 'search_result':
-            print(f"非搜索返回类型：{data['type']}, {data['index']}")
+            print(f"非搜索返回类型：{data['type']}!")
             continue
         object = data['object']
-        # 如果是问题
+        # 如果是问题，知乎一般是返回问题的一个回答
         if object['type'] == 'answer':
             question = object['question']
-            print(f"{data['index']}, type: question, title: {cleanWebContent(question['name'])}")
+            print(f"{data['index']}, question, {cleanWebContent(question['name'])}")
             # 如果问题URL不在列表中,也不在已爬取的列表中,添加到列表
             if question['url'] not in alreadyUrls:
                 questions.append(Question(
@@ -37,7 +32,7 @@ def parseQuestionAndArticle(content: json, questions: list, articles: list, alre
         # 如果是文章
         elif object['type'] == 'article':
             article = object
-            print(f"{data['index']}, type: article, title: {cleanWebContent(article['title'])}")
+            print(f"{data['index']}, article, {cleanWebContent(article['title'])}")
             # 如果文章URL不在列表中，添加到列表
             if article['url'] not in alreadyUrls:
                 articles.append(
@@ -50,8 +45,7 @@ def parseQuestionAndArticle(content: json, questions: list, articles: list, alre
                 ))
                 alreadyUrls.append(article['url'])
         else:
-            print(f"未知类型：{object['type']}, {data['index']}")
-
+            print(f"非目标类型：{object['type']} !")
 
 # 根据关键词检索获得问题URL
 def getQuestionAndArticleFromKeyword(keyWord: str, alreadyUrls: list) -> None:
@@ -92,9 +86,10 @@ def getQuestionAndArticleFromKeyword(keyWord: str, alreadyUrls: list) -> None:
                 'vertical_info': f'0,1,0,0,0,0,0,0,0,{page * 4}',
             }
 
-        print(f'正在爬取关键词：{keyWord}，第{page}页')
         # 完整请求路径
         fullUrl = f"{baseUrl}?{urlencode(params)}"
+
+        print(f'正在爬取关键词：{keyWord}，第{page+1}页，{fullUrl}')
         # 知乎加密参数
         x_zse = execjs.compile(func).call('ed', fullUrl.replace('https://www.zhihu.com', ""))
         headers["X-Zse-96"] = f"2.0_{x_zse}"
@@ -103,16 +98,11 @@ def getQuestionAndArticleFromKeyword(keyWord: str, alreadyUrls: list) -> None:
 
         # 检查响应状态码
         if response.status_code != 200:
-            print(f"请求失败! keyword: {keyword}, url: {fullUrl}, text: {response.text}")
+            print(f"请求失败! 关键词: {keyword}, page: {page+1}, url: {fullUrl}, text: {response.text}")
             break
 
         # 解析JSON内容
         content = json.loads(response.content.decode('utf-8'))
-
-        # 如果后续没有数据，退出循环
-        if content['paging']['is_end']:
-            print(f"关键词 {keyWord} 爬取完毕")
-            break
 
         # 从关键词搜索页面中解析出问题和文章
         parseQuestionAndArticle(content, questions, articles, alreadyUrls)
@@ -125,7 +115,11 @@ def getQuestionAndArticleFromKeyword(keyWord: str, alreadyUrls: list) -> None:
         page += 1
         search_hash_id = content['search_action_info']['search_hash_id']
 
-        print(f"paging : {content['paging']}, search_hash_id: {search_hash_id}")
+        # 如果后续没有数据，退出循环
+        if content['paging']['is_end']:
+            print(f"关键词 {keyWord} 爬取完毕, 共{page}页")
+            break
+
         time.sleep(random.randint(2,5))
 
 if __name__ == '__main__':
