@@ -1,4 +1,5 @@
 import csv
+import os
 import random
 
 import execjs
@@ -44,6 +45,10 @@ questionUrls = []
 articles = []
 articleUrls = []
 
+alreadyUrls = []
+
+
+
 def getPureTitle(title: str)->str:
     return title.replace("<em>", "").replace("</em>", "")
 
@@ -59,8 +64,8 @@ def parse(content: json):
         if object['type'] == 'answer':
             question = object['question']
             print(f"index: {data['index']}, type: question, title: {getPureTitle(question['name'])}")
-            # 如果问题URL不在列表中，添加到列表
-            if question['url'] not in questionUrls:
+            # 如果问题URL不在列表中,也不在已爬取的列表中,添加到列表
+            if question['url'] not in questionUrls and question['url'] not in alreadyUrls:
                 questions.append(Question(
                     question['id'], question['type'], question['name'],
                     question['url'], question['answer_count'], question['follow_count']
@@ -150,33 +155,46 @@ def getQuestionUrls(keyWord: str) -> None:
         time.sleep(random.randint(2,5))
 
 def saveQuestionsAndArticleToPath() -> None:
-    with open(questionPath, 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=questions[0].getFieldName())
-        writer.writeheader()  # 写入列名
+    # 检查问题文件是否存在
+    if not os.path.isfile(questionPath):
+        with open(questionPath, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=questions[0].get_field_name())
+            writer.writeheader()  # 写入列名
+
+    with open(questionPath, 'a', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=questions[0].get_field_name())
         for question in questions:
-            # 转换实体为字典，以便csv.DictWriter处理
             entity_dict = question.__dict__
-            # 可以在这里添加额外的逻辑来清理或转换数据
             writer.writerow(entity_dict)
     print(f"问题数量：{len(questions)}")
 
-    with open(articlePath, 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=articles[0].getFieldName())
-        writer.writeheader()  # 写入列名
+    # 检查文章文件是否存在
+    if not os.path.isfile(articlePath):
+        with open(articlePath, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=articles[0].get_field_name())
+            writer.writeheader()  # 写入列名
+
+    with open(articlePath, 'a', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=articles[0].get_field_name())
         for article in articles:
-            # 转换实体为字典，以便csv.DictWriter处理
             entity_dict = article.__dict__
-            # 可以在这里添加额外的逻辑来清理或转换数据
             writer.writerow(entity_dict)
+
     print(f"文章数量：{len(articles)}")
 
-    with open('../data/qustion_urls.txt', 'w', encoding='utf-8') as f:
+    with open('../data/qustion_urls.txt', 'a+', encoding='utf-8') as f:
         for questionUrl in questionUrls:
             f.write(questionUrl+"\n")
 
-
 if __name__ == '__main__':
+    # 读出加密函数
     with open('x96.js', 'r', encoding='utf-8') as f:
         func = f.read()
-    getQuestionUrls('人工智能')
-    saveQuestionsAndArticleToPath()
+    with open('../data/qustion_urls.txt', 'r', encoding='utf-8') as f:
+        alreadyUrls = [line.strip() for line in f.readlines()]
+    print(f"已经爬取的问题URL：{alreadyUrls}")
+
+
+    # # 获取问题URL
+    # getQuestionUrls('人工智能')
+    # saveQuestionsAndArticleToPath()

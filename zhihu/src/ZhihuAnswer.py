@@ -1,4 +1,5 @@
 import csv
+import os
 import random
 
 import execjs
@@ -87,14 +88,19 @@ def getAllAnswers(questionUrl: str)->None:
         # print(f"数据已成功保存")
 
 def saveAnswers()->None:
-    with open('../data/answers.csv', 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=answers[0].getFieldName())
-        writer.writeheader()  # 写入列名
+    # 检查答案文件是否存在
+    if not os.path.isfile('../data/answers.csv'):
+        with open('../data/answers.csv', 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=answers[0].get_field_name())
+            writer.writeheader()  # 写入列名
+
+    with open('../data/answers.csv', 'a', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=answers[0].get_field_name())
         for answer in answers:
-            # 转换实体为字典，以便csv.DictWriter处理
             entity_dict = answer.__dict__
-            # 可以在这里添加额外的逻辑来清理或转换数据
             writer.writerow(entity_dict)
+
+    print(f"答案数量：{len(answers)}")
 
 if __name__ == '__main__':
     with open('../data/questions.csv', 'r', encoding='utf-8') as f:
