@@ -626,12 +626,3 @@ function ed(u){
     //32位小写md5加密
     return loash.ZP(encrypted)
 }
-
-const ex={
-    "md5" : "9a2c07044f4ce15666e8985816cb14b1",
-    "预期" : "0WBxz9WHuewBd8n9HgYTwCbzg3977tt4L3bwgITec8Lm0TZcBkOqtoOPOW1lGqPi"
-}
-
-console.log(loash.ZP(ex.md5))
-
-console.log(ed("101_3_3.0+/api/v4/search/recommend_query/v2+AHAXJUx5xRaPTo1CHUTt-lh3rGIt69EcLO0=|1683989365"))
