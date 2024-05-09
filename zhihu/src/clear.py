@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-with open('../data/answers.csv', 'r', encoding='utf-8') as rf, open('../data/answers_clear.csv', 'w', encoding='utf-8') as wf:
+with open('../ref/answers.csv', 'r', encoding='utf-8') as rf, open('../data/answers_clear.csv', 'w', encoding='utf-8') as wf:
     head = rf.readline()
     wf.write(head)
     length = len(head.strip().split(','))
