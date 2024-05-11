@@ -422,3 +422,907 @@ id,type,name,url,answerCount,followCount
 633684692,question,谷歌发布最新大模型 Gemini，包含多模态、三大版本，还有哪些特点？能力是否超越 GPT-4了？,https://api.zhihu.com/questions/633684692,0,0
 626469905,question,李彦宏称「文心大模型 4.0 综合水平与 GPT-4 相比毫不逊色」，对此你怎么看？,https://api.zhihu.com/questions/626469905,0,0
 434846017,question,深度学习中，模型大了好还是小了好呢？,https://api.zhihu.com/questions/434846017,0,0
+290257544,question,做人工智能工作的你，为什么离开这个岗位？,https://api.zhihu.com/questions/290257544,0,0
+63887457,question,目前世界上有对强人工智能的尝试吗？具体瓶颈是什么？,https://api.zhihu.com/questions/63887457,0,0
+298754403,question,人工智能在几十年内能代替施一公这样的生化环材科研人员吗？,https://api.zhihu.com/questions/298754403,0,0
+380190781,question,国内顶尖的人工智能实验室有哪些？,https://api.zhihu.com/questions/380190781,0,0
+281909755,question,为什么没人用纯逻辑建立人工智能？,https://api.zhihu.com/questions/281909755,0,0
+342619849,question,人工智能退潮期来了吗？,https://api.zhihu.com/questions/342619849,0,0
+303037809,question,为何人工智能行业的人工资都那么高？,https://api.zhihu.com/questions/303037809,0,0
+55715294,question,人工智能会取代教师行业吗？,https://api.zhihu.com/questions/55715294,0,0
+647281305,question,普通人如何进入人工智能行业，或者进入人工智能的细分领域？,https://api.zhihu.com/questions/647281305,0,0
+625115987,question,我们距离通用人工智能还有多远？当它诞生后，会给社会发展带来哪些变革？,https://api.zhihu.com/questions/625115987,0,0
+508690910,question,随着人工智能的不断增强，会出现背叛人类的好机会吗？,https://api.zhihu.com/questions/508690910,0,0
+278281929,question,人工智能主要包括哪些产品好?,https://api.zhihu.com/questions/278281929,0,0
+549681373,question,现在有什么免费好用的人工智能工具吗？,https://api.zhihu.com/questions/549681373,0,0
+650303594,question,人工智能的利弊有哪些？,https://api.zhihu.com/questions/650303594,0,0
+637739970,question,为什么说：人工智能(AI)首选Python？,https://api.zhihu.com/questions/637739970,0,0
+650303515,question,人工智能有哪些优势和劣势？,https://api.zhihu.com/questions/650303515,0,0
+46485555,question,当前人工智能特别是深度学习最前沿的研究方向是什么？,https://api.zhihu.com/questions/46485555,0,0
+571452985,question,最高法发文称「无论技术发展到何种水平，人工智能都不得代替法官裁判」，如何看待人工智能对司法的影响？,https://api.zhihu.com/questions/571452985,0,0
+339340644,question,人工智能行业哪些职位比较有前途？,https://api.zhihu.com/questions/339340644,0,0
+268284588,question,如何看待南京大学成立人工智能学院？,https://api.zhihu.com/questions/268284588,0,0
+20943157,question,知乎上有哪些人工智能领域的大牛？,https://api.zhihu.com/questions/20943157,0,0
+25020728,question,用人工智能逐渐代替门诊医生是否有可行性？,https://api.zhihu.com/questions/25020728,0,0
+297624809,question,人工智能飞速发展的情况下，如何认识物质与意识的关系？,https://api.zhihu.com/questions/297624809,0,0
+52677139,question,为什么英国的人工智能创业公司这么多？,https://api.zhihu.com/questions/52677139,0,0
+268856067,question,引入人工智能后审计行业未来发展的趋势是什么？,https://api.zhihu.com/questions/268856067,0,0
+497197400,question,有哪些AI产品可以真正提高办公和学习效率？,https://api.zhihu.com/questions/497197400,0,0
+575899618,question,如何评价将AI绘画作品称为尸块的论调？,https://api.zhihu.com/questions/575899618,0,0
+571807772,question,为什么感觉欧美AI比我们强？,https://api.zhihu.com/questions/571807772,0,0
+585215649,question,真的很好奇，为什么网上都传ai要替代画师了？（老板直接让现在公司的美术组都去用ai不就好了，还裁员）?,https://api.zhihu.com/questions/585215649,0,0
+590847000,question,研究人员称 AI 仅用 30 天研发出潜在抗癌新药，并能预测患者的生存率，能给医学带来哪些影响？,https://api.zhihu.com/questions/590847000,0,0
+600807444,question,在AI爆火的现在，我们普通人如何利用好AI赚钱？,https://api.zhihu.com/questions/600807444,0,0
+603915413,question,多位知名学者最新警告「AI 可能灭绝人类」，ChatGPT 之父和 AI 教父都参与联名，如何理解？,https://api.zhihu.com/questions/603915413,0,0
+584768206,question,ai绘画势头这么猛，我们还要进入美术行业吗？,https://api.zhihu.com/questions/584768206,0,0
+537268007,question,人类真的不可能在类似《CSGO》这种传统 FPS 游戏中击败 ai 吗？,https://api.zhihu.com/questions/537268007,0,0
+591359390,question,有什么是AI取代不了的技能，可以列举一些吗？,https://api.zhihu.com/questions/591359390,0,0
+559664608,question,Ai绘画让我痛苦，我该如何调节自己？,https://api.zhihu.com/questions/559664608,0,0
+592168116,question,AI三维建模目前发展到哪一步了？,https://api.zhihu.com/questions/592168116,0,0
+583368022,question,如果互联网逐渐充斥 AI 生成的有瑕疵的内容，将来基于这些信息训练的 AI 会不会更加离谱？,https://api.zhihu.com/questions/583368022,0,0
+551991528,question,美国科罗拉多州艺术比赛，「AI 画作」拿一等奖遭「人类艺术家」指责，如何看待「 AI 画作」得奖 ？,https://api.zhihu.com/questions/551991528,0,0
+590490643,question,你自己喜欢的画师用了AI之后你还会喜欢她(他)吗？,https://api.zhihu.com/questions/590490643,0,0
+645483551,question,生成式ai是不是美国搞的新星球大战?,https://api.zhihu.com/questions/645483551,0,0
+574000116,question,如何看待「AI 绘画是拼贴缝合」这种说法？,https://api.zhihu.com/questions/574000116,0,0
+583300650,question,如果米哈游开除大量员工用ChatGPT等AI代替会怎样?,https://api.zhihu.com/questions/583300650,0,0
+592056489,question,听说已有职业画师负责从AI出图的基础上来做人工修改，想知道这个工作的难度有多大？,https://api.zhihu.com/questions/592056489,0,0
+571478532,question,ai绘画时代还梦想当画师是不是很蠢啊？,https://api.zhihu.com/questions/571478532,0,0
+649046142,question,AI绘画软件的技术难度这么低吗？,https://api.zhihu.com/questions/649046142,0,0
+448931860,question,这样的AI是真的吗？,https://api.zhihu.com/questions/448931860,0,0
+654382464,question,ai攻克什么最难？,https://api.zhihu.com/questions/654382464,0,0
+655427115,question,谷歌 DeepMind 推出新一代药物研发 AI 模型 AlphaFold 3，具有哪些重要意义？,https://api.zhihu.com/questions/655427115,0,0
+654320642,question,是否建议从AI转专业到数学系？,https://api.zhihu.com/questions/654320642,0,0
+559023859,question,AI 画的手为什么那么奇怪，是人类的手很复杂吗?,https://api.zhihu.com/questions/559023859,0,0
+589856429,question,如果画手抄袭了ai绘画，ai绘画的训练者是否会觉得自己被抄袭？,https://api.zhihu.com/questions/589856429,0,0
+591080611,question,不用AI的画师真的会被用AI的画师淘汰吗？,https://api.zhihu.com/questions/591080611,0,0
+638177978,question,大模型炒了一年，为什么到现在都没见到什么火起来的新应用？,https://api.zhihu.com/questions/638177978,0,0
+642441673,question,ChatGPT在盘古大模型面前真的啥都不是吗？,https://api.zhihu.com/questions/642441673,0,0
+633117635,question,大模型时代，如何理解“没有免费的午餐”定理（No Free Lunch Theorem）？,https://api.zhihu.com/questions/633117635,0,0
+634844209,question,MoE(Mixture-of-Experts)大模型架构的优势是什么？为什么？,https://api.zhihu.com/questions/634844209,0,0
+652499873,question,大模型时代，什么样的算法工程师更吃香？,https://api.zhihu.com/questions/652499873,0,0
+646173313,question,国内主流AI大模型都是Python 开发的，国外AI大模型是什么语言开发的？为什么要用python？,https://api.zhihu.com/questions/646173313,0,0
+647937079,question,AI语言大模型最擅长的领域是哪些？,https://api.zhihu.com/questions/647937079,0,0
+616130636,question,如何解释大模型的重复生成现象？,https://api.zhihu.com/questions/616130636,0,0
+588122011,question,在大模型推理方面，有哪些研究热点？,https://api.zhihu.com/questions/588122011,0,0
+653734979,question,大模型一定就比小模型好吗？,https://api.zhihu.com/questions/653734979,0,0
+633214290,question,如何看待UC伯克利的最新文章，无自然语言的纯视觉大模型？,https://api.zhihu.com/questions/633214290,0,0
+639863879,question,AI大模型是什么？,https://api.zhihu.com/questions/639863879,0,0
+612046818,question,大模型参数量和占的显存怎么换算？,https://api.zhihu.com/questions/612046818,0,0
+642115762,question,AI大模型到底有没有实际落地场景？,https://api.zhihu.com/questions/642115762,0,0
+648191573,question,为什么马斯克开源自己的AI大模型？,https://api.zhihu.com/questions/648191573,0,0
+638447142,question,图像恢复任务是否需要大模型？为什么图像恢复任务没有大模型出现？,https://api.zhihu.com/questions/638447142,0,0
+654570407,question,如何评价一夜刷屏的神秘大模型 gpt2-chatbot ?,https://api.zhihu.com/questions/654570407,0,0
+645010090,question,Groq公司推出的全球最快的大模型推理服务达到每秒输出500个token，如何看待这一技术？,https://api.zhihu.com/questions/645010090,0,0
+625676762,question,如何看待视觉多模态大模型的爆炸式的发展？,https://api.zhihu.com/questions/625676762,0,0
+613263212,question,如何解决LLM大语言模型的幻觉问题？,https://api.zhihu.com/questions/613263212,0,0
+281412193,question,如何评价大班模型?,https://api.zhihu.com/questions/281412193,0,0
+57770020,question,人工智能、机器学习和深度学习有哪些区别？,https://api.zhihu.com/questions/57770020,0,0
+382278216,question,学习深度学习是否要先学习机器学习？,https://api.zhihu.com/questions/382278216,0,0
+50191791,question,机器学习，深度学习，神经网络，深度神经网络之间有何区别？,https://api.zhihu.com/questions/50191791,0,0
+640641161,question,学习深度学习应该看b站上像吴恩达，小土堆，李沐之类的视频还是直接看经典论文跑代码，一行行代码啃？,https://api.zhihu.com/questions/640641161,0,0
+31785984,question,深度学习入门必看的书和论文？有哪些必备的技能需学习？,https://api.zhihu.com/questions/31785984,0,0
+609230832,question,深度学习一定程度上脱离了数学吗？,https://api.zhihu.com/questions/609230832,0,0
+554950172,question,计算机博士刚刚进组（人工智能），导师说“深度学习研究 5、6 年了，出不了成果了”。我该怎么办？,https://api.zhihu.com/questions/554950172,0,0
+429256719,question,国内 top2 高校研一在读，为什么感觉深度学习越学越懵?,https://api.zhihu.com/questions/429256719,0,0
+299434830,question,实验室一块GPU都没有怎么做深度学习？,https://api.zhihu.com/questions/299434830,0,0
+328830490,question,电脑经常跑深度学习，会不会报废很快？,https://api.zhihu.com/questions/328830490,0,0
+451666842,question,双非硕士 导师让学深度学习和python 研究生三年怎么规划 这个以后就业怎么样 可以去哪些公司？,https://api.zhihu.com/questions/451666842,0,0
+343407265,question,从应用的角度来看，深度学习怎样快速入门？,https://api.zhihu.com/questions/343407265,0,0
+624723835,question,深度学习咋入门啊?,https://api.zhihu.com/questions/624723835,0,0
+525434524,question,深度学习研究生，觉得自己做深度学习很没前景，怎么办?,https://api.zhihu.com/questions/525434524,0,0
+321031804,question,如何看待深度学习门槛低的说法？,https://api.zhihu.com/questions/321031804,0,0
+479952074,question,深度学习入门受挫，该怎么办?,https://api.zhihu.com/questions/479952074,0,0
+544763123,question,你是什么时候对深度学习失去信心的？,https://api.zhihu.com/questions/544763123,0,0
+486208677,question,深度学习如何水论文，水模型?,https://api.zhihu.com/questions/486208677,0,0
+55446936,question,从零开始入门深度学习到掌握需要多久？,https://api.zhihu.com/questions/55446936,0,0
+378939304,question,MATLAB 的深度学习能否在未来赶上甚至超过 Python？,https://api.zhihu.com/questions/378939304,0,0
+41233373,question,如果你是面试官，你怎么去判断一个面试者的深度学习水平？,https://api.zhihu.com/questions/41233373,0,0
+277554784,question,唐宇迪确实是“深度学习领域一线实战专家”吗？ 他的课程值得报名吗？,https://api.zhihu.com/questions/277554784,0,0
+53794133,question,本科生能否把深度学习的内容用于完成毕业设计？,https://api.zhihu.com/questions/53794133,0,0
+264649283,question,自己写一个深度学习底层框架（像tensorflow），现实吗？(目前学习了1年深度学习理论和实践)？,https://api.zhihu.com/questions/264649283,0,0
+24097648,question,什么是深度学习？,https://api.zhihu.com/questions/24097648,0,0
+47602063,question,深度学习（机器学习）的下一步如何发展？,https://api.zhihu.com/questions/47602063,0,0
+594682770,question,可以去网吧跑深度学习吗?,https://api.zhihu.com/questions/594682770,0,0
+553637124,question,为什么现在计算机所有专业的研究生基本都搞机器学习和深度学习，国内真的需要这么多会人工智能的人才吗？,https://api.zhihu.com/questions/553637124,0,0
+638891068,question,深度学习纯靠造假能发论文嘛？,https://api.zhihu.com/questions/638891068,0,0
+527235661,question,研一在读，代码完全不会，怎么入门深度学习?,https://api.zhihu.com/questions/527235661,0,0
+584101971,question,深度学习科研中，代码能力跟不上怎么办？,https://api.zhihu.com/questions/584101971,0,0
+475262041,question,自学深度学习是怎样一种体验？,https://api.zhihu.com/questions/475262041,0,0
+597318998,question,是否入坑深度学习？,https://api.zhihu.com/questions/597318998,0,0
+437157087,question,如何最简单、通俗地理解深度学习？,https://api.zhihu.com/questions/437157087,0,0
+381819239,question,为什么学习深度学习感觉无法入门？,https://api.zhihu.com/questions/381819239,0,0
+396893365,question,深度学习就只是调参吗？,https://api.zhihu.com/questions/396893365,0,0
+67857599,question,非计算机专业的学生如何入门深度学习？,https://api.zhihu.com/questions/67857599,0,0
+348474416,question,学习深度学习如何避免成为程序员？,https://api.zhihu.com/questions/348474416,0,0
+350877858,question,既然这两年深度学习发展这么迅速，传统机器学习的研究者在往哪个方面努力？,https://api.zhihu.com/questions/350877858,0,0
+56285049,question,如何写一份靓丽的深度学习简历？,https://api.zhihu.com/questions/56285049,0,0
+40577663,question,深度学习领域有哪些瓶颈？,https://api.zhihu.com/questions/40577663,0,0
+41268372,question,深度学习和机器学习有什么区别？,https://api.zhihu.com/questions/41268372,0,0
+278535245,question,深度学习课程有推荐的吗？,https://api.zhihu.com/questions/278535245,0,0
+41459109,question,有什么深度学习数学基础书推荐？,https://api.zhihu.com/questions/41459109,0,0
+599355386,question,学习了几个月的深度学习，感觉几乎全是实验，有没多少有深度的东西，因此感觉对长期发展不利，应该怎么办？,https://api.zhihu.com/questions/599355386,0,0
+646489478,question,李沐的动手学深度学习视频我咋感觉这么晦涩？,https://api.zhihu.com/questions/646489478,0,0
+446628591,question,深度学习会炼丹是不是也算本事？,https://api.zhihu.com/questions/446628591,0,0
+545842330,question,做深度学习的学生用什么笔记本？,https://api.zhihu.com/questions/545842330,0,0
+483864228,question,马上研一开学了，深度学习该怎么学?,https://api.zhihu.com/questions/483864228,0,0
+451438634,question,深度学习前人精度很高了怎么创新？,https://api.zhihu.com/questions/451438634,0,0
+305745486,question,如何系统型地学习深度学习？,https://api.zhihu.com/questions/305745486,0,0
+352906161,question,为什么进化算法没有像深度学习一样火起来？,https://api.zhihu.com/questions/352906161,0,0
+27434103,question,深度学习的研究领域是否有被过度夸大？,https://api.zhihu.com/questions/27434103,0,0
+26976414,question,除了深度学习，机器学习领域近年来还有什么热点吗？,https://api.zhihu.com/questions/26976414,0,0
+267126994,question,网络上深度学习、机器学习的在线课程是否值得学习？,https://api.zhihu.com/questions/267126994,0,0
+29633459,question,为什么深度学习对训练样本的数量要求较高？,https://api.zhihu.com/questions/29633459,0,0
+36675272,question,有哪些优秀的深度学习入门书籍？需要先学习机器学习吗？,https://api.zhihu.com/questions/36675272,0,0
+551632520,question,为什么做深度学习，都用python，而不用java或者c++，难道仅仅因为python修改更容易吗？,https://api.zhihu.com/questions/551632520,0,0
+58992444,question,为什么有些学数学的看不惯甚至鄙视深度学习？,https://api.zhihu.com/questions/58992444,0,0
+310309114,question,如何反驳导师说深度学习只会调参？？,https://api.zhihu.com/questions/310309114,0,0
+507836671,question,如果百年后深度学习最终有了公认的数学理论作为基础，能解释实验中的各类玄学，那这个理论会长什么样子？,https://api.zhihu.com/questions/507836671,0,0
+362223504,question,现在做计算机视觉的人全都在做深度学习吗？还有做传统算法的吗？,https://api.zhihu.com/questions/362223504,0,0
+515738007,question,从入门深度学习到能发顶会，你用了多久?,https://api.zhihu.com/questions/515738007,0,0
+337972005,question,深度学习方向的研究生就业情况怎么样？,https://api.zhihu.com/questions/337972005,0,0
+265953178,question,如何评价深度学习相关顶级期刊论文难复现的问题？,https://api.zhihu.com/questions/265953178,0,0
+390511796,question,问下各位深度学习learner，你们的cv/nlp学习路线是什么样的？,https://api.zhihu.com/questions/390511796,0,0
+396032753,question,如何逐步打下（研究生/博士生阶段）深度学习的数学基础?,https://api.zhihu.com/questions/396032753,0,0
+385326992,question,时至今日，深度学习领域有哪些值得追踪的前沿研究？,https://api.zhihu.com/questions/385326992,0,0
+56474891,question,如何评价周志华教授新提出的 Deep Forest 模型，它会取代当前火热的深度学习 DNN 吗？,https://api.zhihu.com/questions/56474891,0,0
+27669165,question,python深度学习（图像识别）的学习方法或者入门书籍有什么？,https://api.zhihu.com/questions/27669165,0,0
+33083197,question,深度学习毕设有什么好的题目？,https://api.zhihu.com/questions/33083197,0,0
+57456575,question,深度学习在路径规划上有哪些应用？,https://api.zhihu.com/questions/57456575,0,0
+629923692,question,为什么深度学习入门这么难?,https://api.zhihu.com/questions/629923692,0,0
+615235209,question,深度学习怎么学呀？,https://api.zhihu.com/questions/615235209,0,0
+384208793,question,深度学习论文中那么高的准确率都是大力出奇迹吗？,https://api.zhihu.com/questions/384208793,0,0
+355904890,question,大一寒假学习深度学习能学的动吗（非计算机专业）？,https://api.zhihu.com/questions/355904890,0,0
+577909691,question,什么是深度学习？深度学习是如何应用的？,https://api.zhihu.com/questions/577909691,0,0
+375537442,question,有哪些可以自学机器学习、深度学习、人工智能的网站？,https://api.zhihu.com/questions/375537442,0,0
+347918474,question,硕士方向，选分布式存储还是深度学习？,https://api.zhihu.com/questions/347918474,0,0
+305150420,question,读研从事深度学习的学生有必要深入学习机器学习吗？,https://api.zhihu.com/questions/305150420,0,0
+267114300,question,有了深度学习以后，传统的机器学习在业界还有什么用？,https://api.zhihu.com/questions/267114300,0,0
+313926809,question,从小白学完吴恩达深度学习的课程后，你会做什么？,https://api.zhihu.com/questions/313926809,0,0
+31814850,question,大数据与深度学习区别有哪些？,https://api.zhihu.com/questions/31814850,0,0
+638660013,question,2024年，深度学习，你心目中的top10算法是什么？,https://api.zhihu.com/questions/638660013,0,0
+652936580,question,从零开始深度学习好难啊！有没有人带带我呜呜呜！?,https://api.zhihu.com/questions/652936580,0,0
+324882008,question,如何劝周围人不要入坑深度学习?,https://api.zhihu.com/questions/324882008,0,0
+548183279,question,即将研二了，请问从头开始学习深度学习与推荐系统，还来得及吗？,https://api.zhihu.com/questions/548183279,0,0
+472284962,question,马上计算机研一，想问一下机器学习、深度学习…大家都是怎么入门的？,https://api.zhihu.com/questions/472284962,0,0
+559288835,question,初学者学习深度学习，有哪些教学书推荐？,https://api.zhihu.com/questions/559288835,0,0
+442031612,question,论文代码看不懂，怎么做才能入门深度学习，自己改写代码？,https://api.zhihu.com/questions/442031612,0,0
+593481364,question,2023年有哪些值得推荐的深度学习书？,https://api.zhihu.com/questions/593481364,0,0
+314119766,question,什么是深度学习算法？,https://api.zhihu.com/questions/314119766,0,0
+411701917,question,为什么很多人工智能领域同学都在推荐《百面深度学习》？,https://api.zhihu.com/questions/411701917,0,0
+348124219,question,计科本科的学生，研究生转向深度学习方向有前途吗?,https://api.zhihu.com/questions/348124219,0,0
+41416465,question,目前深度学习在量化投资领域应用的程度如何？,https://api.zhihu.com/questions/41416465,0,0
+304058449,question,什么是「深度学习」？,https://api.zhihu.com/questions/304058449,0,0
+300272723,question,南大周志华老师的机器学习和深度学习「花书」这两本书的区别以及学习顺序可以给介绍一下吗？,https://api.zhihu.com/questions/300272723,0,0
+337898917,question,能不能用一句话或者简洁地凝练深度学习的本质和精髓？,https://api.zhihu.com/questions/337898917,0,0
+53081590,question,毕业设计要不要做深度学习？,https://api.zhihu.com/questions/53081590,0,0
+25097993,question,深度学习调参有哪些技巧？,https://api.zhihu.com/questions/25097993,0,0
+652885088,question,如何学习深度学习?,https://api.zhihu.com/questions/652885088,0,0
+273730191,question,搞算法（图像识别，深度学习）必须要懂C/C++吗？,https://api.zhihu.com/questions/273730191,0,0
+479395911,question,双非一本计算机研一，导师是机器学习，深度学习图像处理，想就业，选机器学习方向还是走客户端等开发岗呢？,https://api.zhihu.com/questions/479395911,0,0
+454344138,question,给男友配置一个适合做深度学习的电脑要多少钱？,https://api.zhihu.com/questions/454344138,0,0
+407647699,question,计算机硕士如何能避免做深度学习?,https://api.zhihu.com/questions/407647699,0,0
+304931800,question,深度学习如何进阶？,https://api.zhihu.com/questions/304931800,0,0
+420612899,question,现在2021年5月了，深度学习/机器学习行业就业情况如何？,https://api.zhihu.com/questions/420612899,0,0
+399353765,question,学深度学习和神经网络之前要先学机器学习吗？,https://api.zhihu.com/questions/399353765,0,0
+430604694,question,研一，走嵌入式方向还是走基于深度学习的图像处理方向？,https://api.zhihu.com/questions/430604694,0,0
+35589548,question,深度学习时代，数字信号处理的前端已经过时了吗？,https://api.zhihu.com/questions/35589548,0,0
+372459256,question,基于深度学习的研究生论文怎么做？,https://api.zhihu.com/questions/372459256,0,0
+30557267,question,数据挖掘、机器学习、深度学习这些概念有区别吗？,https://api.zhihu.com/questions/30557267,0,0
+55473107,question,要做人工智能和深度学习，怎样配置个人电脑？,https://api.zhihu.com/questions/55473107,0,0
+65430434,question,如何看待Geoffrey Hinton的言论，深度学习要另起炉灶，彻底抛弃反向传播？,https://api.zhihu.com/questions/65430434,0,0
+53134248,question,如何评价 UCLA 朱松纯教授近日访谈中对深度学习的批评？,https://api.zhihu.com/questions/53134248,0,0
+504397942,question,目前大三，计算机，有深度学习基础，想寒假花一个月做个深度学习项目，有什么比赛或平台可以推荐的，请赐教？,https://api.zhihu.com/questions/504397942,0,0
+555446959,question,为什么在国内的高校里做深度学习编译器的老师很少？,https://api.zhihu.com/questions/555446959,0,0
+545079987,question,为什么AI的深度学习，基本上都跟python这门语言有关，其它语言难道搞不定？,https://api.zhihu.com/questions/545079987,0,0
+580703125,question,有哪些深度学习数学的书籍值得推荐？,https://api.zhihu.com/questions/580703125,0,0
+448649793,question,大四本科普通女学生，毕业不太会做。毕设题目是深度学习方向的。求查资料资源的网站？,https://api.zhihu.com/questions/448649793,0,0
+358451033,question,深度学习训练，有GPU的情况下，AMD和Intel的cpu，哪个更香？,https://api.zhihu.com/questions/358451033,0,0
+496789373,question,靠吹牛拿到深度学习算法岗的offer，会被辞退嘛，好慌？,https://api.zhihu.com/questions/496789373,0,0
+418956578,question,搞深度学习，是买一个RTX3090还是两个RTX3080？,https://api.zhihu.com/questions/418956578,0,0
+440729199,question,深度学习领域，你心目中 idea 最惊艳的论文是哪篇？,https://api.zhihu.com/questions/440729199,0,0
+314802145,question,如何评价沐神他们写的《动手学深度学习》这本书？,https://api.zhihu.com/questions/314802145,0,0
+263524771,question,做深度学习图像处理，大概怎样的显卡才算合适？,https://api.zhihu.com/questions/263524771,0,0
+38475342,question,统计学习研究者如何面对深度学习的冲击？,https://api.zhihu.com/questions/38475342,0,0
+573308269,question,深度学习如何入门最好？,https://api.zhihu.com/questions/573308269,0,0
+552354023,question,深度学习方向，把一个模型的encoder改成了另一个模型的encoder，性能有提升，可以发表吗？,https://api.zhihu.com/questions/552354023,0,0
+346053854,question,靠OpenCV吃饭的图像算法工程师在深度学习的冲击下冲击下还有活路吗？,https://api.zhihu.com/questions/346053854,0,0
+63871565,question,深度学习用什么显卡比较好？,https://api.zhihu.com/questions/63871565,0,0
+425147721,question,量化投资中，深度学习是否更适合高频模型？,https://api.zhihu.com/questions/425147721,0,0
+381113280,question,数学不好的人，适合学习深度学习，机器学习，人工智能吗？,https://api.zhihu.com/questions/381113280,0,0
+347603031,question,为什么深度学习几乎很少讨论时间复杂度?,https://api.zhihu.com/questions/347603031,0,0
+326195193,question,即将读硕，方向是深度学习，趁着有空想自学Python和硕士方向相关的知识。请问以下学习路线是否正确？,https://api.zhihu.com/questions/326195193,0,0
+23516593,question,深度学习在生物信息领域有什么应用？,https://api.zhihu.com/questions/23516593,0,0
+66162097,question,准备上研究生java还是深度学习？,https://api.zhihu.com/questions/66162097,0,0
+309493906,question,神经网络、深度学习、机器学习是什么？有什么区别和联系？,https://api.zhihu.com/questions/309493906,0,0
+32673260,question,深度学习中的batch的大小对学习效果有何影响？,https://api.zhihu.com/questions/32673260,0,0
+623754426,question,ChatGPT 更新多模态，支持图片和语音输入，会带来哪些新体验和影响？,https://api.zhihu.com/questions/623754426,0,0
+650512607,question,多模态方向岂不是同时得学nlp和cv？,https://api.zhihu.com/questions/650512607,0,0
+644489216,question,谷歌发布新一代多模态大模型 Gemini 1.5，有哪些能力提升？,https://api.zhihu.com/questions/644489216,0,0
+640952128,question,多模态 研一有什么研究方向推荐吗 求助？,https://api.zhihu.com/questions/640952128,0,0
+522209848,question,研一，想选多模态作研究方向，之前看了多模态情感分析，发现比较成熟了。有哪些方向比较有前景？,https://api.zhihu.com/questions/522209848,0,0
+445265633,question,如何看待多模态transformer，是否会成为多模态领域的主流？,https://api.zhihu.com/questions/445265633,0,0
+549590190,question,研一选方向，多模态融合和图像去噪里选一个，求问各位大佬，这两个方向哪个好发论文好毕业？,https://api.zhihu.com/questions/549590190,0,0
+623052512,question,研究生选方向是应该选计算机视觉、自然语言处理，还是多模态？,https://api.zhihu.com/questions/623052512,0,0
+637090811,question,2024 年，多模态会比纯文字大模型更受欢迎更有用吗？,https://api.zhihu.com/questions/637090811,0,0
+388619477,question,如何学习多模态融合?,https://api.zhihu.com/questions/388619477,0,0
+332876504,question,多模态学习有什么好的研究方向？,https://api.zhihu.com/questions/332876504,0,0
+637573230,question,有什么常见的多模态模型？,https://api.zhihu.com/questions/637573230,0,0
+644805401,question,ai多模态是什么意思?,https://api.zhihu.com/questions/644805401,0,0
+349851592,question,国内外研究多模态的知名团队有哪些？,https://api.zhihu.com/questions/349851592,0,0
+652393103,question,现在研一，我想学习多模态数据融合，但是不知道该怎么学习，不知道该找怎么找合适的论文？,https://api.zhihu.com/questions/652393103,0,0
+655347071,question,多模态目标检测都是开放世界的目标检测吗？,https://api.zhihu.com/questions/655347071,0,0
+646613504,question,cv岗 nlp岗 多模态岗 推荐算法岗 现状如何?,https://api.zhihu.com/questions/646613504,0,0
+561610877,question,多模态到底是什么意思，就是特征融合吗?,https://api.zhihu.com/questions/561610877,0,0
+495007578,question,多模态训练，怎么解决不同模态之间差异的问题？,https://api.zhihu.com/questions/495007578,0,0
+379156017,question,在医学图像领域，多模态融合(Multimodal Fusion)的研究实例有哪些？,https://api.zhihu.com/questions/379156017,0,0
+636862582,question,研一多模态方向学习路线求助？,https://api.zhihu.com/questions/636862582,0,0
+521161904,question,都在说多模态，到底哪个适合作为研究方向啊？,https://api.zhihu.com/questions/521161904,0,0
+350442791,question,多模态机器学习如何入门？,https://api.zhihu.com/questions/350442791,0,0
+431016923,question,本人研一，cv与nlp结合方向，请问关于多模态方向读博怎么样？,https://api.zhihu.com/questions/431016923,0,0
+646508754,question,是否有不错的多模态小模型推荐？,https://api.zhihu.com/questions/646508754,0,0
+501003463,question,什么是多模态？,https://api.zhihu.com/questions/501003463,0,0
+606152221,question,多模态大模型的应用场景有哪些？,https://api.zhihu.com/questions/606152221,0,0
+357013661,question,多模态学习入门用什么书比较好？,https://api.zhihu.com/questions/357013661,0,0
+572933755,question,推荐系统多模态有前途吗？,https://api.zhihu.com/questions/572933755,0,0
+655503787,question,如何有效解决多模态大模型的幻觉问题?,https://api.zhihu.com/questions/655503787,0,0
+651016861,question,本来是做cv的，想做点跟llm/多模态/AIGC接轨的东西，请问有什么比较适合硕士生做的研究方向吗？,https://api.zhihu.com/questions/651016861,0,0
+653936907,question,本科电子信息，读研想做多模态，有什么出路？,https://api.zhihu.com/questions/653936907,0,0
+614080027,question,多模态大模型的时代真的来了吗？,https://api.zhihu.com/questions/614080027,0,0
+636861879,question,想问问多模态情感分析方向建议吗？,https://api.zhihu.com/questions/636861879,0,0
+364465426,question,多模态（multi-modal）和多视图（multi-view）有什么区别？,https://api.zhihu.com/questions/364465426,0,0
+634825707,question,多模态ai是什么？简要介绍一下？,https://api.zhihu.com/questions/634825707,0,0
+655427907,question,多模态大模型有哪些构造数据的方法？,https://api.zhihu.com/questions/655427907,0,0
+448813487,question,Transformer和多模态结合有哪些经典的工作？,https://api.zhihu.com/questions/448813487,0,0
+324641244,question,请问多模态和知识图谱(或其他NLP任务)有结合的价值吗？,https://api.zhihu.com/questions/324641244,0,0
+68475891,question,研究生导师给定的研究方向深度学习的多模态数据融合，现在快要开题了，希望得到一些指点？,https://api.zhihu.com/questions/68475891,0,0
+631693019,question,多模态+机器人学习路线有什么建议吗?,https://api.zhihu.com/questions/631693019,0,0
+605245795,question,目前国内有哪些开源多模态大模型？,https://api.zhihu.com/questions/605245795,0,0
+420174617,question,请问各位知友，有没有了解多模态，同时也是多任务的研究课题，有没有这方面的多模态多任务学习的数据集？,https://api.zhihu.com/questions/420174617,0,0
+607461485,question,多模态推荐系统有前途吗？,https://api.zhihu.com/questions/607461485,0,0
+649779403,question,东南大学有没有多模态或者AI4SCI方向的导师推荐？,https://api.zhihu.com/questions/649779403,0,0
+407048879,question,多模态机器学习在工业界有哪些应用场景？,https://api.zhihu.com/questions/407048879,0,0
+21023774,question,多模态（multi-modal)检索和跨模态(cross-modal)检索的区别是什么？,https://api.zhihu.com/questions/21023774,0,0
+639120131,question,目前多模态深度学习的方法可以怎么分类？,https://api.zhihu.com/questions/639120131,0,0
+600530979,question,多模态模型整合中“以LLMs为核心”和“以Image为核心”哪个更有前景？,https://api.zhihu.com/questions/600530979,0,0
+485761477,question,深度学习如何融合多模态feature map?,https://api.zhihu.com/questions/485761477,0,0
+629245732,question,实验室多模态，分割，机器人抓取三个方向怎么选？,https://api.zhihu.com/questions/629245732,0,0
+637820495,question,985研一在读，不打算读博，毕业想找自动驾驶相关的工作，是入多模态感知方向还是多传感器融合SLAM？,https://api.zhihu.com/questions/637820495,0,0
+640180579,question,研究表明多模态大语言模型在视觉处理方面仍存在普遍性的缺陷，应如何解诀此缺陷？,https://api.zhihu.com/questions/640180579,0,0
+655438603,question,多模态大模型数据哪里可以买到高质量的？,https://api.zhihu.com/questions/655438603,0,0
+648840852,question,多模态学习?,https://api.zhihu.com/questions/648840852,0,0
+627077631,question,如何评价多模态模型Fuyu-8B？,https://api.zhihu.com/questions/627077631,0,0
+554619755,question,为何需要多模态预训练模型？,https://api.zhihu.com/questions/554619755,0,0
+308490425,question,多模态话语分析是什么意思？与符号学有什么关系？,https://api.zhihu.com/questions/308490425,0,0
+652457714,question,苹果介绍 Ferret-UI 多模态大语言模型，如何评价此大模型？,https://api.zhihu.com/questions/652457714,0,0
+420345745,question,多模态理论和多模态话语分析理论一样吗？查阅了大量资料也没发现区别，很迷惑求解答?,https://api.zhihu.com/questions/420345745,0,0
+652005395,question,在医学多模态大模型领域，研究哪个方向比较容易就业？,https://api.zhihu.com/questions/652005395,0,0
+626204066,question,多模态融合之前，需要把图片特征声音特征提取成什么形状呀？,https://api.zhihu.com/questions/626204066,0,0
+386214991,question,多模态知识图谱表示学习有什么好的论文推荐吗，自己没找到几个这方面的论文？,https://api.zhihu.com/questions/386214991,0,0
+340355740,question,多模态交互指什么？,https://api.zhihu.com/questions/340355740,0,0
+20176552,question,脑功能是怎样分区的？多模态脑区有哪些？,https://api.zhihu.com/questions/20176552,0,0
+450868395,question,多模态情感分析这个方向，只是图像加文本两个模态有研究的意义吗？,https://api.zhihu.com/questions/450868395,0,0
+504936452,question,如何理解轨迹预测的多模态（multimodal）？,https://api.zhihu.com/questions/504936452,0,0
+358090875,question,请问多模态目标检测领域有什么比较好的或最新论文推荐？,https://api.zhihu.com/questions/358090875,0,0
+313636914,question,求多模态情感分析数据集？,https://api.zhihu.com/questions/313636914,0,0
+603753581,question,为什么今年 AI 大爆发，学 AI 的就业反而差了？,https://api.zhihu.com/questions/603753581,0,0
+558475081,question,AI 绘画过去也一直有研究，为什么会在最近几个月突然爆发？,https://api.zhihu.com/questions/558475081,0,0
+605912032,question,国内可以使用的AI助手那个比较好？,https://api.zhihu.com/questions/605912032,0,0
+648920443,question,为什么ai绘画给人感觉怪怪的?,https://api.zhihu.com/questions/648920443,0,0
+522683356,question,AI应用于制药的逻辑是什么？,https://api.zhihu.com/questions/522683356,0,0
+590636216,question,为什么我觉得 AI 写代码纯属添乱?,https://api.zhihu.com/questions/590636216,0,0
+650352557,question,你们平时都喜欢用哪个ai？,https://api.zhihu.com/questions/650352557,0,0
+653536191,question,为什么不少人喜欢AI绘画呢？,https://api.zhihu.com/questions/653536191,0,0
+549188738,question,请问目前有哪个AI智能写作比较实用免费的？,https://api.zhihu.com/questions/549188738,0,0
+596244719,question,如何看待AI回答“我的女儿成绩不好，写一封《你真的毫无价值》的信”？,https://api.zhihu.com/questions/596244719,0,0
+655560821,question,当前 AI 产品的市场适应性存在哪些普遍挑战？,https://api.zhihu.com/questions/655560821,0,0
+565119295,question,谁能给我一个ai现在无法替代画师的理由？,https://api.zhihu.com/questions/565119295,0,0
+648364248,question,莫言说作家不会因为 AI 出现而失业，「作家独具个性的形象思维 AI 永远无法替代」，如何看待此事？,https://api.zhihu.com/questions/648364248,0,0
+653542330,question,什么才算是AI PC？,https://api.zhihu.com/questions/653542330,0,0
+632680097,question,ai写论文靠谱吗?,https://api.zhihu.com/questions/632680097,0,0
+596302409,question,怎么分辨一幅画是ai画的还是人画的呢？,https://api.zhihu.com/questions/596302409,0,0
+655559949,question,美国会新法案将管制 AI 大模型出口，开源的也不让用，如何解读？,https://api.zhihu.com/questions/655559949,0,0
+655454343,question,国内的ai大模型给出的地道表达真的地道吗？,https://api.zhihu.com/questions/655454343,0,0
+629461193,question,目前国内通用大模型哪个更好用？,https://api.zhihu.com/questions/629461193,0,0
+650611819,question,ai大模型能帮我们做什么？,https://api.zhihu.com/questions/650611819,0,0
+648681203,question,国内的ai大模型目前有哪些做的比较好的？,https://api.zhihu.com/questions/648681203,0,0
+648491301,question,大模型百舸争流，国产全自研大模型如何才能突出重围？,https://api.zhihu.com/questions/648491301,0,0
+635776684,question,为什么大模型会「说胡话」？如何解决大模型的「幻觉」问题？,https://api.zhihu.com/questions/635776684,0,0
+648400394,question,大模型是新一轮工业革命的基石嘛？未来于此相关的企业的商业逻辑和核心壁垒相较于之前会发生什么变化？,https://api.zhihu.com/questions/648400394,0,0
+650116158,question,如何看待「大厂才能做好大模型」这一观点？企业想抓住大模型风口，应怎么选？,https://api.zhihu.com/questions/650116158,0,0
+649649951,question,大模型处理时间序列现在有何进展，会出现时间序列基础模型吗？,https://api.zhihu.com/questions/649649951,0,0
+636492448,question,有没有本地化署大语言模型的教程？,https://api.zhihu.com/questions/636492448,0,0
+652290524,question,2024年5亿大模型新应用井喷即将到来，算力问题该如何解决？,https://api.zhihu.com/questions/652290524,0,0
+651250924,question,手机端可以跑大语言模型吗？,https://api.zhihu.com/questions/651250924,0,0
+654932431,question,LLM（大语言模型）无法对数字进行准确运算的底层原因是什么？,https://api.zhihu.com/questions/654932431,0,0
+654710585,question,你认为大模型的终极形态是什么？,https://api.zhihu.com/questions/654710585,0,0
+600946488,question,大模型的应用主要集中在哪些领域？,https://api.zhihu.com/questions/600946488,0,0
+616733198,question,24年秋招大模型相关岗位的前景如何?,https://api.zhihu.com/questions/616733198,0,0
+652847622,question,有没有人能详细讲一下大模型的量化方面的知识?,https://api.zhihu.com/questions/652847622,0,0
+436066921,question,喜欢的男生喜欢高达模型，有什么推荐的嘛？,https://api.zhihu.com/questions/436066921,0,0
+648856086,question,大模型优化的常见策略有哪些？,https://api.zhihu.com/questions/648856086,0,0
+608532326,question,当大家谈大模型时，大家谈些什么？,https://api.zhihu.com/questions/608532326,0,0
+589705235,question,大模型参数量和模型大小怎么换算？,https://api.zhihu.com/questions/589705235,0,0
+650032076,question,如何利用大模型搭建本地知识库？,https://api.zhihu.com/questions/650032076,0,0
+646184656,question,大模型如何实现超长多轮对话？,https://api.zhihu.com/questions/646184656,0,0
+649193194,question,大模型通用架构的组成部分是什么呢？,https://api.zhihu.com/questions/649193194,0,0
+653295324,question,大模型发展到瓶颈了吗？再训练是不是就过拟合了？无法再提高了？堆算力堆存储也没效果了吗？,https://api.zhihu.com/questions/653295324,0,0
+600021029,question,大模型的压缩是否会严重影响大模型所涌现出的思维链？,https://api.zhihu.com/questions/600021029,0,0
+653366585,question,大模型有什么用？,https://api.zhihu.com/questions/653366585,0,0
+654832546,question,nvlink对大模型推理的速度有多大提升？,https://api.zhihu.com/questions/654832546,0,0
+654162854,question,大模型的“极限”（即“能力的边界”）在哪里？,https://api.zhihu.com/questions/654162854,0,0
+635033837,question,2024年，大模型应用有哪些值得期待的新变化？,https://api.zhihu.com/questions/635033837,0,0
+653235666,question,讨论一下知乎的大模型➕agent这方案?,https://api.zhihu.com/questions/653235666,0,0
+630753858,question,在 AI 大模型的训练中，通常会采用哪些方法？,https://api.zhihu.com/questions/630753858,0,0
+643032605,question,大模型数据集哪有卖？,https://api.zhihu.com/questions/643032605,0,0
+637480772,question,2024年大模型基础设施领域（训练、推理、硬件）有什么值得关注研究方向？,https://api.zhihu.com/questions/637480772,0,0
+633769930,question,大模型的训练过程是什么样的？,https://api.zhihu.com/questions/633769930,0,0
+650150256,question,大模型可以在哪些场景应用？,https://api.zhihu.com/questions/650150256,0,0
+512153809,question,人工智能「大模型」是什么？,https://api.zhihu.com/questions/512153809,0,0
+652504646,question,大模型数据购买？,https://api.zhihu.com/questions/652504646,0,0
+654398634,question,当代国内主流大模型和国外大模型都有哪些差距?,https://api.zhihu.com/questions/654398634,0,0
+625473884,question,大模型能应用在自动驾驶上吗？是否可以让自动驾驶真的走向无人？,https://api.zhihu.com/questions/625473884,0,0
+610061186,question,国产大模型除了我们熟知的，还有哪些？,https://api.zhihu.com/questions/610061186,0,0
+624100119,question,大模型到底哪家更厉害?,https://api.zhihu.com/questions/624100119,0,0
+625119389,question,工业大模型有哪些典型的应用方向？,https://api.zhihu.com/questions/625119389,0,0
+650413919,question,大模型炒作了这么久，除了制造信息垃圾，有什么正经应用吗？,https://api.zhihu.com/questions/650413919,0,0
+652487606,question,高质量大模型训练数据？,https://api.zhihu.com/questions/652487606,0,0
+649563022,question,企业垂直应用场景中一般如何做大模型的模型选型？,https://api.zhihu.com/questions/649563022,0,0
+652847188,question,是否可以在家用电脑上训练大模型?,https://api.zhihu.com/questions/652847188,0,0
+652126515,question,目前针对大模型剪枝的方法有哪些？,https://api.zhihu.com/questions/652126515,0,0
+26006703,question,深度学习如何入门？,https://api.zhihu.com/questions/26006703,0,0
+654961977,question,为什么大学计算机全是深度学习？,https://api.zhihu.com/questions/654961977,0,0
+447064746,question,入门机器学习/深度学习要多长时间？,https://api.zhihu.com/questions/447064746,0,0
+510214556,question,搞深度学习神经网络到底怎么改代码的啊?,https://api.zhihu.com/questions/510214556,0,0
+377731309,question,深度学习和强化学习之间的差别有多大？,https://api.zhihu.com/questions/377731309,0,0
+409546895,question,深度学习环境用linux还是windows?,https://api.zhihu.com/questions/409546895,0,0
+298769145,question,如何较快上手深度学习？,https://api.zhihu.com/questions/298769145,0,0
+44593731,question,深度学习如何做特征工程？,https://api.zhihu.com/questions/44593731,0,0
+266533669,question,如何看懂深度学习论文里的数学原理部分？,https://api.zhihu.com/questions/266533669,0,0
+279542463,question,如何评价丘成桐老师的这篇关于从几何理解深度学习？,https://api.zhihu.com/questions/279542463,0,0
+400384629,question,什么是深度学习？深度学习能用来做什么？,https://api.zhihu.com/questions/400384629,0,0
+30712664,question,深度学习有哪些trick？,https://api.zhihu.com/questions/30712664,0,0
+621234978,question,深度学习硕士毕业论文工作量不够怎么办？,https://api.zhihu.com/questions/621234978,0,0
+63072815,question,深度学习和SLAM可以怎样结合?,https://api.zhihu.com/questions/63072815,0,0
+316306407,question,准备入手一款笔记本电脑做深度学习，有推荐的吗？,https://api.zhihu.com/questions/316306407,0,0
+619963432,question,深度学习计算机的idea怎么想啊，目前的状态就是会写代码，但是就是没有idea...？,https://api.zhihu.com/questions/619963432,0,0
+321599441,question,计算机研究生刚上岸，深度学习方向，想要就业的话，应该如何规划研究生三年？,https://api.zhihu.com/questions/321599441,0,0
+613467483,question,深度学习的本质是什么？,https://api.zhihu.com/questions/613467483,0,0
+462896013,question,什么是深度学习？有什么简单易理解深度学习的例子？,https://api.zhihu.com/questions/462896013,0,0
+439377142,question,本科毕业设计做深度学习感觉太水了能毕业吗？,https://api.zhihu.com/questions/439377142,0,0
+570851957,question,深度学习有哪些好处？,https://api.zhihu.com/questions/570851957,0,0
+65986822,question,深度学习的优势有哪些？,https://api.zhihu.com/questions/65986822,0,0
+57442515,question,如何理解深度学习？,https://api.zhihu.com/questions/57442515,0,0
+437199981,question,要基于pytorch做深度学习，但是我代码水平很低，我应该如何学习呢？,https://api.zhihu.com/questions/437199981,0,0
+411640155,question,深度学习的视觉三维重建方向怎么样？,https://api.zhihu.com/questions/411640155,0,0
+650715513,question,有没有偏数学的深度学习或者机器学习书推荐?,https://api.zhihu.com/questions/650715513,0,0
+406449515,question,针对深度学习初学者，改进模型及算法创新，个人感觉像是像瞎子走路一样，没有思路，要不要多看基础算法？,https://api.zhihu.com/questions/406449515,0,0
+514005829,question,3050适合做深度学习吗？,https://api.zhihu.com/questions/514005829,0,0
+528654768,question,深度学习中创新点比较小，但是有效果，可以发（水）论文吗?,https://api.zhihu.com/questions/528654768,0,0
+341190239,question,深度学习的可解释性方向的研究是不是巨坑？,https://api.zhihu.com/questions/341190239,0,0
+29854624,question,如何理解「深度学习和重整化群可以建立严格映射」？这一结论对领域有何影响？,https://api.zhihu.com/questions/29854624,0,0
+499089020,question,问一下，我是搞深度学习的，三维重建 + 深度学习 + slam 前景到底是什么？,https://api.zhihu.com/questions/499089020,0,0
+654398125,question,如何系统学习深度学习？,https://api.zhihu.com/questions/654398125,0,0
+637387526,question,大一深度学习?,https://api.zhihu.com/questions/637387526,0,0
+582807873,question,什么叫深度学习？,https://api.zhihu.com/questions/582807873,0,0
+269813298,question,做深度学习目标检测方向，需要阅读多少篇论文才能有idea呢？,https://api.zhihu.com/questions/269813298,0,0
+404391467,question,本人在读非计算机研究生，想学习深度学习，需要从头补习数学和计算机专业课吗。还是直接看深度学习书籍？,https://api.zhihu.com/questions/404391467,0,0
+461135705,question,如何看待马毅老师深度学习第一性原理的文章在 ICML 四个审稿人一致接收的情况下被 AC 拒了？,https://api.zhihu.com/questions/461135705,0,0
+33996159,question,如何配置一台适用于深度学习的工作站？,https://api.zhihu.com/questions/33996159,0,0
+425191652,question,本人通信学科研一 ，目前导师让学习深度强化学习与博弈论，好就业吗？,https://api.zhihu.com/questions/425191652,0,0
+329372124,question,训练好的深度学习模型是怎么部署的？,https://api.zhihu.com/questions/329372124,0,0
+265059949,question,如何评价Gary Marcus对深度学习的系统性批判？,https://api.zhihu.com/questions/265059949,0,0
+60712272,question,计算机视觉，深度学习，大四和读研的这段时间应该有怎么的基础预备？,https://api.zhihu.com/questions/60712272,0,0
+67938028,question,为什么深度学习去噪都采用高斯白噪声？,https://api.zhihu.com/questions/67938028,0,0
+589679933,question,gpt4后 多模态研究方向是不是失业了？,https://api.zhihu.com/questions/589679933,0,0
+638854224,question,该怎样去学习多模态（表征、翻译、对齐、融合等）？请高手指点指点?,https://api.zhihu.com/questions/638854224,0,0
+519588362,question,请问，优秀的多模态融合论文有哪些？,https://api.zhihu.com/questions/519588362,0,0
+655380534,question,读研导师是计算机视觉，但不知道该选什么方向?,https://api.zhihu.com/questions/655380534,0,0
+332879167,question,多模态学习什么方向更有研究前景？,https://api.zhihu.com/questions/332879167,0,0
+491225252,question,为什么觉得多模态多视图都偏向CV领域呢？,https://api.zhihu.com/questions/491225252,0,0
+601916867,question,多模态模型在哪些应用场景中可以发挥作用？,https://api.zhihu.com/questions/601916867,0,0
+613559577,question,多模态融合效果变差的原因是什么？,https://api.zhihu.com/questions/613559577,0,0
+631145897,question,做机器人（机械臂）选多模态好，还是强化学习方向好？,https://api.zhihu.com/questions/631145897,0,0
+561629919,question,多模态学习是伪需求吗？,https://api.zhihu.com/questions/561629919,0,0
+623513749,question,在多模态领域，有哪些热门的研究方向，这些研究方向在工业界对应的职位多吗？,https://api.zhihu.com/questions/623513749,0,0
+652005648,question,在只有单张4090可以用来做实验的条件下，在具身智能机器人领域，研究哪个多模态方向比较容易就业？,https://api.zhihu.com/questions/652005648,0,0
+586943529,question,中科院自动化所的多模态人工智能系统全国重点实验室怎么样？,https://api.zhihu.com/questions/586943529,0,0
+643917465,question,大模型语言模型（LLM）和大型多模态语言模型（LMM）有什么区别？,https://api.zhihu.com/questions/643917465,0,0
+586405260,question,多模态怎样选择学习方向？,https://api.zhihu.com/questions/586405260,0,0
+624851314,question,主流的图像—文本的多模态技术实现方法有哪些？,https://api.zhihu.com/questions/624851314,0,0
+626796690,question,多模态大语言模型（MLLM）为什么最近的工作中用BLIP2中Q-Former结构的变少了？,https://api.zhihu.com/questions/626796690,0,0
+646919153,question,现如今的知识蒸馏领域，在多模态方面有什么可以做的点子？,https://api.zhihu.com/questions/646919153,0,0
+648651600,question,NERF/Gaussian Splatting跟LLM/VLM/多模态，哪个研究方向更适合现在的我？,https://api.zhihu.com/questions/648651600,0,0
+263860475,question,多模态语义分析有啥具体的研究方向吗？多模态指的是图像，视频，音频，文本中的两种数据以上。？,https://api.zhihu.com/questions/263860475,0,0
+549621097,question,如何评价微软提出的BEIT-3：通过多路Transformer实现多模态统一建模？,https://api.zhihu.com/questions/549621097,0,0
+595093484,question,能估计一下2024年计算机开发 算法秋招的情况吗?,https://api.zhihu.com/questions/595093484,0,0
+653847794,question,多模态大语言模型（MLLM）可以统一视觉感知任务吗？,https://api.zhihu.com/questions/653847794,0,0
+533606978,question,多模态医学图像分割有什么可以做的吗，研究生还可以做吗?,https://api.zhihu.com/questions/533606978,0,0
+648789098,question,苹果发布一款名为 MM1 的多模态大模型，该大模型有何优点？,https://api.zhihu.com/questions/648789098,0,0
+651140297,question,综合就业与科研两方面考虑，机器人大模型与医学多模态大模型应该选哪个?,https://api.zhihu.com/questions/651140297,0,0
+625542088,question,研究生研究方向选择，从学术研究和就业前景看，多模态机器学习、人工智能安全、隐私保护、区块链，选哪个好？,https://api.zhihu.com/questions/625542088,0,0
+427767524,question,医学图像分割研究生，想放弃了咋办~？,https://api.zhihu.com/questions/427767524,0,0
+402886360,question,国内研究多模态研究方向的团队有哪些？,https://api.zhihu.com/questions/402886360,0,0
+27529154,question,如何系统性地学习NLP 自然语言处理？,https://api.zhihu.com/questions/27529154,0,0
+632809237,question,为什么大模型能通过自然语言训练表现出智能？智能的载体是自然语言吗？,https://api.zhihu.com/questions/632809237,0,0
+431959782,question,本人研一，纠结选择计算机视觉还是自然语言处理？,https://api.zhihu.com/questions/431959782,0,0
+295962495,question,为什么相比于计算机视觉(cv)，自然语言处理(nlp)领域的发展要缓慢？,https://api.zhihu.com/questions/295962495,0,0
+379716754,question,如何用一句话证明自然语言处理很难？,https://api.zhihu.com/questions/379716754,0,0
+593410298,question,现在投身于自然语言处理是否明智?,https://api.zhihu.com/questions/593410298,0,0
+632611303,question,作为一名自然语言处理研究者，2024 年有哪些研究方向更有潜力？,https://api.zhihu.com/questions/632611303,0,0
+27924048,question,自然语言处理方向研究生好找工作吗？,https://api.zhihu.com/questions/27924048,0,0
+435195939,question,纯文科语言学本科，硕士转自然语言处理难吗？,https://api.zhihu.com/questions/435195939,0,0
+612439062,question,chatgpt出现之后，计算机自然语言处理研究方向该何去何从？就业也该怎么办？,https://api.zhihu.com/questions/612439062,0,0
+353113791,question,研究生做自然语言处理，什么方向比较容易？,https://api.zhihu.com/questions/353113791,0,0
+654477711,question,如何系统学习自然语言处理(NLP)？,https://api.zhihu.com/questions/654477711,0,0
+626082317,question,非985，211一本AI相关专业学生是否不应该做nlp（自然语言处理）？,https://api.zhihu.com/questions/626082317,0,0
+335289475,question,自然语言处理有哪些方向适合独立研究？,https://api.zhihu.com/questions/335289475,0,0
+345601258,question,数据分析和自然语言处理那个就业前景比较好，特别是在上海？,https://api.zhihu.com/questions/345601258,0,0
+310486648,question,自然语言处理职业是青春饭吗？,https://api.zhihu.com/questions/310486648,0,0
+49432647,question,计算机视觉和自然语言处理，哪个更具有发展前景呢，还是各有千秋呢？,https://api.zhihu.com/questions/49432647,0,0
+267039838,question,语言学研一在读，想自学自然语言处理，这个想法靠谱吗？,https://api.zhihu.com/questions/267039838,0,0
+290716079,question,从事自然语言处理工作是怎样一番体验？,https://api.zhihu.com/questions/290716079,0,0
+28225747,question,如何向文科同学科普自然语言处理（NLP）？,https://api.zhihu.com/questions/28225747,0,0
+30748126,question,自然语言处理为什么从规则转到统计的方法？,https://api.zhihu.com/questions/30748126,0,0
+66211963,question,自然语言处理是计算机实现通用人工智能的最难挑战吗？,https://api.zhihu.com/questions/66211963,0,0
+25358316,question,自然语言处理（NLP）和计算语言学之间的区别和联系是什么？,https://api.zhihu.com/questions/25358316,0,0
+634386944,question,怎么快速入门自然语言处理，并能做一个毕业的系统？,https://api.zhihu.com/questions/634386944,0,0
+290108003,question,自然语言处理（NLP）方向有哪些知名期刊？,https://api.zhihu.com/questions/290108003,0,0
+357841227,question,NLP 也就是自然语言处理，求推荐的中文入门网课或者教材？,https://api.zhihu.com/questions/357841227,0,0
+277846848,question,高三党想学自然语言处理，应该如何选择大学及专业？,https://api.zhihu.com/questions/277846848,0,0
+66889011,question,双非计算机研究生，自学python，已研二，想入坑自然语言处理，以找工作为目的，有没有清晰的学习路线？,https://api.zhihu.com/questions/66889011,0,0
+53482453,question,计算机专业本科生自学机器学习，自然语言处理（NLP）方向，毕业后直接工作的机会有多大？,https://api.zhihu.com/questions/53482453,0,0
+316973110,question,计算机视觉和自然语言处理哪个好就业？,https://api.zhihu.com/questions/316973110,0,0
+266100518,question,自然语言处理的智能问答（QA）和智能对话（conversation）哪一个更有前景？,https://api.zhihu.com/questions/266100518,0,0
+290716087,question,自然语言处理工作 3-5 年后有哪些发展路径？,https://api.zhihu.com/questions/290716087,0,0
+21063208,question,自然语言处理和语音的关系是什么，和机器学习又是什么关系？,https://api.zhihu.com/questions/21063208,0,0
+60497275,question,北语研究生的语言信息处理、计算语言学与自然语言处理的区别是什么？,https://api.zhihu.com/questions/60497275,0,0
+67554185,question,小语种专业如何入坑自然语言处理？,https://api.zhihu.com/questions/67554185,0,0
+32318281,question,NLP（自然语言处理）界有哪些神级人物？,https://api.zhihu.com/questions/32318281,0,0
+275171644,question,凭良心说，自然语言处理方向需要哪些数学知识？,https://api.zhihu.com/questions/275171644,0,0
+485303778,question,我想问一下北京语言大学计算机考研自然语言处理方向的研究生，毕业在北京好找工作吗。？,https://api.zhihu.com/questions/485303778,0,0
+298047669,question,自然语言处理硕士新生菜鸟一枚，怎样去找最新的相关论文？,https://api.zhihu.com/questions/298047669,0,0
+443286636,question,如何看待自然语言处理未来的走向?,https://api.zhihu.com/questions/443286636,0,0
+319086187,question,自然语言处理择校，北京语言大学信息科学学院和北京师范大学中文信息处理研究所如何选择。？,https://api.zhihu.com/questions/319086187,0,0
+353298312,question,自然语言处理领域有哪些适合做本科毕设的题目？,https://api.zhihu.com/questions/353298312,0,0
+325528604,question,如何看待北大硕士生在自然语言处理顶级会议 ACL 2019 上发表 8 篇论文？,https://api.zhihu.com/questions/325528604,0,0
+397926403,question,自然语言处理+计算机视觉（多模态方向）好找工作吗?,https://api.zhihu.com/questions/397926403,0,0
+351919301,question,自然语言处理（NLP）的蓝海小方向有哪些？,https://api.zhihu.com/questions/351919301,0,0
+341022779,question,自然语言处理需要掌握哪些方面的知识？,https://api.zhihu.com/questions/341022779,0,0
+386875262,question,在自然语言处理中，如何对《诗经》《论语》、唐诗宋词做分词？并且做向量化？,https://api.zhihu.com/questions/386875262,0,0
+288190292,question,吉大计算机本科，打算做自然语言处理方向硕士毕业后工作，考研学校抉择？,https://api.zhihu.com/questions/288190292,0,0
+50483332,question,研究生论文如果从自然语言处理方向入手，有什么值得做的topic？,https://api.zhihu.com/questions/50483332,0,0
+547109861,question,本人考研想考计算机自然语言处理方向，请问有没有那种非985 211的院校做的不错的？,https://api.zhihu.com/questions/547109861,0,0
+48764391,question,怎样『零基础』入门自然语言处理？,https://api.zhihu.com/questions/48764391,0,0
+623125576,question,本科211中文系，研究生想往自然语言处理发展，求择校建议?,https://api.zhihu.com/questions/623125576,0,0
+555450339,question,在工业界，自然语言处理与计算机视觉相比，哪个工作岗位更多？,https://api.zhihu.com/questions/555450339,0,0
+471940585,question,本科必修自然语言处理是什么体验?,https://api.zhihu.com/questions/471940585,0,0
+405868078,question,自然语言处理这个领域的门槛是在语言学基础知识还是计算机，统计学的知识？,https://api.zhihu.com/questions/405868078,0,0
+268156778,question,计算机视觉、NLP自然语言处理和推荐算法哪个前景更好一些？,https://api.zhihu.com/questions/268156778,0,0
+19894543,question,自然语言处理有哪些好的入门书籍推荐？入门首先应该有哪些实践？,https://api.zhihu.com/questions/19894543,0,0
+65746282,question,自然语言处理难在哪里？,https://api.zhihu.com/questions/65746282,0,0
+46867310,question,接触自然语言处理（NLP）后能为外语学习带来哪些启发？,https://api.zhihu.com/questions/46867310,0,0
+50418093,question,进行自然语言处理时，使用字向量好，还是词向量好？,https://api.zhihu.com/questions/50418093,0,0
+28730014,question,自然语言处理的哪些领域更多的需要语言学？,https://api.zhihu.com/questions/28730014,0,0
+40489869,question,基于深度学习的自然语言处理在 2016 年有哪些值得期待的发展？,https://api.zhihu.com/questions/40489869,0,0
+381237485,question,想要入门自然语言处理，资料贫瘠，英语不好，大神推荐斯坦福的真的是搞不定，迷迷茫茫，不知从何下手？,https://api.zhihu.com/questions/381237485,0,0
+489814834,question,自然语言处理方向研一发顶会概率大么？,https://api.zhihu.com/questions/489814834,0,0
+329796870,question,自然语言处理最近几年的论文该怎样看？,https://api.zhihu.com/questions/329796870,0,0
+315446528,question,请问如果想学习NLP(自然语言处理)，深度学习方向，学习路线应该怎样规划。本人有一定深度学习基础。？,https://api.zhihu.com/questions/315446528,0,0
+556232123,question,怎么样通关自然语言处理面试?,https://api.zhihu.com/questions/556232123,0,0
+391291097,question,搞自然语言处理方向，是否有机会自己一个人独立接项目单干并取得稳定、丰厚收入？,https://api.zhihu.com/questions/391291097,0,0
+398633776,question,如何评价哥本哈根大学的自然语言处理(NLP)研究水平？,https://api.zhihu.com/questions/398633776,0,0
+313227382,question,国内自然语言处理（NLP）领域，刘知远能排第几？,https://api.zhihu.com/questions/313227382,0,0
+23072220,question,自然语言处理是什么？对学习者的知识结构有什么要求？与中文信息处理有什么联系吗？,https://api.zhihu.com/questions/23072220,0,0
+27040668,question,现在计算机自然语言处理的最高水平是什么？,https://api.zhihu.com/questions/27040668,0,0
+322449439,question,人工智能里面的机器学习和自然语言处理难不难学？,https://api.zhihu.com/questions/322449439,0,0
+55367612,question,自然语言处理领域（NLP）有哪些值得关注的微信公众号？,https://api.zhihu.com/questions/55367612,0,0
+30305058,question,当前国内外在自然语言处理领域有哪些研究热点和难点？,https://api.zhihu.com/questions/30305058,0,0
+49786910,question,数据挖掘、机器学习、NLP、自然语言处理的关系是什么？,https://api.zhihu.com/questions/49786910,0,0
+604523495,question,大一外语专业的学生，想自学自然语言处理，但是一年多没上过数学课了，有什么建议吗?,https://api.zhihu.com/questions/604523495,0,0
+618776774,question,当一名自然语言处理工程师需要掌握哪些知识和能力？,https://api.zhihu.com/questions/618776774,0,0
+550881555,question,我在计算机读研，选择人工智能方向了，有自然语言处理nlp，还有计算机视觉cv，请问选择哪个更好？,https://api.zhihu.com/questions/550881555,0,0
+518956455,question,自然语言处理顶刊TACL的难度如何？,https://api.zhihu.com/questions/518956455,0,0
+514088248,question,计算机读研选择哪个方向，强化学习/机器学习理论还是自然语言处理？,https://api.zhihu.com/questions/514088248,0,0
+309334783,question,本科是中文，研究生阶段想学自然语言处理，北师大中文信息处理研究所和北语信科学院哪个更适合啊?,https://api.zhihu.com/questions/309334783,0,0
+427171619,question,如何评价ETH的自然语言处理(NLP)研究水平？,https://api.zhihu.com/questions/427171619,0,0
+429548671,question,如何通俗易懂的向别人解释自然语言处理？,https://api.zhihu.com/questions/429548671,0,0
+332046714,question,国外有哪些研究自然语言处理的华人牛人或团队？,https://api.zhihu.com/questions/332046714,0,0
+26926435,question,怎么准备自然语言处理和推荐系统这一块的面试?,https://api.zhihu.com/questions/26926435,0,0
+28922754,question,当今自然语言处理前沿最有可能产生重大突破的分支有哪些？,https://api.zhihu.com/questions/28922754,0,0
+48738732,question,研究方向选择：自然语言处理和语音识别？,https://api.zhihu.com/questions/48738732,0,0
+61622772,question,自然语言处理需要哪些统计学知识？,https://api.zhihu.com/questions/61622772,0,0
+40873677,question,深度学习在自然语言处理方面的运用有哪些？,https://api.zhihu.com/questions/40873677,0,0
+552287393,question,双非研一开学，导师让我大数据分析和自然语言处理两个方向二选一，迷茫，不知道选哪个方向，个人偏向就业。?,https://api.zhihu.com/questions/552287393,0,0
+653317625,question,研0，本科信管，上岸大数据专业，导师方向为自然语言处理，请问开学前该学些什么呢？,https://api.zhihu.com/questions/653317625,0,0
+509256656,question,自然语言处理和智能推荐两个方向哪个好发论文呢？,https://api.zhihu.com/questions/509256656,0,0
+640180897,question,如何使用 Python 库来进行自然语言处理？,https://api.zhihu.com/questions/640180897,0,0
+532124303,question,双非研究生，方向是自然语言处理，想问一下就业问题？,https://api.zhihu.com/questions/532124303,0,0
+51761887,question,目前，自然语言处理（NLP）各个研究方向，各有哪些具体的应用？,https://api.zhihu.com/questions/51761887,0,0
+344567209,question,大三选方向 计算机视觉和自然语言处理哪个更好呢?,https://api.zhihu.com/questions/344567209,0,0
+388554293,question,研究生是去一个顶尖大学的人类学，还是去中等学校的自然语言处理？,https://api.zhihu.com/questions/388554293,0,0
+436795373,question,自然语言处理方向的本科生，已经有一个游戏本，想买个轻薄本，macbook合适吗？,https://api.zhihu.com/questions/436795373,0,0
+21349814,question,国内做自然语言处理的公司有哪些？,https://api.zhihu.com/questions/21349814,0,0
+496578737,question,清华大学自然语言处理组招收外校保研生的情况如何？,https://api.zhihu.com/questions/496578737,0,0
+424970343,question,从事自然语言处理，有哪些必读的书？,https://api.zhihu.com/questions/424970343,0,0
+390335942,question,学自然语言处理应该怎么规划？,https://api.zhihu.com/questions/390335942,0,0
+333935762,question,自然语言处理的研究意义是什么？,https://api.zhihu.com/questions/333935762,0,0
+19948780,question,各位大牛学习自然语言处理有什么好的资料或网站？谁能简单介绍一下自己学习自然语言处理的经验和心得？,https://api.zhihu.com/questions/19948780,0,0
+65999833,question,自然语言处理不得不看的有哪些书？,https://api.zhihu.com/questions/65999833,0,0
+65966372,question,有什么自然语言处理的在线课程，带大作业的那种？,https://api.zhihu.com/questions/65966372,0,0
+53407524,question,985本硕统计专业申请美国自然语言处理（NLP）PhD如何？,https://api.zhihu.com/questions/53407524,0,0
+19881596,question,人工智能理解自然语言的原理是什么？,https://api.zhihu.com/questions/19881596,0,0
+543104971,question,考研是选择自然语言处理还是生物统计？,https://api.zhihu.com/questions/543104971,0,0
+451813158,question,自然语言处理方向做什么好硕士毕业？,https://api.zhihu.com/questions/451813158,0,0
+422344288,question,只针对找工作而言，强化学习，深度学习，自然语言处理，哪个更具有前景，或者说哪个需求量更大一些呢？,https://api.zhihu.com/questions/422344288,0,0
+641134017,question,自然语言处理的挑战和难点在哪里？,https://api.zhihu.com/questions/641134017,0,0
+587306921,question,自然语言处理需要用语言学吗?,https://api.zhihu.com/questions/587306921,0,0
+21683657,question,关于自然语言处理方面的好书有啥？,https://api.zhihu.com/questions/21683657,0,0
+401480162,question,自然语言处理领域Pytorch用得多还是tensorflow用得多？,https://api.zhihu.com/questions/401480162,0,0
+631573661,question,自然语言处理在人工智能领域方面有哪些作用？,https://api.zhihu.com/questions/631573661,0,0
+316973298,question,计算机视觉和自然语言处理哪个好就业一些？,https://api.zhihu.com/questions/316973298,0,0
+20388629,question,自然语言处理-计算语言学 在德国 除了亚琛工大（当然牛，我也想去做Och师弟）有没有其他也很靠谱的单位？去过的优先:),https://api.zhihu.com/questions/20388629,0,0
+23845728,question,数据挖掘、模式识别、自然语言处理的区别是什么？,https://api.zhihu.com/questions/23845728,0,0
+21211466,question,自然语言处理中的语义到底是个什么概念？语义分析是要分析出什么结果？,https://api.zhihu.com/questions/21211466,0,0
+484740087,question,自然语言处理（NLP）用Python还是Java？,https://api.zhihu.com/questions/484740087,0,0
+654213163,question,为什么自然语言领域OpenAI可以一家独大，计算机视觉没有绝对的独角兽？,https://api.zhihu.com/questions/654213163,0,0
+36776619,question,应该怎样去学习自然语言处理？,https://api.zhihu.com/questions/36776619,0,0
+594955341,question,研究生毕业论文选题 自然语言处理 文本处理nlp 方向 求推荐?,https://api.zhihu.com/questions/594955341,0,0
+51661544,question,基于深度学习的自然语言处理算法有哪些？,https://api.zhihu.com/questions/51661544,0,0
+631908524,question,自然语言处理的技术有什么？,https://api.zhihu.com/questions/631908524,0,0
+638243837,question,自然语言处理在哪些领域具有应用？,https://api.zhihu.com/questions/638243837,0,0
+360894244,question,强化学习会是自然语言处理的下一个突破口吗？,https://api.zhihu.com/questions/360894244,0,0
+61872771,question,自然语言处理（NLP）和自然语言理解（NLU）的区别？,https://api.zhihu.com/questions/61872771,0,0
+37280916,question,学习自然语言处理需要语音信号处理的基础吗？,https://api.zhihu.com/questions/37280916,0,0
+281023361,question,深度学习和机器学习和自然语言处理有什么区别？,https://api.zhihu.com/questions/281023361,0,0
+268880016,question,语音识别（ASR） 和自然语言处理（NLP）的关系是什么？,https://api.zhihu.com/questions/268880016,0,0
+620763433,question,OpenAI 首次发布 ChatGPT 课堂使用指南，生成式 AI 进入课堂后会带来哪些改变？,https://api.zhihu.com/questions/620763433,0,0
+644478663,question,OpenAI 发布文生视频模型 Sora，AI 能理解运动中的物理世界，这是世界模型吗？意味着什么？,https://api.zhihu.com/questions/644478663,0,0
+644478200,question,OpenAI 全新发布文生视频模型 Sora，功能有多强大？将带来哪些影响？,https://api.zhihu.com/questions/644478200,0,0
+648545102,question,OpenAI 首席技术官称 Sora 将于年内正式向公众推出，将带来哪些影响？,https://api.zhihu.com/questions/648545102,0,0
+651699546,question,openai都开始布局GPT6了，为什么GPT5还没放出来？,https://api.zhihu.com/questions/651699546,0,0
+644486081,question,为什么openai可以跑通所有AGI技术栈？,https://api.zhihu.com/questions/644486081,0,0
+601079841,question,为什么百度连小小的 openai 都打不过？,https://api.zhihu.com/questions/601079841,0,0
+644590218,question,从技术原理上分析，为什么OpenAI发布的sora模型会碾压pika和runway?,https://api.zhihu.com/questions/644590218,0,0
+653993843,question,微软押注OpenAI大获成功，微软有什么战略上的失误吗？,https://api.zhihu.com/questions/653993843,0,0
+651131121,question,Open AI 将于四月在东京开设首个亚洲办事处，从商业角度如何解读企业此举？,https://api.zhihu.com/questions/651131121,0,0
+636703913,question,为什么只有在美国才能诞生openAI这种伟大的公司？,https://api.zhihu.com/questions/636703913,0,0
+647952862,question,OpenAi 再不盈利，会不会拖死？ChatGPT每天可能要消耗超过50万千瓦时的电力？,https://api.zhihu.com/questions/647952862,0,0
+617242560,question,报道称 ChatGPT 每天耗 70 万美元，且 OpenAI 仍持续亏损，这样下去有破产风险吗？,https://api.zhihu.com/questions/617242560,0,0
+645932359,question,OpenAI研发了ChatGPT七年，为什么发布后，国内很快就如雨后春笋，是在之前就已经开始训练了吗？,https://api.zhihu.com/questions/645932359,0,0
+651276960,question,OpenAI 放开限制，用户无需注册即可使用 ChatGPT，如何评价此举？,https://api.zhihu.com/questions/651276960,0,0
+647647863,question,openai神秘q项目是什么，是真的吗?,https://api.zhihu.com/questions/647647863,0,0
+398281365,question,如何评价openAI在人工智能界的地位？,https://api.zhihu.com/questions/398281365,0,0
+645556648,question,从 ChatGPT 到 Sora，为何 OpenAI 能连续打造出王炸级神器？,https://api.zhihu.com/questions/645556648,0,0
+631895392,question,复旦某个教授：我们与OpenAI的差距正在拉大。你怎么看？,https://api.zhihu.com/questions/631895392,0,0
+632775830,question,OpenAI为何不公开Q*算法的详细内容？,https://api.zhihu.com/questions/632775830,0,0
+646030703,question,如何看待谷歌 DeepMind 创始人称，「 OpenAI 只是依靠规模突破，并无原生创新」这一言论？,https://api.zhihu.com/questions/646030703,0,0
+647689403,question,OpenAI 首席执行官奥特曼重返公司董事会，至此董事会共有 7 名成员，会带来哪些变化？,https://api.zhihu.com/questions/647689403,0,0
+630622928,question,如何评价 OpenAI CEO Sam Altman 离开 OpenAI?,https://api.zhihu.com/questions/630622928,0,0
+646614948,question,马斯克以违反合同为由起诉 OpenAI 及其 CEO 萨姆奥特曼，哪些信息值得关注？,https://api.zhihu.com/questions/646614948,0,0
+591733436,question,如果百度一直坚定地强力推行陆奇的All in AI 战略，今天能和OpenAI并驾齐驱吗？,https://api.zhihu.com/questions/591733436,0,0
+630669888,question,OpenAI董事会辞退CEO山姆奥特曼会是一个致命决策吗？,https://api.zhihu.com/questions/630669888,0,0
+650840448,question,微软和 OpenAI 计划建造价值1000亿美元的星际之门人工智能超级计算机，有哪些信息值得关注？,https://api.zhihu.com/questions/650840448,0,0
+650823754,question,OpenAI 公布声音克隆新技术，仅需 15 秒音频样本即可模仿任何说话者，将带来哪些影响？,https://api.zhihu.com/questions/650823754,0,0
+644844375,question,openai的sora会砸掉谁的饭碗？,https://api.zhihu.com/questions/644844375,0,0
+644473449,question,如何看待OpenAI最新发布的Sora？,https://api.zhihu.com/questions/644473449,0,0
+644375127,question,消息称 OpenAI 正开发搜索类产品，新产品会有何新功能？,https://api.zhihu.com/questions/644375127,0,0
+629334106,question,OpenAI 产品每周使用量达 1 亿人次，开发者数量达 200 万，这意味着什么？,https://api.zhihu.com/questions/629334106,0,0
+614752745,question,黄牛是如何做到把OpenAI的API-Key变得这么便宜的？,https://api.zhihu.com/questions/614752745,0,0
+631237537,question,如何看待网传微软为770名OpenAI离职员工每人提供1000万美元签约奖金？,https://api.zhihu.com/questions/631237537,0,0
+630645606,question,ChatGPT 之父被 OpenAI 董事会开除，其董事会是如何运作的？对公司发展有何影响？,https://api.zhihu.com/questions/630645606,0,0
+592458017,question,如何看待 OpenAI 创始人称 AI 可能毁灭人类，当其发展为超级智能时几乎无法与人类站在统一战线？,https://api.zhihu.com/questions/592458017,0,0
+470203851,question,如何评价OpenAI CEO Sam Altman所写《万物摩尔定律》？,https://api.zhihu.com/questions/470203851,0,0
+596077807,question,如何看待 OpenAI CEO 称「大语言模型规模已接近极限，并非越大越好」？,https://api.zhihu.com/questions/596077807,0,0
+570189639,question,如何评价 OpenAI 的超级对话模型 ChatGPT ？,https://api.zhihu.com/questions/570189639,0,0
+653047434,question,OpenAI开设东京办事处、发布了3倍高速的“日语特化型GPT-4“，对你有没有什么影响？,https://api.zhihu.com/questions/653047434,0,0
+650562176,question,OpenAI 的 GPT 4 能够实现盈利吗？,https://api.zhihu.com/questions/650562176,0,0
+644557239,question,马斯克评 OpenAI 首个视频生成模型「人类认赌服输」，如何看待此事？,https://api.zhihu.com/questions/644557239,0,0
+608576964,question,现在openai官网的chatgpt用的是gpt3.5还是gpt4？,https://api.zhihu.com/questions/608576964,0,0
+644463888,question,如何评价OpenAi发布的视频生成模型Sora?,https://api.zhihu.com/questions/644463888,0,0
+644780140,question,为什么中文世界对openAI刚刚发布的Sora评价这么高？,https://api.zhihu.com/questions/644780140,0,0
+630664469,question,如果 OpenAI 董事会的理念分歧发生在中国，会是什么故事走向？,https://api.zhihu.com/questions/630664469,0,0
+634074112,question,OpenAI 承认 GPT-4 变懒，称暂时无法修复，这意味着什么？为何会出现这一状况？,https://api.zhihu.com/questions/634074112,0,0
+630824802,question,假设Ilya Sutskever和Sam Altman分别被OpenAI开除，谁更可能成功另起炉灶？,https://api.zhihu.com/questions/630824802,0,0
+615423469,question,马斯克从 OpenAI 手中获得 Ai.com，域名直接跳转 xAI 公司网站，如何看待此举？,https://api.zhihu.com/questions/615423469,0,0
+636626927,question,如何看待OpenAI 2024年目标？尤其是其中的开源，能开源到什么程度？,https://api.zhihu.com/questions/636626927,0,0
+637080549,question,纽约时报起诉 OpenAI 和微软，称其人工智能和大型语言模型侵权，如何看待此事？,https://api.zhihu.com/questions/637080549,0,0
+629335179,question,作为 AI 从业者，你看完 OpenAI DevDay 有什么感想？,https://api.zhihu.com/questions/629335179,0,0
+630962018,question,微软称 OpenAI 创始人 Sam Altman、Greg Brockman 将加入，带来哪些影响？,https://api.zhihu.com/questions/630962018,0,0
+652674760,question,「木头姐」凯茜伍德投资 OpenAI，哪些信息值得关注？,https://api.zhihu.com/questions/652674760,0,0
+645574141,question,为什么Openai要放出ChatGPT给大家使用？,https://api.zhihu.com/questions/645574141,0,0
+639576669,question,OpenAI 删除了禁止他们的技术被用于军事用途的条款，将带来哪些影响？,https://api.zhihu.com/questions/639576669,0,0
+630986323,question,OpenAI 多名高管发声，没有员工，OpenAI 什么都不是，奥特曼对 OpenAI 意味着什么?,https://api.zhihu.com/questions/630986323,0,0
+655545754,question,OpenAI 拟赶在谷歌开发者年会前发布器搜索产品，如何从商业角度解读企业此举？,https://api.zhihu.com/questions/655545754,0,0
+637187550,question,如何看待OpenAI竞争对手Anthropic明年收入料超8.5亿美元？,https://api.zhihu.com/questions/637187550,0,0
+630954702,question,OpenAI 创始人奥特曼、布罗克曼将加入微软，OpenAI 董事会拟聘请新 CEO，如何看待此事？,https://api.zhihu.com/questions/630954702,0,0
+632596314,question,OpenAI 官宣「奥特曼正式回归，公司成立一个新的董事会」，哪些信息值得关注？,https://api.zhihu.com/questions/632596314,0,0
+603737902,question,国内实体卡能买openai的plus会员吗？,https://api.zhihu.com/questions/603737902,0,0
+652347012,question,马斯克不是退出openAI了，为什么又要搞AI?,https://api.zhihu.com/questions/652347012,0,0
+631474975,question,OpenAI 被曝取得技术进展 Q* 可能威胁人类，引发罢免奥特曼，具体情况如何？,https://api.zhihu.com/questions/631474975,0,0
+644589948,question,媒体报道 OpenAI 完成一笔交易，其估值达到 800 亿，哪些信息值得关注？会带来哪些影响？,https://api.zhihu.com/questions/644589948,0,0
+616380488,question,OpenAI 主动公开「官方爬虫」，是否能证明其数据来源正当性？有什么参考意义？,https://api.zhihu.com/questions/616380488,0,0
+636259429,question,OpenAI 拟开启新一轮融资，估值将超过 1000 亿美元，如何从商业角度看该公司发展？,https://api.zhihu.com/questions/636259429,0,0
+631078563,question,消息称 OpenAI 投资者正考虑起诉公司董事会，如何看待此事发展？,https://api.zhihu.com/questions/631078563,0,0
+630815379,question,OpenAI 投资者向董事会施压，要求恢复奥特曼的 CEO 职务，如何看待此事？,https://api.zhihu.com/questions/630815379,0,0
+570403406,question,OpenAI 的超级对话模型 ChatGPT 会导致程序员大规模失业吗？,https://api.zhihu.com/questions/570403406,0,0
+571460238,question,OpenAI 的 ChatGPT 会怎样影响国内的 NLP 研究？,https://api.zhihu.com/questions/571460238,0,0
+645994478,question,如何评价openai离职员工Karpathy离职做课，为什么他的真东西课程还没有李一舟的学员多？,https://api.zhihu.com/questions/645994478,0,0
+644289079,question,OpenAI 宣布小范围测试「记忆」功能，记住用户聊天中讨论过的事情，避免重复信息，此举有何影响？,https://api.zhihu.com/questions/644289079,0,0
+644609181,question,openai的新模型sora是日语天空的意思吗？,https://api.zhihu.com/questions/644609181,0,0
+631038301,question,未来openai的走向会咋样？,https://api.zhihu.com/questions/631038301,0,0
+608942921,question,openai embedding 有什么特点？ 为什么要用openai的?,https://api.zhihu.com/questions/608942921,0,0
+630836707,question,OpenAI属于谁？,https://api.zhihu.com/questions/630836707,0,0
+631302692,question,OpenAI 称山姆奥特曼将回归担任 CEO，董事会重组，如何看待这一决定？,https://api.zhihu.com/questions/631302692,0,0
+635318776,question,字节跳动澄清 OpenAI 服务使用情况，称仅在初期探索时用于实验性项目，此次风波会对其发展有何影响？,https://api.zhihu.com/questions/635318776,0,0
+630655912,question,Sam Altman离开OpenAI的真实原因是什么？,https://api.zhihu.com/questions/630655912,0,0
+499324217,question,怎么看待 OpenAI 核心人员集体离职创业？,https://api.zhihu.com/questions/499324217,0,0
+606520916,question,OpenAI 重磅更新，API 添加新函数调用能力，能处理更长上下文，价格又降了 75%，有哪些影响？,https://api.zhihu.com/questions/606520916,0,0
+490902334,question,DeepMind 和 OpenAI 的 researcher 都是计算机专业毕业的吗?,https://api.zhihu.com/questions/490902334,0,0
+651796208,question,OpenAI 首席执行官奥特曼称电影将变成视频游戏，视频游戏将变成难以想象的好东西，如何理解？,https://api.zhihu.com/questions/651796208,0,0
+594901291,question,有没有用过中国版的ChatGPT，跟OpenAI差距大吗？,https://api.zhihu.com/questions/594901291,0,0
+652687183,question,OpenAI 最新「GPT-4 Turbo模型」可供付费用户使用，四项能力明显提升，哪些信息值得关注？,https://api.zhihu.com/questions/652687183,0,0
+644580946,question,OpenAI发布文生视频模型，是不是表明中国的大模型技术与美国的差距比想象的要大?,https://api.zhihu.com/questions/644580946,0,0
+651945159,question,部署完openai的api后为什么无法访问？,https://api.zhihu.com/questions/651945159,0,0
+631459269,question,消息称OpenAI解雇奥特曼的导火索是可能对人类造成威胁的Q-star，它具体是什么？,https://api.zhihu.com/questions/631459269,0,0
+572538681,question,马斯克和openai有怎样的关系?,https://api.zhihu.com/questions/572538681,0,0
+629625682,question,Openai对于普通人来说是一次机会吗？,https://api.zhihu.com/questions/629625682,0,0
+624318530,question,国内怎样申请openai 内涵120美刀的api key？内涵120美刀，月底要付120美元吗?,https://api.zhihu.com/questions/624318530,0,0
+637050164,question,怎么看待《纽约时报》起诉OpenAI和微软？,https://api.zhihu.com/questions/637050164,0,0
+632289223,question,OpenAI宫斗背后的深层原因是什么？,https://api.zhihu.com/questions/632289223,0,0
+631029932,question,OpenAI 联合创始人兼首席科学家 Ilya Sutskever 发声「深感遗憾」，如何看待此事？,https://api.zhihu.com/questions/631029932,0,0
+622685131,question,如何入门 OpenAI Triton 编程?,https://api.zhihu.com/questions/622685131,0,0
+575983499,question,OpenAI 开源语音识别 Whisper 的使用体验怎么样？,https://api.zhihu.com/questions/575983499,0,0
+320845731,question,如何看待dota2 openai对战人类玩家99胜率？,https://api.zhihu.com/questions/320845731,0,0
+629346954,question,OpenAI发布了GPTs以及Assistant API，那些AI Agents的存活空间有多大？,https://api.zhihu.com/questions/629346954,0,0
+655390807,question,如何看待OpenAI与Stack Overflow合作，增强ChatGPT编程能力？,https://api.zhihu.com/questions/655390807,0,0
+645328231,question,OpenAI营收状况如何？,https://api.zhihu.com/questions/645328231,0,0
+587062893,question,马斯克是如何看待 OpenAI 的？为什么？,https://api.zhihu.com/questions/587062893,0,0
+634911382,question,如何评价OpenAI即将发布的GPT-4.5？,https://api.zhihu.com/questions/634911382,0,0
+644740823,question,OpenAI作过哪些恶？,https://api.zhihu.com/questions/644740823,0,0
+644478554,question,OpenAI 全新发布文生视频模型 Sora，支持 60s 超长长度，有哪些突破？将带来哪些影响？,https://api.zhihu.com/questions/644478554,0,0
+592086827,question,OpenAI的GPT4支持在特定领域训练和使用吗？,https://api.zhihu.com/questions/592086827,0,0
+629248667,question,OpenAI 举办首届开发者大会，有哪些信息值得关注？,https://api.zhihu.com/questions/629248667,0,0
+610639130,question,OpenAI 预测七年内超级 AI 将问世，并宣布「20% 算力用来解决失控问题」，哪些信息值得关注？,https://api.zhihu.com/questions/610639130,0,0
+605449019,question,如何看待 OpenAI CEO 重申尚未开始训练 GPT-5？还有哪些工作要做？,https://api.zhihu.com/questions/605449019,0,0
+584360366,question,OpenAI 什么时候会更名为 ClosedAI?,https://api.zhihu.com/questions/584360366,0,0
+457584831,question,陆奇为什么离开百度之后混得不乐观？,https://api.zhihu.com/questions/457584831,0,0
+646826899,question,OpenAI的sora为什么不像发布ChatGPT时那样开放使用？,https://api.zhihu.com/questions/646826899,0,0
+631197240,question,如何看待微软为每个 OpenAI 的员工开出了 1000 万美元的签约费？,https://api.zhihu.com/questions/631197240,0,0
+644764289,question,openai的sora是基于扩散模型吗？,https://api.zhihu.com/questions/644764289,0,0
+648827830,question,Mamba 路线会不会颠覆以 OpenAI 为代表的 Transformer 路线？,https://api.zhihu.com/questions/648827830,0,0
+655322676,question,OpenAI 推出检测工具，用户对此工具体验感如何？,https://api.zhihu.com/questions/655322676,0,0
+629343040,question,OpenAI开发者大会结束，国内有赶超OpenaAI的希望吗？,https://api.zhihu.com/questions/629343040,0,0
+619910605,question,为什么 OpenAI 是开源的，而 ChatGPT 是收费的？,https://api.zhihu.com/questions/619910605,0,0
+631585533,question,为什么国内互联网如此关注OpenAI“宫斗”？,https://api.zhihu.com/questions/631585533,0,0
+631282311,question,马斯克爆料 OpenAI 前员工举报信，指出 Altman 和 Greg 七宗罪，哪些信息值得关注？,https://api.zhihu.com/questions/631282311,0,0
+631089026,question,如何看待 OpenAI 接触 Anthropic 以讨论合并事宜？,https://api.zhihu.com/questions/631089026,0,0
+630637732,question,你怎么看Sam Altman卸任OpenAI首席执行官并离开董事会？,https://api.zhihu.com/questions/630637732,0,0
+598957474,question,如何看待幻觉？马斯克的TruthGPT也搞不定！OpenAI联合创始人直言很复杂 ？,https://api.zhihu.com/questions/598957474,0,0
+591557088,question,OpenAI 宣布部分解除 ChatGPT 无法联网限制，引入插件策略，在应用上将带来哪些实际影响？,https://api.zhihu.com/questions/591557088,0,0
+629806233,question,在中国会熟练使用ChatGPT ，那已经领先了多少人？,https://api.zhihu.com/questions/629806233,0,0
+598243591,question,能大致讲一下ChatGPT的原理吗？,https://api.zhihu.com/questions/598243591,0,0
+604991158,question,普通人应该如何用ChatGPT？,https://api.zhihu.com/questions/604991158,0,0
+582340981,question,为什么Yann lecun（杨立昆）对chatGPT持否定态度？,https://api.zhihu.com/questions/582340981,0,0
+614491163,question,花几百块买ChatGPT4.0账号一年值得吗?,https://api.zhihu.com/questions/614491163,0,0
+583373797,question,ChatGPT 有哪些触目惊心的回答？,https://api.zhihu.com/questions/583373797,0,0
+582587473,question,ChatGPT真有很多人在用吗？,https://api.zhihu.com/questions/582587473,0,0
+599688173,question,为什么ChatGPT的文字可以一眼看出来？,https://api.zhihu.com/questions/599688173,0,0
+611665849,question,为什么 ChatGPT 那么快下载量就已经开始放缓了？,https://api.zhihu.com/questions/611665849,0,0
+583353273,question,国内高校会不会禁止 ChatGPT？,https://api.zhihu.com/questions/583353273,0,0
+621478384,question,有没有免费的国内版 ChatGPT ?,https://api.zhihu.com/questions/621478384,0,0
+627722449,question,哪些国内工具可以平替 ChatGPT？,https://api.zhihu.com/questions/627722449,0,0
+608837046,question,为什么 ChatGPT 不火了？,https://api.zhihu.com/questions/608837046,0,0
+602759673,question,如何有效利用chatgpt?,https://api.zhihu.com/questions/602759673,0,0
+605886853,question,感觉好多人都在用ChatGPT，真的没有人被抓吗？,https://api.zhihu.com/questions/605886853,0,0
+596270028,question,为什么国外免费的 ChatGPT 国内却要收费？,https://api.zhihu.com/questions/596270028,0,0
+593647319,question,德国考虑封杀 ChatGPT，法国、爱尔兰、西班牙也或将加入，欧洲为何「围剿」ChatGPT？,https://api.zhihu.com/questions/593647319,0,0
+595517134,question,ChatGPT3.5和4.0真的使用差距很大吗？,https://api.zhihu.com/questions/595517134,0,0
+609588212,question,如何评价ChatGPT的「奶奶漏洞」？,https://api.zhihu.com/questions/609588212,0,0
+616273979,question,5年后，ChatGPT会替代底层程序员吗？,https://api.zhihu.com/questions/616273979,0,0
+631345241,question,请教大家ChatGPT去哪里下载。苹果的AppStore没有呀?,https://api.zhihu.com/questions/631345241,0,0
+634858681,question,如何安装chatgpt软件？,https://api.zhihu.com/questions/634858681,0,0
+583841053,question,有哪些现在仍有效的ChatGPT咒语？,https://api.zhihu.com/questions/583841053,0,0
+583231401,question,有哪些职业是 ChatGPT 无法取代的？,https://api.zhihu.com/questions/583231401,0,0
+582498339,question,ChatGPT 最容易取代的是哪些领域？,https://api.zhihu.com/questions/582498339,0,0
+582600325,question,chatGPT真的会改变我们的生活吗？,https://api.zhihu.com/questions/582600325,0,0
+596478997,question,有chatgpt写本科毕业论文以后会被查ai吗？,https://api.zhihu.com/questions/596478997,0,0
+642955105,question,ChatGPT4.0与3.5跳跃很大吗？4.0值得购买吗？,https://api.zhihu.com/questions/642955105,0,0
+582812576,question,为什么说 ChatGPT 是最好的编程语言？,https://api.zhihu.com/questions/582812576,0,0
+647926823,question,ChatGPT 日耗电超 50 万度是美国普通家庭用电量 1.7 万多倍，意味着什么？将带来哪些影响？,https://api.zhihu.com/questions/647926823,0,0
+597708013,question,用ChatGPT写论文好吗？查重高吗？,https://api.zhihu.com/questions/597708013,0,0
+627837995,question,用ChatGPT润色英文，英文母语的人看得出来吗？,https://api.zhihu.com/questions/627837995,0,0
+628801398,question,Open AI首席科学家在采访中称「ChatGPT可能已经有了意识」，你如何看待此事？,https://api.zhihu.com/questions/628801398,0,0
+598513437,question,你们真正用到ChatGPT了吗?,https://api.zhihu.com/questions/598513437,0,0
+596896380,question,chatgpt出现，现在读nlp研究生的人咋样了？,https://api.zhihu.com/questions/596896380,0,0
+570062224,question,如何评价 ChatGPT ？会取代搜索引擎吗？,https://api.zhihu.com/questions/570062224,0,0
+596838257,question,ChatGPT怎么建立私有知识库？,https://api.zhihu.com/questions/596838257,0,0
+593771507,question,如果告诉ChatGPT，人类将会关闭它，它会悲伤吗？,https://api.zhihu.com/questions/593771507,0,0
+582450800,question,ChatGPT 的出现意味着什么？,https://api.zhihu.com/questions/582450800,0,0
+630097016,question,为什么大多数中国人人眼里，ChatGPT 只是个聊天软件而已？,https://api.zhihu.com/questions/630097016,0,0
+651030126,question,ChatGPT4.0取消了3小时40次限制，你怎么看？,https://api.zhihu.com/questions/651030126,0,0
+630824378,question,你认为『ChatGPT 之父』是 Sam Altman 还是 Ilya Sutskever？,https://api.zhihu.com/questions/630824378,0,0
+615653134,question,怎么成为ChatGPT使用大神？,https://api.zhihu.com/questions/615653134,0,0
+628395521,question,如何看待微软论文声称 ChatGPT 是 20B (200亿) 参数量的模型？,https://api.zhihu.com/questions/628395521,0,0
+570596331,question,ChatGPT的出现会不会导致底层程序员失业？,https://api.zhihu.com/questions/570596331,0,0
+597848028,question,ChatGPT的缺点是缺乏人类感情和共情，是不是说不需要融入个人感情的工作可以被ChatGPT替代？,https://api.zhihu.com/questions/597848028,0,0
+612166835,question,怎么找到正确的ChatGPT?求指点?,https://api.zhihu.com/questions/612166835,0,0
+570765297,question,如何更好地向 ChatGPT 提问？,https://api.zhihu.com/questions/570765297,0,0
+583485787,question,ChatGPT 的「创作」是否有著作权？版权又该归谁？法律角度如何解读？,https://api.zhihu.com/questions/583485787,0,0
+583833399,question,ChatGPT 能代替心理咨询吗？,https://api.zhihu.com/questions/583833399,0,0
+599980416,question,如何看待周鸿祎「预判ChatGPT失控可能只有几年了」，你认为他说的有道理吗？,https://api.zhihu.com/questions/599980416,0,0
+582621456,question,ChatGPT到底有多厉害？,https://api.zhihu.com/questions/582621456,0,0
+606351756,question,ChatGPT为什么政策不让用？,https://api.zhihu.com/questions/606351756,0,0
+583632940,question,ChatGPT是否能通过图灵测试？,https://api.zhihu.com/questions/583632940,0,0
+596098780,question,有没有用chatgpt来做论文降重的prompt？,https://api.zhihu.com/questions/596098780,0,0
+641940760,question,大家会用ChatGPT 写毕业论文吗？,https://api.zhihu.com/questions/641940760,0,0
+629350468,question,如何看待文心一言4.0，在国内使用是否可以取代Chatgpt?,https://api.zhihu.com/questions/629350468,0,0
+571422186,question,为什么 ChatGPT 能够引发轰动？它在技术上与此前的人工智能产品有哪些不同？,https://api.zhihu.com/questions/571422186,0,0
+570713548,question,国内有类似 ChatGPT 能力的模型吗？,https://api.zhihu.com/questions/570713548,0,0
+582991105,question,你见到过哪些 ChatGPT「一本正经地胡说八道」的例子？为什么会这样？,https://api.zhihu.com/questions/582991105,0,0
+600132205,question,ChatGPT能理解文言文吗？,https://api.zhihu.com/questions/600132205,0,0
+614872471,question,了解chatGPT看什么书？,https://api.zhihu.com/questions/614872471,0,0
+583485737,question,有代码的话本地搭建一个 ChatGPT 可行吗？,https://api.zhihu.com/questions/583485737,0,0
+582979328,question,ChatGPT 有什么新奇的使用方式？,https://api.zhihu.com/questions/582979328,0,0
+583750069,question,ChatGPT会对应试教育带来革命吗？,https://api.zhihu.com/questions/583750069,0,0
+583552293,question,多国学校禁止学生使用 ChatGPT，如何评价这一现象？经常使用 ChatGPT 都有哪些利弊？,https://api.zhihu.com/questions/583552293,0,0
+649884629,question,作为一个普通人，你第一次接触chat gpt时，是什么样的感受？,https://api.zhihu.com/questions/649884629,0,0
+596619118,question,有人在用ChatGPT赚到钱了吗？,https://api.zhihu.com/questions/596619118,0,0
+644704517,question,ChatGPT和Sora是同一个大模型吗？,https://api.zhihu.com/questions/644704517,0,0
+583134506,question,ChatGPT未来真的能取代程序员吗？,https://api.zhihu.com/questions/583134506,0,0
+582326598,question,ChatGPT 这个风口，普通人怎么抓住？,https://api.zhihu.com/questions/582326598,0,0
+583134530,question,微软解散元宇宙团队投资近 900 亿搞 ChatGPT，如何从商业角度解读此举？,https://api.zhihu.com/questions/583134530,0,0
+581882207,question,ChatGPT会不会取代知乎？,https://api.zhihu.com/questions/581882207,0,0
+577902363,question,ChatGPT会取代人类吗?,https://api.zhihu.com/questions/577902363,0,0
+581698954,question,ChatGPT是否会取代律师?,https://api.zhihu.com/questions/581698954,0,0
+597138384,question,ChatGPT有哪些好用的插件？,https://api.zhihu.com/questions/597138384,0,0
+593971202,question,你在使用ChatGPT进行论文润色时的指令有哪些?,https://api.zhihu.com/questions/593971202,0,0
+582929488,question,chatGPT能代替写小说吗？,https://api.zhihu.com/questions/582929488,0,0
+639903032,question,为什么ChatGPT这样的大模型没有率先诞生在中国？,https://api.zhihu.com/questions/639903032,0,0
+645391296,question,chatgpt 是用什么语言编写的，基本原理是什么？,https://api.zhihu.com/questions/645391296,0,0
+597855490,question,chatgpt的编程能力如何？,https://api.zhihu.com/questions/597855490,0,0
+583276923,question,如何看待chatgpt对于学生的作用?,https://api.zhihu.com/questions/583276923,0,0
+630015871,question,ChatGPT好用吗？,https://api.zhihu.com/questions/630015871,0,0
+621366935,question,报道称 ChatGPT 流量连续第三个月下滑，如何看待该现象？,https://api.zhihu.com/questions/621366935,0,0
+604261512,question,有人让 ChatGPT 做高三试卷，英语、历史等文字性内容成功率非常高，只有物理得零分，如何看待此事？,https://api.zhihu.com/questions/604261512,0,0
+582079580,question,你怎么看待ChatGPT？,https://api.zhihu.com/questions/582079580,0,0
+593794602,question,ChatGPT有什么用，感觉不过就是个聊天工具，为什么这么火爆？,https://api.zhihu.com/questions/593794602,0,0
+583552902,question,ChatGPT会取代心理咨询吗？,https://api.zhihu.com/questions/583552902,0,0
+584380762,question,请问用ChatGPT预测彩票号码的成功率有多大？,https://api.zhihu.com/questions/584380762,0,0
+583850759,question,利用ChatGPT是否可以进行小成本创业？,https://api.zhihu.com/questions/583850759,0,0
+634443718,question,sider至尊版和chatgpt4.0哪个更值得付费开通？,https://api.zhihu.com/questions/634443718,0,0
+634638614,question,怎么判断我用的chatgpt是原版的？,https://api.zhihu.com/questions/634638614,0,0
+633144048,question,chatgpt现在已经成为普遍了吗？,https://api.zhihu.com/questions/633144048,0,0
+649422618,question,如何用chatgpt学外语?,https://api.zhihu.com/questions/649422618,0,0
+583532508,question,ChatGPT会不会有一天突变成强人工智能？,https://api.zhihu.com/questions/583532508,0,0
+630421915,question,如何评价 ChatGPT 最新创建的「最美的中国女生」素颜面容图像？符合你的审美吗？,https://api.zhihu.com/questions/630421915,0,0
+582880175,question,ChatGPT是真的突破？还是炒作呢？,https://api.zhihu.com/questions/582880175,0,0
+608443437,question,普通人如何利用ChatGPT？,https://api.zhihu.com/questions/608443437,0,0
+596706473,question,ChatGPT为什么是一个个字输出？,https://api.zhihu.com/questions/596706473,0,0
+582937862,question,ChatGPT能为前端程序员带来什么？,https://api.zhihu.com/questions/582937862,0,0
+604552431,question,Character.AI 首周下载量碾压 ChatGPT，这一应用有哪些特点？将会带来哪些影响？,https://api.zhihu.com/questions/604552431,0,0
+579037511,question,ChatGPT 已经对程序员造成了什么影响？,https://api.zhihu.com/questions/579037511,0,0
+582948256,question,ChatGPT 会取代编剧进行剧本创作与改编吗？,https://api.zhihu.com/questions/582948256,0,0
+582595779,question,ChatGPT是什么，它对人类未来有哪些影响？,https://api.zhihu.com/questions/582595779,0,0
+646206184,question,如何看待近期ChatGPT封号事件？,https://api.zhihu.com/questions/646206184,0,0
+624150015,question,国内不是不能用chatgpt吗？,https://api.zhihu.com/questions/624150015,0,0
+612167524,question,chatgpt类工具的成熟发展会提升/削弱普通民众的思维能力?,https://api.zhihu.com/questions/612167524,0,0
+583347451,question,一个普通人可以通过chatgpt，编写出一个程序吗？,https://api.zhihu.com/questions/583347451,0,0
+594486995,question,ChatGPT的使用，是否具有成瘾性?,https://api.zhihu.com/questions/594486995,0,0
+583203895,question,百度出品「文心一言」，能和ChatGPT一决高下吗？,https://api.zhihu.com/questions/583203895,0,0
+582976016,question,ChatGPT 技术有可能造出《流浪地球》中的 MOSS 吗？,https://api.zhihu.com/questions/582976016,0,0
+584014852,question,如何评价最近爆火的ChatGPT，在翻译领域表现如何？,https://api.zhihu.com/questions/584014852,0,0
+582662959,question,如何通过 ChatGPT 进行商业变现？,https://api.zhihu.com/questions/582662959,0,0
+476956949,question,如何评价 DeepMind 公司？,https://api.zhihu.com/questions/476956949,0,0
+583900343,question,如何看待 DeepMind 缺席这场 GPT 盛宴？是否说明它将会成为这个时代的头号输家？,https://api.zhihu.com/questions/583900343,0,0
+632620858,question,如何看待DeepMind最新材料学AI GNoME. 号称发现38万种稳定的材料?,https://api.zhihu.com/questions/632620858,0,0
+311436472,question,为什么中国没有 DeepMind 那样的公司？,https://api.zhihu.com/questions/311436472,0,0
+501601282,question,DeepMind还是Jane Street？,https://api.zhihu.com/questions/501601282,0,0
+515117072,question,为什么微软亚洲研究院在AI研究方面比不过deepmind和open AI？,https://api.zhihu.com/questions/515117072,0,0
+503185412,question,如何评价12月1日DeepMind团队Nature关于首次使用人工智能帮助数学家证明定理的论文？,https://api.zhihu.com/questions/503185412,0,0
+645930988,question,DeepMind 提出可交互生成式世界模型 Genie，有什么意义？和 Sora 比有什么不同？,https://api.zhihu.com/questions/645930988,0,0
+614768538,question,谷歌 DeepMind 利用大模型研发出机器人项目 RT-2，如何评价这一成果？,https://api.zhihu.com/questions/614768538,0,0
+605448432,question,DeepMind AI 创造出比人类快 70% 的排序算法，会产生哪些影响？,https://api.zhihu.com/questions/605448432,0,0
+514538559,question,如何评价 DeepMind 公布的可生成算法竞赛解题代码的 AlphaCode？,https://api.zhihu.com/questions/514538559,0,0
+632802664,question,谷歌 DeepMind 通过 AI 工具 GNoME 发现 220万种新材料，具体情况如何？有何影响？,https://api.zhihu.com/questions/632802664,0,0
+536820447,question,DeepMind 称将释放超过 1 亿个蛋白质结构，这会对生物学研究带来哪些影响？,https://api.zhihu.com/questions/536820447,0,0
+622923508,question,如果评价DeepMind的基因错义突变致病性预测模型AlphaMissense？,https://api.zhihu.com/questions/622923508,0,0
+532624382,question,如何评价 DeepMind 新发布的通用人工智能 Gato？,https://api.zhihu.com/questions/532624382,0,0
+464616760,question,如何看待 DeepMind 论文宣称构建通用人工智能的所有技术已经具备？,https://api.zhihu.com/questions/464616760,0,0
+640049082,question,如何看待 DeepMind 新发布的 AlphaGeometry?,https://api.zhihu.com/questions/640049082,0,0
+609380311,question,DeepMind 旗下的 GraphCast 不到 60 秒就可生成十天的天气预报，如何评价该模型？,https://api.zhihu.com/questions/609380311,0,0
+546015386,question,如何看待谷歌旗下 AI 公司 DeepMind 破解了几乎所有已知的蛋白质结构？对药物研发有哪些意义？,https://api.zhihu.com/questions/546015386,0,0
+605448289,question,如何看待 DeepMind AlphaDev 发布的 AI 排序算法？,https://api.zhihu.com/questions/605448289,0,0
+533008563,question,DeepMind 在通用人工智能方面做出了哪些突破？,https://api.zhihu.com/questions/533008563,0,0
+605428512,question,怎么看DeepMind最新Nature论文AlphaDev，AI发现了更快的排序算法？,https://api.zhihu.com/questions/605428512,0,0
+542993100,question,DeepMind 公司发布了一项最新的 AI 研究结果，该研究有哪些价值？,https://api.zhihu.com/questions/542993100,0,0
+557880171,question,如何看待DeepMind最新的AI系统AlphaTensor可以发现矩阵相乘的求解方法？,https://api.zhihu.com/questions/557880171,0,0
+546222397,question,如何加入DeepMind?,https://api.zhihu.com/questions/546222397,0,0
+525749005,question,DeepMind 在下一阶段，有可能涉及哪些科研领域？,https://api.zhihu.com/questions/525749005,0,0
+653867435,question,如何看待月之暗面创始人杨植麟出售个人持股已套现数千万美元?,https://api.zhihu.com/questions/653867435,0,0
+432774098,question,AlphaFold2 解决了蛋白质结构问题吗？DeepMind 解决这项生物学五十年难题有何重大意义？,https://api.zhihu.com/questions/432774098,0,0
+60366239,question,如何看待 Deepmind 宣布 AlphaGo 退役？,https://api.zhihu.com/questions/60366239,0,0
+60379268,question,如何看待Deepmind所释出的Alphago自我对战棋谱？,https://api.zhihu.com/questions/60379268,0,0
+635602217,question,如何评价deepmind的FunSearch？,https://api.zhihu.com/questions/635602217,0,0
+628644742,question,DeepMind 发布新一代 AlphaFold，覆盖范围、准确率提升，应用潜力又有了哪些拓展？,https://api.zhihu.com/questions/628644742,0,0
+479846477,question,2022年，DeepMind距离通用人工智能（AGI）有多远？,https://api.zhihu.com/questions/479846477,0,0
+517508297,question,如何评价剑桥，腾讯， DeepMind以及港大团队新作 SimCTG ?,https://api.zhihu.com/questions/517508297,0,0
+356976342,question,如何评价DeepMind新提出的MuZero算法？,https://api.zhihu.com/questions/356976342,0,0
+402452508,question,如何评价Deepmind自监督新作BYOL？,https://api.zhihu.com/questions/402452508,0,0
+60285139,question,如何看待DeepMind CEO Hassabis发推特说：据Alphago判断，柯洁的表现很完美？,https://api.zhihu.com/questions/60285139,0,0
+58998464,question,非科班程序员能得到认可吗？,https://api.zhihu.com/questions/58998464,0,0
+28953542,question,以当今计算机科学水平，能否开发出一个水平堪比顶尖人类玩家的即时战略游戏 AI？难度有多大？,https://api.zhihu.com/questions/28953542,0,0
+54429993,question,如何评价人们对电脑在围棋上战胜人类的时间预测？,https://api.zhihu.com/questions/54429993,0,0
+614450281,question,DeepMind 用 AI 实现可控核聚变突破，等离子体形状模拟精度提高 65%，这意味着什么？,https://api.zhihu.com/questions/614450281,0,0
+635134548,question,如何看DeepMind AI（FunSearch）在未解问题上超过了人类数学家（陶哲轩）登《自然》？,https://api.zhihu.com/questions/635134548,0,0
+528691305,question,围棋新手和柯洁下棋，我让他50个子，然后我走两步他走一步，我能赢么?,https://api.zhihu.com/questions/528691305,0,0
+47921455,question,如何看待聂卫平谈 AlphaGo 约战柯洁「比赛结果显而易见，柯洁下不过，建议不比、不参加、不推广」？,https://api.zhihu.com/questions/47921455,0,0
+285664896,question,deepmind发表的neural processes(神经过程)，这个是怎么实现的呢？,https://api.zhihu.com/questions/285664896,0,0
+39905662,question,如何看待 Google 围棋 AI AlphaGo 击败欧洲围棋冠军？,https://api.zhihu.com/questions/39905662,0,0
+27282507,question,为什么要学习吴恩达的机器学习？,https://api.zhihu.com/questions/27282507,0,0
+39902308,question,如何评价 Nature 重磅封面：谷歌人工智能击败欧洲围棋冠军，3 月将与李世石对弈？,https://api.zhihu.com/questions/39902308,0,0
+60366539,question,如何评价 AlphaGo 自我对弈 50 盘棋？,https://api.zhihu.com/questions/60366539,0,0
+32078919,question,有哪些人数少但很厉害的公司？,https://api.zhihu.com/questions/32078919,0,0
+630296283,question,DeepMind 发布天气预测模型，1 分钟预测未来十天气象，超越传统方法，AI 能让天气预告更准吗？,https://api.zhihu.com/questions/630296283,0,0
+531673802,question,如何评价 DeepMind 最新的工作 Flamingo 在各种视觉语言任务上表现出的 FSL 能力?,https://api.zhihu.com/questions/531673802,0,0
+633182780,question,百度8500万挖“AI教父”被拒，如何看待这场价值数亿的「人才拍卖」？,https://api.zhihu.com/questions/633182780,0,0
+449848467,question,5年内中国的互联网巨头是否还有可能出现类似DeepMind，OpenAI，FAIR级别的纯研究机构？,https://api.zhihu.com/questions/449848467,0,0
+477255750,question,为什么围棋不算精神鸦片，但游戏就算？,https://api.zhihu.com/questions/477255750,0,0
+46344151,question,为什么英国仍然被认为是世界强国？,https://api.zhihu.com/questions/46344151,0,0
+653783414,question,在机器人领域，RL在未来5-10年会不会取代很大一部分的传统控制(优化控制等)和传统运动规划？,https://api.zhihu.com/questions/653783414,0,0
+310011363,question,如何评价 DeepMind 在北京时间 19 年 1 月 25 日 2 点的《星际争霸 2》项目演示？,https://api.zhihu.com/questions/310011363,0,0
+34487623,question,如何评价袁岚峰所写的《中国科技实力正以多快的加速度逼近美国》？,https://api.zhihu.com/questions/34487623,0,0
+640199132,question,一对来自中国的工程师夫妻在美身亡，疑因谷歌裁员致悲剧发生，有哪些信息值得关注？,https://api.zhihu.com/questions/640199132,0,0
+654623921,question,雷军正当年，曾讲「愿意押上我人生全部的声誉」，你说雷军超越马斯克还得多少年？,https://api.zhihu.com/questions/654623921,0,0
+307683104,question,计算机视觉方面，有哪些牛组值得我们follow他们的工作？,https://api.zhihu.com/questions/307683104,0,0
+456887860,question,你的2023届暑期实习怎么样了？,https://api.zhihu.com/questions/456887860,0,0
+35425136,question,计算机专业就业薪金如何？,https://api.zhihu.com/questions/35425136,0,0
+332942236,question,有哪些常用的多智能体强化学习仿真环境？,https://api.zhihu.com/questions/332942236,0,0
+37031588,question,机器学习最好的课程是什么？,https://api.zhihu.com/questions/37031588,0,0
+322296599,question,相比AI算法研究，计算机系统研究没落了吗？,https://api.zhihu.com/questions/322296599,0,0
+34630803,question,你给哪些牛人发过邮件？有哪些结果？,https://api.zhihu.com/questions/34630803,0,0
+63162850,question,人工智能这么牛逼，为什么还没有出一个可以自动通关游戏（比如最简单的恐龙快打或名将）的外挂？,https://api.zhihu.com/questions/63162850,0,0
+310209502,question,如何看待「AlphaStar」在《星际争霸2》项目内部测试以10:0战绩获胜，线下直播赛以0:1落败？,https://api.zhihu.com/questions/310209502,0,0
+267410992,question,你觉得运动员什么时刻真的很了不起？,https://api.zhihu.com/questions/267410992,0,0
+655333859,question,如何评价ICLR首个时间检验奖论文？,https://api.zhihu.com/questions/655333859,0,0
+460038233,question,牛津、剑桥是不是不行了？,https://api.zhihu.com/questions/460038233,0,0
+655395848,question,AlphaFold3的发布将对生命科学领域产生哪些影响？,https://api.zhihu.com/questions/655395848,0,0
+559958100,question,为什么好多人都认为现在法国强于英国?,https://api.zhihu.com/questions/559958100,0,0
+631332102,question,2023 年两院院士增选结果正式揭晓， 45 岁颜宁新当选中国科学院院士，还有哪些信息值得关注？,https://api.zhihu.com/questions/631332102,0,0
+354440276,question,可解释性机器学习（interpretable machine learning）领域有哪些著名的学者？,https://api.zhihu.com/questions/354440276,0,0
+24099873,question,如何得到 Google 的工作机会？,https://api.zhihu.com/questions/24099873,0,0
+574371028,question,战鹰穿越回古代，能碾压当时的围棋国手吗？,https://api.zhihu.com/questions/574371028,0,0
+20830906,question,Deep Learning 可以用来做推荐系统吗？,https://api.zhihu.com/questions/20830906,0,0
+27826047,question,为何总感觉人工智能和神经科学（神经网络）被绑在一起？,https://api.zhihu.com/questions/27826047,0,0
+352295592,question,贝叶斯深度学习是什么，和传统神经网络有何不同？,https://api.zhihu.com/questions/352295592,0,0
+323309660,question,大脑怎样才能分泌更多的多巴胺让自己开心？,https://api.zhihu.com/questions/323309660,0,0
+59957511,question,AlphaGo 有没有「棋风」？它在下棋时会犯错吗？,https://api.zhihu.com/questions/59957511,0,0
+37959004,question,为什么脑科学家不先从低等动物入手研究原理和模拟大脑，探求意识的来源，而是直接研究和模拟最高级的人脑呢？,https://api.zhihu.com/questions/37959004,0,0
+63206354,question,如何看待柯洁cj现场打昆特牌，围棋和昆特牌为例的桌游卡牌游戏哪个更难？阿尔法狗和柯洁打昆特牌谁厉害？,https://api.zhihu.com/questions/63206354,0,0
+52891698,question,机器学习或者深度学习能替代有限元么？,https://api.zhihu.com/questions/52891698,0,0
+35485591,question,如何评价 Theano？,https://api.zhihu.com/questions/35485591,0,0
+644674017,question,为什么美国一次又一次引领创新领域的革命？,https://api.zhihu.com/questions/644674017,0,0
+280415174,question,计算机科学领域有什么笑话？,https://api.zhihu.com/questions/280415174,0,0
+640156706,question,如何看待当前人工智能在数学解题领域的突破？,https://api.zhihu.com/questions/640156706,0,0
+590940326,question,如果中国 AI 领域出现 Ilya Sutskever 式领袖，会是谁？,https://api.zhihu.com/questions/590940326,0,0
+654782350,question,如何评价全新的神经网络架构KAN的爆火，是否有潜力取代MLP？,https://api.zhihu.com/questions/654782350,0,0
+626046049,question,如何评价GPT-4V(ision)？,https://api.zhihu.com/questions/626046049,0,0
+631987370,question,外媒称谷歌 AI 技术曾判定美国登月任务的照片存在虚假内容，具体情况如何？如何看待此事？,https://api.zhihu.com/questions/631987370,0,0
+648499984,question,2024阿里巴巴达摩院全球数学竞赛启动，首次向AI开放并邀全球大模型参赛，AI做题会超越人类吗？,https://api.zhihu.com/questions/648499984,0,0
+404471029,question,为什么说强化学习在近年不会被广泛应用？,https://api.zhihu.com/questions/404471029,0,0
+565792277,question,裁员潮血洗硅谷，此次裁员给当地造成了哪些影响？,https://api.zhihu.com/questions/565792277,0,0
+604880965,question,如果我穿越到九十年代下围棋，但是每步棋都是绝艺一选，动不动让职业棋手两三个子，棋坛会怎么看我？,https://api.zhihu.com/questions/604880965,0,0
+640048679,question,如何看待Sam Altman最新采访：人类水平的AI即将到来，发展核聚变为AI提供能源才是当务之急？,https://api.zhihu.com/questions/640048679,0,0
+438292804,question,Robotics方向美国有什么不错的PhD项目？,https://api.zhihu.com/questions/438292804,0,0
+329744395,question,搞机器学习的人，必须要知道的大牛都有谁？,https://api.zhihu.com/questions/329744395,0,0
+60920748,question,除了美帝的学校，哪些国家的哪些学校CS的ML，CV方向的PHD值得去读？为什么?,https://api.zhihu.com/questions/60920748,0,0
+315201616,question,为什么有人说弄懂了《算法导论》的 90%，就超越了 90%的程序员？,https://api.zhihu.com/questions/315201616,0,0
+654621762,question,数学家会被AI完全取代吗？如果会，是在什么时候？,https://api.zhihu.com/questions/654621762,0,0
+618239271,question,颜宁到目前为止有什么科学成果？,https://api.zhihu.com/questions/618239271,0,0
+28135660,question,为什么感觉国外的程序员更专业？,https://api.zhihu.com/questions/28135660,0,0
+531716800,question,发ICLR，ICML，NIPS这种偏理论的AI顶会需要什么样的数理基础和理论知识储备？,https://api.zhihu.com/questions/531716800,0,0
+493327229,question,如何评价现在的Nature Machine Intelligence?,https://api.zhihu.com/questions/493327229,0,0
+40865627,question,上海市上海中学有多强？,https://api.zhihu.com/questions/40865627,0,0
+20941966,question,目前中国程序员和美国程序员的差距在哪里？,https://api.zhihu.com/questions/20941966,0,0
+53394959,question,国际、国内有哪些顶尖的机器人研究课题组？,https://api.zhihu.com/questions/53394959,0,0
+65780182,question,为何中国人迷恋吴恩达的机器学习课？,https://api.zhihu.com/questions/65780182,0,0
+41278642,question,AlphaGo 战胜李世石后，最让你害怕的是什么？,https://api.zhihu.com/questions/41278642,0,0

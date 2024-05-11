@@ -12,7 +12,7 @@ def cleanWebContent(content: str)->str:
     text = soup.get_text()
 
     # 删除多余空白字符（包括换行符、制表符等），并压缩多个空格为一个
-    cleanedText = re.sub(r'\s+', ' ', text).strip()
+    cleanedText = re.sub(r'\s+', ' ', text).strip().replace(',','，')
     return cleanedText
 
 # 保存实体到文件

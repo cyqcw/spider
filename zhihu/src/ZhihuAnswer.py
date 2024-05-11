@@ -25,9 +25,9 @@ def parseAnswer(content: json, answers: list) -> None:
         print(f"正在解析，问题：{data['question']['id']}，答案：{data['id']}")
         answers.append(
             Answer(
-                data['id'], data['question']['id'], cleanWebContent(data['question']['title']), data['author']['id'], data['author']['name'],
-                data['author']['url'], data['author']['user_type'], data['author']['headline'],
-                data['type'], data['url'], data['excerpt'], data['voteup_count'],
+                data['id'], data['question']['id'], cleanWebContent(data['question']['title']), data['author']['id'], cleanWebContent(data['author']['name']),
+                data['author']['url'], data['author']['user_type'], cleanWebContent(data['author']['headline']),
+                data['type'], data['url'], cleanWebContent(data['excerpt']), data['voteup_count'],
                 data['comment_count'], None, data['created_time'],
                 data['updated_time'], cleanWebContent(data['content'])
         ))
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     with open(questionPath, 'r', encoding='utf-8') as f:
         f.readline()
         lines = f.readlines()
-        ids = [line.split(',')[0] for line in lines][34:]
+        ids = [line.split(',')[0] for line in lines][1004:]
         print(ids)
         for id in ids:
             getAllAnswers(f'https://www.zhihu.com/api/v4/questions/{id}/answers')

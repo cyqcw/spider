@@ -1,5 +1,5 @@
 # 关键词
-keyWords = ['人工智能', 'AI', '大模型']
+keyWords = ['人工智能', 'AI', '大模型', '深度学习', '多模态', '自然语言处理', 'openai', 'chatgpt', 'deepmind']
 
 # 保存路径
 questionPath = '../data/questions.csv'

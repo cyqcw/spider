@@ -37,9 +37,9 @@ def parseQuestionAndArticle(content: json, questions: list, articles: list, alre
             if article['url'] not in alreadyUrls:
                 articles.append(
                     Article(
-                        article['id'], article['author']['id'], article['author']['name'],
-                        article['author']['url'], article['author']['type'], article['author']['headline'],
-                        cleanWebContent(article['title']), article['type'], article['url'], article['excerpt'],
+                        article['id'], article['author']['id'], cleanWebContent(article['author']['name']),
+                        article['author']['url'], article['author']['type'], cleanWebContent(article['author']['headline']),
+                        cleanWebContent(article['title']), article['type'], article['url'], cleanWebContent(article['excerpt']),
                         article['voteup_count'], article['comment_count'], article['zfav_count'],
                         article['created_time'], article['updated_time'], cleanWebContent(article['content'])
                 ))
