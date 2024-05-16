@@ -1,35 +1,38 @@
 import re
-import nltk
-from nltk.corpus import stopwords
-
 import json
+import jieba
+import spacy
+from neo4j import GraphDatabase
 
 # 假设数据存储在questions_answers.json文件中
-with open('questions_answers.json', 'r', encoding='utf-8') as file:
+with open('', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
-nltk.download('stopwords')
-stop_words = set(stopwords.words('english'))
+# 使用中文停用词表
+stop_words = set()
+with open('stopwords.txt', 'r', encoding='utf-8') as f:
+    stop_words = set(f.read().splitlines())
+
 
 def preprocess_text(text):
     # 移除HTML标签
     text = re.sub(r'<.*?>', '', text)
-    # 移除非字母字符
-    text = re.sub(r'[^a-zA-Z\s]', '', text)
-    # 转换为小写
-    text = text.lower()
+    # 移除非中文字符（保留汉字、字母和数字）
+    text = re.sub(r'[^\u4e00-\u9fffA-Za-z0-9]', '', text)
+    # 分词
+    words = jieba.lcut(text)
     # 移除停用词
-    text = ' '.join([word for word in text.split() if word not in stop_words])
+    text = ' '.join([word for word in words if word not in stop_words])
     return text
+
 
 for item in data:
     item['question'] = preprocess_text(item['question'])
     item['answer'] = preprocess_text(item['answer'])
 
+# 加载spacy中文模型
+nlp = spacy.load('zh_core_web_sm')
 
-
-import spacy
-nlp = spacy.load('en_core_web_sm')
 
 def extract_entities_relations(text):
     doc = nlp(text)
@@ -41,6 +44,7 @@ def extract_entities_relations(text):
             relations.append((token.head.text, token.dep_, token.text))
     return entities, relations
 
+
 for item in data:
     question_entities, question_relations = extract_entities_relations(item['question'])
     answer_entities, answer_relations = extract_entities_relations(item['answer'])
@@ -49,15 +53,14 @@ for item in data:
     item['answer_entities'] = answer_entities
     item['answer_relations'] = answer_relations
 
-
-
-from neo4j import GraphDatabase
-
+# Neo4j数据库连接设置
 uri = "bolt://localhost:7687"
 driver = GraphDatabase.driver(uri, auth=("neo4j", "password"))
 
+
 def create_entity(tx, entity_text, entity_label):
     tx.run("MERGE (e:Entity {text: $text, label: $label})", text=entity_text, label=entity_label)
+
 
 def create_relation(tx, head, relation, tail):
     tx.run("""
@@ -65,6 +68,7 @@ def create_relation(tx, head, relation, tail):
         MATCH (t:Entity {text: $tail})
         MERGE (h)-[r:RELATION {type: $relation}]->(t)
     """, head=head, tail=tail, relation=relation)
+
 
 def add_data_to_neo4j(data):
     with driver.session() as session:
@@ -74,5 +78,5 @@ def add_data_to_neo4j(data):
             for head, relation, tail in item['question_relations'] + item['answer_relations']:
                 session.write_transaction(create_relation, head, relation, tail)
 
-add_data_to_neo4j(data)
 
+add_data_to_neo4j(data)
