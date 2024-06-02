@@ -69,7 +69,6 @@ if __name__ == '__main__':
     with open(questionPath, 'r', encoding='utf-8') as f:
         f.readline()
         lines = f.readlines()
-        ids = [line.split(',')[0] for line in lines][1004:]
-        print(ids)
+        ids = [line.split(',')[0] for line in lines]
         for id in ids:
             getAllAnswers(f'https://www.zhihu.com/api/v4/questions/{id}/answers')
