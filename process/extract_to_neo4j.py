@@ -6,7 +6,7 @@ import time
 from neo4j import GraphDatabase
 
 # 读取数据
-data = pd.read_csv('../zhihu/data/articles.csv', encoding='utf-8')
+data = pd.read_csv('../zhihu/data/answers.csv', encoding='utf-8')
 
 # 使用中文停用词表
 stop_words = set()
@@ -27,7 +27,7 @@ def preprocess_text(text):
 
 
 # 合并title和content列，并进行预处理
-data['merged_text'] = (data['title'].fillna('') + ' ' + data['content'].fillna('')).apply(preprocess_text)
+data['merged_text'] = data['content'].fillna('').apply(preprocess_text)
 
 # 加载spacy中文模型
 nlp = spacy.load('zh_core_web_sm')
@@ -53,14 +53,20 @@ data['relations'] = data['entities_relations'].apply(lambda x: x[1])
 
 print(data[['entities', 'relations']])
 
-# Neo4j数据库连接设置
-uri = "bolt://101.37.253.225:7687"
-driver = GraphDatabase.driver(uri, auth=("neo4j", "demouser"))
+relations_list = []
+for relations in data['relations']:
+    for head, relation, tail in relations:
+        relations_list.append({'head': head, 'relation': relation, 'tail': tail})
+relations_df = pd.DataFrame(relations_list)
+relations_df.to_csv('relations.csv', index=False, encoding='utf-8')
 
+
+# Neo4j数据库连接设置
+uri = "bolt://localhost:7687"
+driver = GraphDatabase.driver(uri, auth=("neo4j", "12345678"))
 
 def create_entity(tx, entity_text, entity_label):
     tx.run("MERGE (e:Entity {text: $text, label: $label})", text=entity_text, label=entity_label)
-
 
 def create_relation(tx, head, relation, tail):
     tx.run("""
@@ -69,23 +75,25 @@ def create_relation(tx, head, relation, tail):
         MERGE (h)-[r:RELATION {type: $relation}]->(t)
     """, head=head, tail=tail, relation=relation)
 
-
 def add_data_to_neo4j(data, batch_size=100, delay=1):
     with driver.session() as session:
         for i in range(0, len(data), batch_size):
             print(f'Processing {i} to {i + batch_size}')
             batch = data.iloc[i:i + batch_size]
             with session.begin_transaction() as tx:
-                for _, row in batch.iterrows():
-                    for entity, label in row['entities']:
-                        if entity and label:  # 确保实体和标签不为空
-                            create_entity(tx, entity, label)
-                    for head, relation, tail in row['relations']:
-                        if head and relation and tail:  # 确保关系的各项不为空
-                            create_relation(tx, head, relation, tail)
-            tx.commit()
+                try:
+                    for _, row in batch.iterrows():
+                        for entity, label in row['entities']:
+                            if entity and label:  # 确保实体和标签不为空
+                                create_entity(tx, entity, label)
+                        for head, relation, tail in row['relations']:
+                            if head and relation and tail:  # 确保关系的各项不为空
+                                create_relation(tx, head, relation, tail)
+                    tx.commit()
+                except Exception as e:
+                    print(f"An error occurred: {e}")
+                    tx.rollback()
             # time.sleep(delay)  # 延迟，减缓写入速度
-
 
 # 调用函数将数据批量添加到Neo4j，每次写入100条记录，间隔1秒
 add_data_to_neo4j(data, batch_size=100, delay=1)
