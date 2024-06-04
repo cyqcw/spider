@@ -47,7 +47,7 @@ def call_stream_with_messages(question):
 if __name__ == '__main__':
     alreadyQuestions = getAlreadyQuestions()
     # 打开或创建一个 CSV 文件，并准备写入数据
-    with open("data/answer.csv", 'a+', newline='', encoding='utf-8') as csvfile:
+    with open("data/answer_new.csv", 'a+', newline='', encoding='utf-8') as csvfile:
         # 定义 CSV 文件的列名
         fieldnames = ['question', 'answer']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
